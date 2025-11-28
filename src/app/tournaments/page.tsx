@@ -3,10 +3,10 @@
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { TournamentCard } from "@/components/TournamentCard";
 import { MOCK_TOURNAMENTS } from "@/data/mockTournaments";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function TournamentsPage() {
+function TournamentsContent() {
     const searchParams = useSearchParams();
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
@@ -99,5 +99,13 @@ export default function TournamentsPage() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function TournamentsPage() {
+    return (
+        <Suspense fallback={<div className="container mx-auto px-4 py-8 text-white">Loading...</div>}>
+            <TournamentsContent />
+        </Suspense>
     );
 }
