@@ -34,7 +34,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 150,
         currentParticipants: 0,
-        sourceUrl: "https://mkbowl.com/",
+        sourceUrl: "https://www.mk-group.co.jp/charitycup/",
     },
     // 3. Rokko Queens Open Tournament
     {
@@ -225,7 +225,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 150,
         currentParticipants: 0,
-        sourceUrl: "https://mkbowl.com/",
+        sourceUrl: "https://www.jpba.or.jp/information/tournament/tournament2025/PDF/2026_TournamentSchedule_251128.pdf",
     },
     // 14. 第58回 京都府ボウリング選手権大会
     {
