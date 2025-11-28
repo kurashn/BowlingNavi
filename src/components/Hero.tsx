@@ -40,19 +40,19 @@ export function Hero() {
 
             {/* Search Bar */}
             <div className="relative w-full max-w-2xl">
-                <div className="relative flex items-center rounded-full bg-slate-900/80 p-2 shadow-2xl ring-1 ring-white/10 backdrop-blur-xl transition-all focus-within:ring-blue-500/50">
-                    <Search className="ml-4 size-5 text-slate-400" />
+                <div className="relative flex items-center rounded-full bg-slate-900/80 p-1.5 shadow-2xl ring-1 ring-white/10 backdrop-blur-xl transition-all focus-within:ring-blue-500/50 sm:p-2">
+                    <Search className="ml-3 size-4 text-slate-400 sm:ml-4 sm:size-5" />
                     <input
                         type="text"
-                        placeholder="大会名、場所、タイプで検索..."
-                        className="flex-1 bg-transparent px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none"
+                        placeholder="大会名、場所などで検索"
+                        className="flex-1 bg-transparent px-3 py-2 text-sm text-white placeholder:text-slate-500 focus:outline-none sm:px-4 sm:py-3 sm:text-base"
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         onKeyDown={handleKeyDown}
                     />
                     <button
                         onClick={handleSearch}
-                        className="rounded-full bg-blue-600 px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                        className="whitespace-nowrap rounded-full bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 sm:px-8 sm:py-3"
                     >
                         検索
                     </button>
