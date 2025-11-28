@@ -26,7 +26,7 @@ export function Hero() {
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950" />
             <div className="absolute top-0 left-1/2 -z-10 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[100px]" />
 
-            <h1 className="mb-6 max-w-4xl text-5xl font-bold tracking-tighter text-white md:text-7xl">
+            <h1 className="mb-6 max-w-4xl text-3xl font-bold tracking-tighter text-white sm:text-5xl md:text-7xl">
                 全てのボウラーに<br />
                 <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                     最高のステージを
@@ -59,7 +59,7 @@ export function Hero() {
                 </div>
 
                 {/* Quick Filters */}
-                <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center">
                     {['プロ公式戦', 'アマチュア', 'プロアマ', 'チャレンジ'].map((tag) => (
                         <button
                             key={tag}
