@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "ja_JP",
-        url: "https://bowling-navi.com/", // Replace with actual domain
+        url: "https://bowlingnavi.com/",
         title: "BowlingNavi -ボウナビ- | 関西のボウリング大会情報サイト",
         description: "関西エリアのボウリング大会情報を網羅。あなたにぴったりの大会が見つかります。",
         siteName: "BowlingNavi -ボウナビ-",

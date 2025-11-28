@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { MOCK_TOURNAMENTS } from '@/data/mockTournaments'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://bowling-navi.com' // Replace with actual domain
+    const baseUrl = 'https://bowlingnavi.com'
 
     // Static pages
     const routes = [

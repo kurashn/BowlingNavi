@@ -30,7 +30,7 @@ export function JsonLd({ tournament }: { tournament: Tournament }) {
             price: "0", // Placeholder or parse from entryFee
             priceCurrency: "JPY",
             availability: "https://schema.org/InStock",
-            url: `https://bowling-navi.com/tournaments/${tournament.id}`,
+            url: `https://bowlingnavi.com/tournaments/${tournament.id}`,
         },
     };
 
