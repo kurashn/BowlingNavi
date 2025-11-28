@@ -12,8 +12,7 @@ export default function ThanksPage() {
                     <h1 className="mb-6 text-4xl font-bold text-white">送信完了</h1>
                     <p className="mb-10 text-lg text-slate-400">
                         お問い合わせありがとうございます。<br />
-                        内容を確認の上、担当者よりご連絡させていただきます。<br />
-                        （自動返信メールをお送りしましたのでご確認ください）
+                        内容を確認の上、担当者よりご連絡させていただきます。
                     </p>
                     <Link
                         href="/"
