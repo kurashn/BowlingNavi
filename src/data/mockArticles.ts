@@ -228,19 +228,19 @@ export const MOCK_ARTICLES: Article[] = [
             <p>シューズと一緒に揃えておくと便利なアイテムを2つ紹介します。<br>
             送料対策としてもおすすめです。</p>
 
-            <h3>4-1. シューズケース（袋）</h3>
+            <h3>4-1. ABS シューズ袋</h3>
             <p>マイシューズには箱がついてきますが、毎回箱に入れて持ち運ぶのは不便です。<br>
             ボールバッグを持っていない場合は、単体のシューズケースを用意しましょう。<br>
-            1,000円〜2,000円程度で購入できます。</p>
+            ABS製のシンプルな巾着タイプなら、1,000円以下で購入できることもあり非常にコスパが良いです。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ボウリング+シューズケース" target="_blank" rel="noopener noreferrer">Amazonで「ボウリング シューズケース」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10003698%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10003698%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【ABS】PROamシューズ袋※巾着袋としても利用できます。ネコポス・メール便可 プロアマシューズケースボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
-            <h3>4-2. シューズスライド（滑り調整）</h3>
+            <h3>4-2. HI-SP シューズスライド</h3>
             <p>ボウリング場によって、床（アプローチ）の滑りやすさは異なります。<br>
             「今日のアプローチは滑らなくてつっかかる」という時に、靴の上から被せるカバーです。<br>
-            これを持っておくと、どんなボウリング場でも膝への負担なく投げられます。</p>
+            HI-SPのシューズスライドは定番中の定番で、一つ持っておくとどんなボウリング場でも安心です。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ボウリング+シューズスライド" target="_blank" rel="noopener noreferrer">Amazonで「シューズスライド」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowling-shoes%2Fhisp1-1008%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowling-shoes%2Fi%2F10000523%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">HI-SP MA-3 シューズ スライド パーツ ハイ スポーツ ボウリング用品 ボーリング グッズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <hr>
 
@@ -410,7 +410,7 @@ export const MOCK_ARTICLES: Article[] = [
                 「派手に曲がりすぎない」ので、コントロールを練習するのに最適です。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ストーム+トロピカルサージ" target="_blank" rel="noopener noreferrer">Amazonで「ストーム トロピカルサージ」の在庫を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【中古】【未使用・未開封品】Storm トロピカルサージボーリングボール ブラック/チェリー 16</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <h3>【おすすめNo.2】安定感抜群！扱いやすさNo.1<br>Brunswick（ブランズウィック） ライノ</h3>
 
@@ -429,7 +429,7 @@ export const MOCK_ARTICLES: Article[] = [
                 基礎をしっかり固めたい方におすすめです。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ブランズウィック+ライノ" target="_blank" rel="noopener noreferrer">Amazonで「ブランズウィック ライノ」の在庫を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10002581%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【Brunswick 新色追加】 ライノ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <h3>【おすすめNo.3】日本人のために作られたコスパ最強モデル<br>Hi-SP（ハイスポーツ） アップビート</h3>
 
@@ -448,7 +448,7 @@ export const MOCK_ARTICLES: Article[] = [
                 予算を抑えたい学生さんや、とりあえず試してみたい方に一押しです。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ハイスポーツ+アップビート" target="_blank" rel="noopener noreferrer">Amazonで「ハイスポーツ アップビート」の在庫を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnandk-shop%2Fupbeat-pearl-hisp%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fnandk-shop%2Fi%2F10000140%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【HI-SPORTS】 アップビートパール ・SE ボウリング ボール ハイスポーツ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <hr>
 
@@ -462,14 +462,14 @@ export const MOCK_ARTICLES: Article[] = [
             重いボールとシューズを収納できる専用バッグが必要です。<br>
             最初は1個用のショルダータイプか、キャスター付きがおすすめです。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ボウリング+バッグ+1個用" target="_blank" rel="noopener noreferrer">Amazonで「ボウリング ボールバッグ 1個用」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM ROTOGRIP HI-SPORTS】 SB24-DF 1ボールケース</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <h3>5-2. ボールクリーナー</h3>
             <p>リアクティブボールは、レーンの油を吸い込む性質があります。<br>
             投げ終わった後にクリーナーで拭かないと、<mark>数ヶ月で曲がらなくなってしまいます（ボールの死）。</mark><br>
             必ず練習後にひと拭きして、ボールの寿命を延ばしましょう。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ボウリング+ボールクリーナー" target="_blank" rel="noopener noreferrer">Amazonで「ボウリング ボールクリーナー」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fbowl-clean%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000247%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【ABS】 ボウルクリーン【単品】</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <hr>
 
@@ -485,7 +485,7 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>おすすめは、香り付きでテンションも上がる<mark>「トロピカル・サージ」</mark>です。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ストーム+トロピカルサージ" target="_blank" rel="noopener noreferrer">Amazonで「トロピカルサージ」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【中古】【未使用・未開封品】Storm トロピカルサージボーリングボール ブラック/チェリー 16</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <p>マイボールを手に入れたら、あなたのボウリングライフは劇的に変わります。<br>
             ストライクの音、ピンが弾け飛ぶ爽快感を、ぜひ自分のボールで味わってください。</p>
@@ -689,16 +689,16 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>ここからは、Amazonなどで買える<strong>「キャスター付き・シューズ収納あり」</strong>のおすすめバッグを紹介します。</p>
 
-            <h3>【おすすめNo.1】コスパ最強のド定番モデル<br>ABS（アメリカンボウリングサービス） B20-320</h3>
+            <h3>【おすすめNo.1】コスパ最強のド定番モデル<br>STORM SB24-DF</h3>
 
-            <p>ボウリングバッグの中で最も売れている、ABSの定番モデルです。<br>
-            3,000円〜4,000円台という安さながら、しっかりしたタイヤとシューズ収納スペースがついています。<br>
+            <p>STORM/ROTOGRIP/HI-SPORTSの定番1ボールケースです。<br>
+            シンプルで使いやすい、1個用ボールケースです。<br>
             カラーバリエーションも豊富で、自分の好きな色が見つかります。</p>
 
             <ul>
-                <li><strong>タイプ:</strong> 1個用キャスター</li>
-                <li><strong>シューズ収納:</strong> あり</li>
-                <li><strong>参考価格:</strong> 3,500円〜4,500円</li>
+                <li><strong>タイプ:</strong> 1個用ケース</li>
+                <li><strong>シューズ収納:</strong> なし</li>
+                <li><strong>参考価格:</strong> 2,000円〜3,000円</li>
             </ul>
 
             <blockquote>
@@ -707,16 +707,16 @@ export const MOCK_ARTICLES: Article[] = [
                 軽くて丈夫なので、最初の1つに最適です。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ABS+ボウリングバッグ+1個用" target="_blank" rel="noopener noreferrer">Amazonで「ABS 1個用バッグ」の在庫を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM ROTOGRIP HI-SPORTS】 SB24-DF 1ボールケース</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
-            <h3>【おすすめNo.2】デザインがおしゃれ！機能性抜群<br>Storm（ストーム） 1ボールキャリー</h3>
+            <h3>【おすすめNo.2】デザインがおしゃれ！機能性抜群<br>Storm（ストーム） SB155-DF</h3>
 
             <p>ボールメーカーとして大人気の「Storm」製バッグです。<br>
             ロゴが大きく入ったスポーティーなデザインで、持っているだけで「上手そうな人」に見えます。<br>
             生地が厚く、耐久性が高いため長く使えます。</p>
 
             <ul>
-                <li><strong>タイプ:</strong> 1個用キャスター</li>
+                <li><strong>タイプ:</strong> 2個用キャスター</li>
                 <li><strong>シューズ収納:</strong> あり</li>
                 <li><strong>参考価格:</strong> 4,500円〜6,000円</li>
             </ul>
@@ -726,7 +726,7 @@ export const MOCK_ARTICLES: Article[] = [
                 ストームのボールを使っているなら、バッグもストームで合わせると統一感があってカッコいいです！</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=Storm+ボウリングバッグ+1個用" target="_blank" rel="noopener noreferrer">Amazonで「Storm ボウリングバッグ」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnandk-shop%2Fsb155-df-hisp%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fnandk-shop%2Fi%2F10000038%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">ボウリング バッグ (2個用) SB155-DF キャリー 【STORM ROTOGRIP HI-SPORTS】ボウリング用品 ボーリング ダブル ストーム ハイスポーツ ◆全12種類◆ キャスター 人気 おしゃれ かわいい</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <h3>【おすすめNo.3】将来を見据えて…最初から2個用！<br>Brunswick（ブランズウィック） ダブルローラー</h3>
 
@@ -746,7 +746,7 @@ export const MOCK_ARTICLES: Article[] = [
                 本気で上達したいなら、買い替えの手間がない2個用が結果的に安上がりになります。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ボウリングバッグ+2個用" target="_blank" rel="noopener noreferrer">Amazonで「ボウリングバッグ 2個用」を探す</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10007577%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10007692%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【Brunswick】BB220 ブランズウィック・ダブルローラーバッグ(2025)</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <hr>
 
@@ -760,9 +760,9 @@ export const MOCK_ARTICLES: Article[] = [
                 <li><strong>シューズが入るスペースがあるか必ず確認する</strong></li>
             </ul>
 
-            <p>おすすめは、コスパ最強の<mark>「ABS製 1個用キャスターバッグ」</mark>です。</p>
+            <p>おすすめは、コスパ最強の<mark>「STORM SB24-DF」</mark>です。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ABS+ボウリングバッグ+1個用" target="_blank" rel="noopener noreferrer">Amazonで「ABS 1個用バッグ」をチェックする</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM ROTOGRIP HI-SPORTS】 SB24-DF 1ボールケース</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <p>バッグを手に入れれば、重さを気にせず、いつでも気軽にボウリング場へ行けるようになります。<br>
             マイボールとマイシューズを持って、さっそく練習に出かけましょう！</p>
