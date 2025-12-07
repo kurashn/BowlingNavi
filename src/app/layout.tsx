@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
+import Script from "next/script";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -47,6 +49,21 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ja" className="dark">
+            <head>
+                {/* Google Analytics */}
+                <Script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=G-DWH2PZFFBM"
+                />
+                <Script id="google-analytics">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-DWH2PZFFBM');
+                    `}
+                </Script>
+            </head>
             <body className={inter.className}>
                 <div className="flex min-h-screen flex-col">
                     <Navbar />
