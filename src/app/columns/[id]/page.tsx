@@ -95,9 +95,17 @@ export default async function ColumnDetailPage({ params }: PageProps) {
                         [&_mark]:bg-cyan-100 [&_mark]:text-slate-900 [&_mark]:px-1 [&_mark]:rounded [&_mark]:font-bold [&_mark]:box-decoration-clone
                         
                         /* Lists */
+                        prose-li:text-slate-600
+                        
+                        /* Unordered Lists (UL) */
                         prose-ul:my-8 prose-ul:list-none prose-ul:pl-0 prose-ul:space-y-2
-                        prose-li:relative prose-li:pl-7 prose-li:text-slate-600
-                        prose-li:before:absolute prose-li:before:left-0 prose-li:before:top-3 prose-li:before:size-1.5 prose-li:before:rounded-full prose-li:before:bg-blue-500
+                        [&_ul>li]:relative [&_ul>li]:pl-7
+                        [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-3 [&_ul>li]:before:size-1.5 [&_ul>li]:before:rounded-full [&_ul>li]:before:bg-blue-500
+                        
+                        /* Ordered Lists (OL) */
+                        prose-ol:my-8 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
+                        [&_ol>li]:pl-2
+                        [&_ol>li::marker]:font-bold [&_ol>li::marker]:text-blue-500
                         
                         /* Tables */
                         prose-table:my-10 prose-table:w-full prose-table:border-separate prose-table:border-spacing-0 prose-table:rounded-lg prose-table:overflow-hidden prose-table:ring-1 prose-table:ring-slate-200
