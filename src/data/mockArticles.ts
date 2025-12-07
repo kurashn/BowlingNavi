@@ -267,6 +267,12 @@ export const MOCK_ARTICLES: Article[] = [
             <p>初心者歓迎の大会もたくさんあります。<br>
             新しいシューズを履いて、ぜひ大会デビューしてみてください。</p>
 
+            <p><strong>👇 次はマイボールを選んでみよう</strong><br>
+            👉 <strong><a href="/columns/bowling-ball-recommendation-2025" target="_blank" rel="noopener noreferrer">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
+
+            <p><strong>👇 練習の成果を試すならプロチャレンジ！</strong><br>
+            👉 <strong><a href="/columns/pro-challenge-guide-2025" target="_blank" rel="noopener noreferrer">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
+
             <p><strong>👇 近くのボウリング場の大会を探す</strong><br>
             <a href="https://bowlingnavi.com">BowlingNaviトップページへ</a></p>
         `,
@@ -464,6 +470,9 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM ROTOGRIP HI-SPORTS】 SB24-DF 1ボールケース</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
+            <p><strong>👇 失敗しないバッグの選び方はこちら</strong><br>
+            👉 <strong><a href="/columns/bowling-bag-recommendation-2025" target="_blank" rel="noopener noreferrer">【失敗しない】ボウリングバッグのおすすめ3選！1個用キャスター付きが最強な理由</a></strong></p>
+
             <h3>5-2. ボールクリーナー</h3>
             <p>リアクティブボールは、レーンの油を吸い込む性質があります。<br>
             投げ終わった後にクリーナーで拭かないと、<mark>数ヶ月で曲がらなくなってしまいます（ボールの死）。</mark><br>
@@ -492,6 +501,9 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p><strong>まだマイシューズを持っていない方はこちら</strong><br>
             👉 <strong><a href="/columns/bowling-shoes-recommendation-2025" target="_blank" rel="noopener noreferrer">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+
+            <p><strong>👇 もっと曲げたい！カーブの投げ方はこちら</strong><br>
+            👉 <strong><a href="/columns/how-to-throw-curve-2025" target="_blank" rel="noopener noreferrer">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
 
             <p><strong>練習の成果を大会で試そう！</strong><br>
             👉 <strong><a href="https://bowlingnavi.com" target="_blank" rel="noopener noreferrer">近くのボウリング大会・プロチャレンジを探す（BowlingNaviトップ）</a></strong></p>
@@ -628,6 +640,9 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p><strong>👇 まだレンタルの靴を履いていますか？</strong><br>
             👉 <strong><a href="/columns/bowling-shoes-recommendation-2025" target="_blank" rel="noopener noreferrer">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+
+            <p><strong>👇 カーブを覚えたらプロチャレンジに出てみよう！</strong><br>
+            👉 <strong><a href="/columns/pro-challenge-guide-2025" target="_blank" rel="noopener noreferrer">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
         `,
         category: "Technique",
         publishedAt: "2025-12-09T10:00:00Z",
@@ -772,6 +787,9 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p><strong>👇 マイシューズもバッグに忘れず入れましょう</strong><br>
             👉 <strong><a href="/columns/bowling-shoes-recommendation-2025" target="_blank" rel="noopener noreferrer">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+
+            <p><strong>👇 道具が揃ったら大会へGO！</strong><br>
+            👉 <strong><a href="/columns/pro-challenge-guide-2025" target="_blank" rel="noopener noreferrer">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
         `,
         category: "Gear",
         publishedAt: "2025-12-10T10:00:00Z",
@@ -914,6 +932,9 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p><strong>さあ、近くで開催される大会を探してみましょう！</strong><br>
             推しのプロがいるなら、会いに行ってみませんか？</p>
+
+            <p><strong>👇 大会で勝つためにカーブを覚えよう</strong><br>
+            👉 <strong><a href="/columns/how-to-throw-curve-2025" target="_blank" rel="noopener noreferrer">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
 
             <p><strong>👇 全国のおすすめ大会・プロチャレンジを検索する</strong><br>
             👉 <strong><a href="/" target="_blank" rel="noopener noreferrer">BowlingNaviトップページへ（大会検索）</a></strong></p>
