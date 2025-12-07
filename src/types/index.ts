@@ -43,7 +43,7 @@ export interface Article {
     title: string;
     excerpt: string;
     content: string; // HTML content for now
-    category: 'Guide' | 'Report' | 'Gear';
+    category: 'Guide' | 'Report' | 'Gear' | 'Technique';
     publishedAt: string;
     thumbnailUrl: string;
 }
