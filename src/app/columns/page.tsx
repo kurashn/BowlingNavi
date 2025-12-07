@@ -10,24 +10,21 @@ export default function ColumnsPage() {
                 <p className="text-slate-400">ボウリングの上達法や大会レポート、用品選びのガイドなどをお届けします。</p>
             </div>
 
-            <div className="flex min-h-[400px] flex-col items-center justify-center rounded-xl border border-white/10 bg-slate-900/50 p-8 text-center">
-                <div className="mb-4 rounded-full bg-slate-800 p-4">
-                    <Calendar className="size-8 text-slate-400" />
-                </div>
-                <h2 className="mb-2 text-xl font-bold text-white">記事を準備中</h2>
-                <p className="text-slate-400">
-                    現在、皆様に役立つ情報を執筆中です。<br />
-                    公開まで今しばらくお待ちください。
-                </p>
-            </div>
-            {/* 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {MOCK_ARTICLES.map((article) => (
                     <Link key={article.id} href={`/columns/${article.id}`} className="group block overflow-hidden rounded-xl border border-white/10 bg-slate-900/50 transition-all hover:border-blue-500/50 hover:bg-slate-900">
-                        <div className="aspect-video w-full bg-slate-800 object-cover">
-                            <div className="flex h-full w-full items-center justify-center text-slate-600">
-                                <span className="text-4xl">📷</span>
-                            </div>
+                        <div className="aspect-video w-full bg-slate-800 object-cover overflow-hidden">
+                            {article.thumbnailUrl ? (
+                                <img
+                                    src={article.thumbnailUrl}
+                                    alt={article.title}
+                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                />
+                            ) : (
+                                <div className="flex h-full w-full items-center justify-center text-slate-600">
+                                    <span className="text-4xl">📷</span>
+                                </div>
+                            )}
                         </div>
                         <div className="p-6">
                             <div className="mb-3 flex items-center gap-3 text-xs text-slate-400">
@@ -50,7 +47,6 @@ export default function ColumnsPage() {
                     </Link>
                 ))}
             </div>
-            */}
         </div>
     );
 }
