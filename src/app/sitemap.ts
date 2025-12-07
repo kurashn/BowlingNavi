@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { MOCK_TOURNAMENTS } from '@/data/mockTournaments'
+import { MOCK_ARTICLES } from '@/data/mockArticles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://bowlingnavi.com'
@@ -9,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/about',
         '/tournaments',
+        '/columns',
         '/contact',
         '/terms',
         '/privacy',
@@ -22,10 +24,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Dynamic tournament pages
     const tournaments = MOCK_TOURNAMENTS.map((tournament) => ({
         url: `${baseUrl}/tournaments/${tournament.id}`,
-        lastModified: new Date(tournament.date), // Or updated date if available
+        lastModified: new Date(tournament.date),
         changeFrequency: 'weekly' as const,
         priority: 0.6,
     }))
 
-    return [...routes, ...tournaments]
+    // Dynamic article pages
+    const articles = MOCK_ARTICLES.map((article) => ({
+        url: `${baseUrl}/columns/${article.id}`,
+        lastModified: new Date(article.publishedAt),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+    }))
+
+    return [...routes, ...tournaments, ...articles]
 }
