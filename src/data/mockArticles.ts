@@ -178,7 +178,7 @@ export const MOCK_ARTICLES: Article[] = [
                 カラーバリエーションも豊富で、ウェアに合わせやすいのも魅力です。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ABS+S-380+ボウリングシューズ" target="_blank" rel="noopener noreferrer">Amazonで「ABS S-380」の最安値を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">【ABS】 S-380 ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <h3>【第2位】デザイン重視ならこれ！普段履きのようなカッコよさ<br>Dexter（デクスター） Ds38</h3>
 
@@ -199,27 +199,27 @@ export const MOCK_ARTICLES: Article[] = [
                 友人やデートでボウリングに行く際も、このデザインなら恥ずかしくありません。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=Dexter+Ds38+ボウリングシューズ" target="_blank" rel="noopener noreferrer">Amazonで「Dexter Ds38」の詳細を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10003761%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10003761%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">★13000足突破！◆新色追加！◆デクスターDs38ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
-            <h3>【第3位】長時間投げても快適！機能性重視モデル<br>ABS S-570</h3>
+            <h3>【第3位】紐を結ぶ手間なし！画期的なジッパータイプ<br>Dexter（デクスター） Ds49</h3>
 
-            <p>1位のS-380よりワンランク上のモデルです。<br>
-            ムレを防止する「エアベント」機能が強化されており、快適性が向上しています。<br>
-            素材も高級感があり、耐久性が高いため長く使えます。</p>
+            <p>「靴紐を結ぶのが面倒」「ほどけるのが心配」という方に革命的な一足です。<br>
+            紐の代わりに<strong>「ジッパー（チャック）」</strong>がついているため、1秒で脱ぎ履きができます。<br>
+            ボウリング場についたらサッと履き替えて、すぐに投げ始められる快適さは一度味わうと戻れません。</p>
 
             <ul>
                 <li><strong>参考価格：</strong> 4,000円〜5,000円前後</li>
                 <li><strong>タイプ：</strong> 左右兼用</li>
-                <li><strong>おすすめな人：</strong> これから定期的に通って練習したい人</li>
+                <li><strong>おすすめな人：</strong> 靴紐が苦手な人、準備を早く済ませたい人</li>
             </ul>
 
             <blockquote>
                 <p><strong>編集部コメント：</strong><br>
-                数百円の差で、快適性と耐久性が手に入ります。<br>
-                「安すぎる靴は不安」という方は、こちらを選んでおけば間違いありません。</p>
+                トイレに行く時など、ボウリングシューズは意外と脱ぎ履きの機会が多いです。<br>
+                ジッパー式ならストレスフリーで、集中力を切らさずにプレイできます。</p>
             </blockquote>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ABS+S-570+ボウリングシューズ" target="_blank" rel="noopener noreferrer">Amazonで「ABS S-570」の詳細を見る</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10004096%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10004096%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">【Dexter】デクスターDs49・ジッパーボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <hr>
 
@@ -259,7 +259,7 @@ export const MOCK_ARTICLES: Article[] = [
             <p>最もおすすめなのは、<strong>ABS S-380</strong> です。<br>
             3,000円台という安さで、レンタルシューズとは段違いの投げやすさを手に入れられます。</p>
 
-            <p>👉 <strong><a href="https://www.amazon.co.jp/s?k=ABS+S-380+ボウリングシューズ" target="_blank" rel="noopener noreferrer">Amazonで「ABS S-380」をチェックする</a></strong></p>
+            <p>👉 <strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">【ABS】 S-380 ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <p>マイシューズを手に入れたら、次は練習の成果を試してみましょう。<br>
             当サイト「BowlingNavi（ボウナビ）」では、全国のボウリング大会やプロチャレンジの情報を検索できます。</p>

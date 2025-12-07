@@ -124,10 +124,14 @@ export default async function ColumnDetailPage({ params }: PageProps) {
                         /* Custom Button Links (Amazon etc) */
                         [&_a[target='_blank']]:no-underline [&_a[target='_blank']]:decoration-0 [&_a[target='_blank']]:after:content-none
                         [&_a[target='_blank']]:inline-flex [&_a[target='_blank']]:items-center [&_a[target='_blank']]:justify-center [&_a[target='_blank']]:w-full [&_a[target='_blank']]:md:w-auto
-                        [&_a[target='_blank']]:rounded-xl [&_a[target='_blank']]:bg-gradient-to-r [&_a[target='_blank']]:from-blue-600 [&_a[target='_blank']]:to-blue-500 
+                        [&_a[target='_blank']]:rounded-full [&_a[target='_blank']]:bg-gradient-to-r [&_a[target='_blank']]:from-orange-500 [&_a[target='_blank']]:to-yellow-500 
                         [&_a[target='_blank']]:px-8 [&_a[target='_blank']]:py-4 [&_a[target='_blank']]:font-bold [&_a[target='_blank']]:text-white 
-                        [&_a[target='_blank']]:shadow-xl [&_a[target='_blank']]:shadow-blue-500/20 
-                        [&_a[target='_blank']]:transition-all hover:[&_a[target='_blank']]:translate-y-[-2px] hover:[&_a[target='_blank']]:shadow-blue-500/40
+                        [&_a[target='_blank']]:shadow-lg [&_a[target='_blank']]:shadow-orange-500/30 
+                        [&_a[target='_blank']]:transition-all hover:[&_a[target='_blank']]:translate-y-[-2px] hover:[&_a[target='_blank']]:shadow-orange-500/50 hover:[&_a[target='_blank']]:brightness-110
+                        
+                        /* Shopping Cart Icon */
+                        [&_a[target='_blank']]:before:content-[''] [&_a[target='_blank']]:before:mr-2 [&_a[target='_blank']]:before:size-5 
+                        [&_a[target='_blank']]:before:bg-[url('https://api.iconify.design/lucide/shopping-cart.svg?color=white')] [&_a[target='_blank']]:before:bg-no-repeat [&_a[target='_blank']]:before:bg-contain
                         
                         /* Images */
                         prose-img:rounded-xl prose-img:shadow-lg prose-img:ring-1 prose-img:ring-slate-900/5
