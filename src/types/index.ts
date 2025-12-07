@@ -37,3 +37,13 @@ export interface Player {
     bio: string;
     achievements: string[];
 }
+
+export interface Article {
+    id: string;
+    title: string;
+    excerpt: string;
+    content: string; // HTML content for now
+    category: 'Guide' | 'Report' | 'Gear';
+    publishedAt: string;
+    thumbnailUrl: string;
+}

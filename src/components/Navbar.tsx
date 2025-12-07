@@ -42,6 +42,9 @@ export function Navbar() {
                         <Link href="/tournaments" className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
                             大会一覧
                         </Link>
+                        <Link href="/columns" className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
+                            コラム
+                        </Link>
                         <Link href="/about" className="text-sm font-medium text-slate-300 transition-colors hover:text-white">
                             BowlingNaviについて
                         </Link>
@@ -106,6 +109,13 @@ export function Navbar() {
                             onClick={() => setIsMenuOpen(false)}
                         >
                             大会一覧
+                        </Link>
+                        <Link
+                            href="/columns"
+                            className="text-base font-medium text-slate-300 transition-colors hover:text-white"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            コラム
                         </Link>
                         <Link
                             href="/about"
