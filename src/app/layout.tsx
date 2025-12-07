@@ -35,6 +35,9 @@ export const metadata: Metadata = {
         description: "関西エリアのボウリング大会情報を網羅。",
         images: ["/og-image.png"],
     },
+    verification: {
+        google: "4XAF4lZbvh_3cQlFproSp2B5IDBHk2w6lQyGiyhHi1w",
+    },
 };
 
 export default function RootLayout({
