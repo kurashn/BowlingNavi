@@ -48,7 +48,7 @@ export function FilterSidebar({
             <div>
                 <h3 className="mb-4 text-sm font-semibold text-slate-400 uppercase tracking-wider">大会タイプ</h3>
                 <div className="space-y-2">
-                    {['プロ公式戦', 'アマチュア', 'プロアマ', 'チャレンジ'].map((type) => (
+                    {['プロ公式戦', 'アマチュア', 'プロアマ', 'JB', 'NBF'].map((type) => (
                         <label key={type} className="flex items-center gap-2 cursor-pointer group">
                             <input
                                 type="checkbox"

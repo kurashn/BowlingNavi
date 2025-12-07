@@ -60,7 +60,7 @@ export function Hero() {
 
                 {/* Quick Filters */}
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center">
-                    {['プロ公式戦', 'アマチュア', 'プロアマ', 'チャレンジ'].map((tag) => (
+                    {['プロ公式戦', 'アマチュア', 'プロアマ', 'JB', 'NBF'].map((tag) => (
                         <button
                             key={tag}
                             onClick={() => router.push(`/tournaments?type=${encodeURIComponent(tag)}`)}
