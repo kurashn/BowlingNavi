@@ -228,8 +228,6 @@ thumbnailUrl: "/images/article_average_score.jpg"
 
 <p>数百円で買える<strong>「ボウリング用テープ」</strong>を親指に貼るだけで、汗によるベタつきがなくなり、プロのようにスムーズにボールが手から離れていきます。「抜け」が良くなれば、スピードもコントロールも向上します。</p>
 
-<p>👉 <strong><a href="/columns/bowling-taping-guide-2025" target="_blank" rel="noopener noreferrer">【指が痛い人へ】ボウリング用テーピングの巻き方とおすすめ3選！100均で代用はNG？</a></strong></p>
-
 <h3>3. マイボールでカーブを投げる</h3>
 <p>もしあなたが「130点の壁」にぶつかっているなら、ボールを作るタイミングです。<br>
 店にあるハウスボールは、誰が投げても曲がらないように設計されています。</p>
@@ -272,7 +270,10 @@ thumbnailUrl: "/images/article_average_score.jpg"
 
 <h3>Q. ガターを出さないコツはある？</h3>
 <p><strong>A. レーンの真ん中に立たないことです。</strong><br>
-右投げの場合、少し右側に立ち、レーンの真ん中のスパット（三角）より一つ右のスパットを狙って対角線上に投げると、ガターに落ちにくくなります。</p>
+            右投げの場合、少し右側に立ち、レーンの真ん中のスパット（三角）より一つ右のスパットを狙って対角線上に投げると、ガターに落ちにくくなります。</p>
+
+            <p><strong>👇 もっと詳しいコツはこちら</strong><br>
+            👉 <strong><a href="/columns/bowling-tips-beginner" target="_blank" rel="noopener noreferrer">【明日使える】ボウリングのコツ5選！初心者でもスコア100を超える簡単な方法</a></strong></p>
 
 <h3>Q. ボウリングのカロリー消費は？</h3>
 <p><strong>A. 3ゲームで約ウォーキング50分〜1時間相当です。</strong><br>

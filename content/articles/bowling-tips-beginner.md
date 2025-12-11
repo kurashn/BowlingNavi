@@ -37,6 +37,9 @@ thumbnailUrl: "/images/article_tips_beginner.jpg"
 親指の根元までしっかり入れた状態で、くるくる回して<strong>「少しキツイかな？」と感じるくらい</strong>がベストです。<br>
 ブカブカの穴だと、ボールを落とさないように無意識に握力を使ってしまい、コントロールが定まりません。</p>
 
+<p><strong>👇 初心者におすすめのマイボールはこちら</strong><br>
+<a href="/columns/bowling-ball-recommendation-2025" target="_blank" rel="noopener noreferrer">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></p>
+
 <hr>
 
 <h2>コツ2：ピンを見ずに「スパット（▲）」を見る</h2>
@@ -115,6 +118,9 @@ thumbnailUrl: "/images/article_tips_beginner.jpg"
 </ol>
 
 <p>この5つを意識するだけで、スコア100〜120は十分に狙えます。</p>
+
+<p><strong>👇 男女・年代別の平均スコアをチェック</strong><br>
+<a href="/columns/bowling-average-score-guide" target="_blank" rel="noopener noreferrer">ボウリング平均スコア男女別目安！脱初心者100点の壁を超えるコツ</a></p>
 
 <h3>【裏技】もっと簡単に上手くなりたいなら…</h3>
 <p>もし、これらのコツを試しても「足元が滑って投げにくい」「やっぱり安定しない」と感じるなら、原因は<strong>「レンタルシューズ」</strong>かもしれません。</p>

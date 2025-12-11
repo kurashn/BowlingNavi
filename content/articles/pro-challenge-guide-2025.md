@@ -139,6 +139,9 @@ thumbnailUrl: "/images/article_pro_challenge.jpg"
 <p><strong>さあ、近くで開催される大会を探してみましょう！</strong><br>
 推しのプロがいるなら、会いに行ってみませんか？</p>
 
+<p><strong>👇 参加前に自分の実力をチェック！</strong><br>
+👉 <strong><a href="/columns/bowling-average-score-guide" target="_blank" rel="noopener noreferrer">ボウリング平均スコア男女別目安！ハンデ算出の参考に</a></strong></p>
+
 <p><strong>👇 大会で勝つためにカーブを覚えよう</strong><br>
 👉 <strong><a href="/columns/how-to-throw-curve-2025" target="_blank" rel="noopener noreferrer">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
 
