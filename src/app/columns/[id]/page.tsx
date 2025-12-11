@@ -74,7 +74,7 @@ export default async function ColumnDetailPage({ params }: PageProps) {
                         /* H2 Styling */
                         prose-h2:mt-16 prose-h2:mb-8 prose-h2:pb-4 prose-h2:text-2xl prose-h2:border-b prose-h2:border-slate-200
                         prose-h2:relative prose-h2:pl-4
-                        prose-h2:before:absolute prose-h2:before:left-0 prose-h2:before:top-0 prose-h2:before:h-full prose-h2:before:w-1 prose-h2:before:bg-gradient-to-b prose-h2:before:from-blue-500 prose-h2:before:to-cyan-500 prose-h2:before:rounded-full
+                        prose-h2:before:absolute prose-h2:before:left-0 prose-h2:before:top-0 prose-h2:before:bottom-4 prose-h2:before:w-1 prose-h2:before:bg-gradient-to-b prose-h2:before:from-blue-500 prose-h2:before:to-cyan-500 prose-h2:before:rounded-full
                         
                         /* H3 Styling */
                         prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-xl prose-h3:font-bold prose-h3:text-slate-800
