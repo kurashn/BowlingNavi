@@ -504,7 +504,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "https://www.nbf.or.jp/",
+        sourceUrl: "https://nbfgr.jp/events/event/2026022122/",
     },
     // 30. 第38回 オールジャパンレディスボウリングトーナメント with MEN
     {
