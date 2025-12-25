@@ -486,7 +486,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 150,
         currentParticipants: 0,
-        sourceUrl: "https://www.jbc-bowling.or.jp/",
+        sourceUrl: "https://www.japan-bowling.or.jp/",
     },
     // 29. 第51回 全日本オーバー70ダブルスボウリングフェスティバル
     {
