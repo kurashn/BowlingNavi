@@ -203,7 +203,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         type: "プロ公式戦",
         prizePool: "要確認",
         entryFee: "要確認",
-        organizer: "ラウンドワン、JAPAN BOWLINGほか",
+        organizer: "ラウンドワン、JPBA、JAPAN BOWLING",
         description: "2026年度の全国決勝大会。男子・女子・各3部門実施。",
         imageUrl: "/images/tournament_championship.png",
         status: "開催予定",
