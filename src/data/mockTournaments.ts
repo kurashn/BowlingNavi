@@ -10,7 +10,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         type: "プロアマ",
         prizePool: "FINAL賞金総額1,800万円（大会総額3,000万円／レギュラー部門優勝400万）",
         entryFee: "予選会 3,000円程度〜",
-        organizer: "ラウンドワン、JPBA、JBC、NBF",
+        organizer: "ラウンドワン、JPBA、JAPAN BOWLING、NBF",
         description: "優勝賞金400万円（レギュラー部門）をかけた、プロ・アマ・連盟の垣根を超えた国内最大級のトーナメント決勝大会。",
         imageUrl: "/images/tournament_championship.png",
         status: "開催終了",
@@ -133,13 +133,13 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         type: "JB",
         prizePool: "なし（強化指定選手への認定）",
         entryFee: "約5,000円",
-        organizer: "JBC（全日本ボウリング協会）",
+        organizer: "JAPAN BOWLING",
         description: "次世代の日本代表を目指すジュニアボウラーのための認定会。",
         imageUrl: "/images/tournament_rookie.png",
         status: "開催終了",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "https://www.jbc-bowling.or.jp/",
+        sourceUrl: "https://www.japan-bowling.or.jp/",
     },
     // 9. 21st Kansai Club Countermeasure Competition
     {
@@ -203,7 +203,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         type: "プロ公式戦",
         prizePool: "要確認",
         entryFee: "要確認",
-        organizer: "ラウンドワン、JBCほか",
+        organizer: "ラウンドワン、JAPAN BOWLINGほか",
         description: "2026年度の全国決勝大会。男子・女子・各3部門実施。",
         imageUrl: "/images/tournament_championship.png",
         status: "開催予定",
@@ -522,7 +522,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 150,
         currentParticipants: 0,
-        sourceUrl: "https://www.jbc-bowling.or.jp/",
+        sourceUrl: "https://www.japan-bowling.or.jp/",
     },
     // 31. 文部科学大臣杯 第33回全国高等学校対抗ボウリング選手権大会
     {
