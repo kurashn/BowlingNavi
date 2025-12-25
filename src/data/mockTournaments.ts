@@ -540,6 +540,6 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "https://www.jbc-bowling.or.jp/",
+        sourceUrl: "https://www.japan-bowling.or.jp/",
     },
 ];
