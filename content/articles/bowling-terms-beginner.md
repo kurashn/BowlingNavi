@@ -65,6 +65,11 @@ thumbnailUrl: "/images/article_terms.jpg"
 18メートル先のピンより、5メートル先の矢印の方が狙いやすいです。<br>
 ピンではなく「スパット」を見るのが、コントロール安定のコツです。</p>
 
+<div class="bg-gray-50 p-4 rounded-lg border border-gray-200 my-4">
+  <p class="font-bold text-gray-800 mb-1">📘 もっとコントロールを良くしたい？</p>
+  <a href="/columns/bowling-tips-beginner" class="text-blue-600 hover:underline">👉 【基本】スパットを使ってストライクを出す具体的な方法はこちら</a>
+</div>
+
 <h3>板目（いため）：立ち位置を調整する基準</h3>
 <p>レーンの床を構成する約2.5センチ幅の板です。<br>
 立ち位置を「板目2枚分右へ」といった具体的な調整に使います。<br>
@@ -117,6 +122,11 @@ thumbnailUrl: "/images/article_terms.jpg"
 <p>ボール内部にある重りの形状を指します。<br>
 重りの形によって、ボールの転がり方や曲がるタイミングが変わります。<br>
 自分の投げ方に合う「コア」を選ぶことが、上達への近道です。</p>
+
+<div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 my-4">
+  <p class="font-bold text-blue-800 mb-1">📘 マイボールに興味が出てきたら</p>
+  <a href="/columns/bowling-ball-recommendation-2025" class="text-blue-600 hover:underline font-bold">👉 初心者におすすめ！「勝手に曲がる」マイボールの選び方</a>
+</div>
 
 <h3>スパン：指穴の間隔とフィット感</h3>
 <p>親指の穴と、中指・薬指の穴の距離を指します。<br>
@@ -181,10 +191,20 @@ thumbnailUrl: "/images/article_terms.jpg"
 プロの技術を間近で見ながら、一緒に投球を楽しめる貴重な機会です。<br>
 初心者でも参加可能なものが多く、ファンに高い人気があります。</p>
 
+<div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500 my-4">
+  <p class="font-bold text-green-800 mb-1">🏆 プロチャレンジに参加してみよう！</p>
+  <a href="/columns/pro-challenge-guide-2025" class="text-green-700 hover:underline font-bold">👉 怖くない！プロチャレンジの参加方法とマナー</a>
+</div>
+
 <h3>アベレージ：自分の実力を示す平均スコア</h3>
 <p>全ゲームの平均スコアを指します。<br>
 自分のレベルを客観的に知るための、最も重要な指標です。<br>
 アベレージを10点上げることを目標にすると、練習が充実します。</p>
+
+<div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-500 my-4">
+  <p class="font-bold text-gray-800 mb-1">📊 あなたのアベレージは平均以上？</p>
+  <a href="/columns/bowling-average-score-guide" class="text-blue-600 hover:underline font-bold">👉 男女・年代別平均スコア目安はこちら</a>
+</div>
 
 <hr>
 

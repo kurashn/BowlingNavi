@@ -72,6 +72,11 @@ thumbnailUrl: "/images/article_curve.jpg"
 <p>レーンの手前にある<strong>三角形の目印（スパット）</strong>を見て投げましょう。<br>
 「右から2番目のスパットの上を通す」といった具合に、近くの目標を狙うのがコントロールを安定させる鉄則です。</p>
 
+<div class="bg-gray-50 p-4 rounded-lg border border-gray-200 my-4">
+  <p class="font-bold text-gray-800 mb-1">📘 コントロールを安定させるには？</p>
+  <a href="/columns/bowling-tips-beginner" class="text-blue-600 hover:underline">👉 【基本】ボウリングでストライクを出すコツ！スパットを狙う重要性とは</a>
+</div>
+
 <hr>
 
 <h2>3. 「サムレス投法」ならハウスボールでも曲がる？</h2>
@@ -95,6 +100,16 @@ thumbnailUrl: "/images/article_curve.jpg"
 <p>ここまでテクニックを解説しましたが、遠回りをせずに最短でカーブを習得する方法はただ一つ。</p>
 
 <p><mark>「曲がるボール（マイボール）を手に入れること」</mark>です。</p>
+
+「曲がるボール（マイボール）を手に入れること」</mark>です。</p>
+
+<div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 my-8">
+  <h3 class="text-green-800 font-bold text-xl mb-2">💡 どのボールを買えばいいの？</h3>
+  <p class="text-gray-700 mb-4">「種類が多すぎて選べない...」という方のために、初心者でも扱いやすく、かつ<b>確実に曲がる</b>ボールを厳選しました。</p>
+  <a href="/columns/bowling-ball-recommendation-2025" class="flex items-center text-green-700 hover:text-green-900 font-bold">
+    <span class="mr-2">🟢</span> 初心者向け！絶対に曲がるマイボールおすすめ3選を見る
+  </a>
+</div>
 
 <p>嘘のような話ですが、マイボールに変えた瞬間に、<strong>「えっ、勝手に曲がった！」</strong>と驚く初心者が続出します。<br>
 無理に手首をひねらなくても、ボールの性能（素材とコア）が勝手に仕事をしてくれるからです。</p>

@@ -141,5 +141,11 @@ thumbnailUrl: "/images/article_bag.jpg"
 <p><strong>👇 マイシューズもバッグに忘れず入れましょう</strong><br>
 👉 <strong><a href="/columns/bowling-shoes-recommendation-2025" target="_blank" rel="noopener noreferrer">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
+<div class="bg-gray-50 p-4 rounded-lg border border-gray-200 my-4">
+  <p class="font-bold text-gray-800 mb-1">💡 靴も一緒に揃えると便利</p>
+  <p class="text-sm text-gray-600 mb-2">バッグに収納スペースがあるなら、マイシューズも一緒に持ち運ぶのが基本です。</p>
+  <a href="/columns/bowling-shoes-recommendation-2025" class="text-blue-600 hover:underline text-sm font-bold">👉 初心者におすすめのシューズ5選を見る</a>
+</div>
+
 <p><strong>👇 道具が揃ったら大会へGO！</strong><br>
 👉 <strong><a href="/columns/pro-challenge-guide-2025" target="_blank" rel="noopener noreferrer">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>

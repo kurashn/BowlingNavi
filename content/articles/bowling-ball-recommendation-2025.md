@@ -38,6 +38,11 @@ thumbnailUrl: "/images/article_ball.jpg"
 <p>マイボールの中心には、<mark>「コア」と呼ばれる変重心の重り</mark>が入っています。<br>
 これがエンジンの役割を果たし、ボールが転がる時に不規則な回転を生み出し、カーブ（フック）が発生します。</p>
 
+<div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 my-4">
+  <p class="font-bold text-blue-800 mb-1">📘 カーブをもっと詳しく知りたい？</p>
+  <a href="/columns/how-to-throw-curve-2025" class="text-blue-600 hover:underline font-bold">👉 【初心者必見】ボウリングでカーブを投げるコツとメカニズムを解説</a>
+</div>
+
 <p>一方、ハウスボールの中身は均一です。<br>
 誰が投げても真っ直ぐ行くように作られているため、無理に曲げようと手首をひねると、怪我の原因になります。</p>
 
@@ -108,6 +113,14 @@ thumbnailUrl: "/images/article_ball.jpg"
 </ol>
 
 <hr>
+
+<div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200 my-8">
+  <h3 class="text-yellow-800 font-bold text-xl mb-2">⚠️ ボールを買うときの注意点</h3>
+  <p class="text-gray-700 mb-4">マイボールはボウリング場に置いて帰れません。持ち運ぶための「バッグ」も必ず一緒に用意しましょう。</p>
+  <a href="/columns/bowling-bag-recommendation-2025" class="flex items-center text-blue-700 hover:text-blue-900 font-bold">
+    <span class="mr-2">🎒</span> 【失敗しない】ボウリングバッグのおすすめ3選！1個用キャスターが最強な理由
+  </a>
+</div>
 
 <h2>4. 初心者におすすめ！「勝手に曲がる」入門ボール3選</h2>
 

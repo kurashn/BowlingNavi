@@ -144,3 +144,40 @@ export default async function ColumnDetailPage({ params }: PageProps) {
     );
 }
 
+export async function generateMetadata({ params }: PageProps) {
+    const { id } = await params;
+    const article = MOCK_ARTICLES.find((a) => a.id === id);
+
+    if (!article) {
+        return {
+            title: "記事が見つかりません",
+            description: "お探しの記事は見つかりませんでした。",
+        };
+    }
+
+    return {
+        title: article.title,
+        description: article.excerpt,
+        openGraph: {
+            title: article.title,
+            description: article.excerpt,
+            type: "article",
+            url: `/columns/${article.id}`,
+            images: [
+                {
+                    url: article.thumbnailUrl,
+                    width: 1200,
+                    height: 630,
+                    alt: article.title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: article.title,
+            description: article.excerpt,
+            images: [article.thumbnailUrl],
+        },
+    };
+}
+

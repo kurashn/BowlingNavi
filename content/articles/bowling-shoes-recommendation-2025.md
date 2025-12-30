@@ -272,6 +272,15 @@ HI-SPのシューズスライドは定番中の定番で、一つ持っておく
 <p><strong>👇 次はマイボールを選んでみよう</strong><br>
 👉 <strong><a href="/columns/bowling-ball-recommendation-2025" target="_blank" rel="noopener noreferrer">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
 
+
+<div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 my-8">
+  <h3 class="text-blue-800 font-bold text-xl mb-2">💡 ボウリング上達の次のステップ</h3>
+  <p class="text-gray-700 mb-4">マイシューズを手に入れたら、次は自分専用の「マイボール」を作ってみませんか？<br>驚くほど曲がるようになり、ストライクの数が劇的に増えます。</p>
+  <a href="/columns/bowling-ball-recommendation-2025" class="flex items-center text-blue-700 hover:text-blue-900 font-bold">
+    <span class="mr-2">🎳</span> 初心者向け！絶対に曲がるマイボールおすすめ3選はこちら
+  </a>
+</div>
+
 <p><strong>👇 練習の成果を試すならプロチャレンジ！</strong><br>
 👉 <strong><a href="/columns/pro-challenge-guide-2025" target="_blank" rel="noopener noreferrer">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
 

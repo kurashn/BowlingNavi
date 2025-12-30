@@ -64,6 +64,12 @@ thumbnailUrl: "/images/article_pro_challenge.jpg"
 <p>靴の裏に水やガムがついたまま投げると、急ブレーキがかかって転倒し、大怪我に繋がります。<br>
 トイレに行く時は必ず専用のスリッパに履き替えるか、シューズカバーを付けましょう。</p>
 
+<div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 my-4">
+  <p class="font-bold text-blue-800 mb-1">📘 飛び交う用語がわからない？</p>
+  <p class="text-sm text-gray-700 mb-1">大会では「タップ」や「スプリット」などの専門用語が飛び交います。事前にチェックしておくと安心です。</p>
+  <a href="/columns/bowling-terms-beginner" class="text-blue-600 hover:underline font-bold">👉 初心者が覚えるべきボウリング用語集はこちら</a>
+</div>
+
 <hr>
 
 <h2>3. 当日の流れと持ち物</h2>
@@ -139,8 +145,11 @@ thumbnailUrl: "/images/article_pro_challenge.jpg"
 <p><strong>さあ、近くで開催される大会を探してみましょう！</strong><br>
 推しのプロがいるなら、会いに行ってみませんか？</p>
 
-<p><strong>👇 参加前に自分の実力をチェック！</strong><br>
-👉 <strong><a href="/columns/bowling-average-score-guide" target="_blank" rel="noopener noreferrer">ボウリング平均スコア男女別目安！ハンデ算出の参考に</a></strong></p>
+<div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-500 my-4">
+  <p class="font-bold text-gray-800 mb-1">📊 自分の実力はどのくらい？</p>
+  <p class="text-sm text-gray-700 mb-1">大会に出る前に、自分の平均スコアがどのレベルか確認してみましょう。ハンディキャップの算出にも役立ちます。</p>
+  <a href="/columns/bowling-average-score-guide" class="text-blue-600 hover:underline font-bold">👉 男女別！ボウリング平均スコア目安表はこちら</a>
+</div>
 
 <p><strong>👇 大会で勝つためにカーブを覚えよう</strong><br>
 👉 <strong><a href="/columns/how-to-throw-curve-2025" target="_blank" rel="noopener noreferrer">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
