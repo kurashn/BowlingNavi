@@ -1,7 +1,7 @@
-import { MOCK_TOURNAMENTS } from "@/data/mockTournaments";
+import { getTournaments } from "@/data/mockTournaments";
 import { JsonLd } from "@/components/JsonLd";
 import { Metadata } from "next";
-import { Calendar, MapPin, Trophy, Users, ArrowLeft, Share2 } from "lucide-react";
+import { Calendar, MapPin, Trophy, Users, ArrowLeft } from "lucide-react";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,7 +14,7 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
     const { id } = await params;
-    const tournament = MOCK_TOURNAMENTS.find((t) => t.id === id);
+    const tournament = getTournaments().find((t) => t.id === id);
 
     if (!tournament) {
         return {
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function TournamentDetailPage({ params }: PageProps) {
     const { id } = await params;
-    const tournament = MOCK_TOURNAMENTS.find((t) => t.id === id);
+    const tournament = getTournaments().find((t) => t.id === id);
 
     if (!tournament) {
         notFound();
@@ -89,16 +89,9 @@ export default async function TournamentDetailPage({ params }: PageProps) {
                             </span>
                         </div>
 
-                        <div className="flex flex-wrap items-start justify-between gap-6">
-                            <h1 className="text-3xl font-bold text-white md:text-5xl max-w-4xl leading-tight">
-                                {tournament.title}
-                            </h1>
-
-                            <button className="inline-flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-white/10 hover:text-white border border-white/10">
-                                <Share2 className="size-4" />
-                                シェア
-                            </button>
-                        </div>
+                        <h1 className="text-3xl font-bold text-white md:text-5xl max-w-4xl leading-tight">
+                            {tournament.title}
+                        </h1>
                     </div>
                 </div>
             </div>

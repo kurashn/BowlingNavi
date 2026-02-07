@@ -1,6 +1,57 @@
-import { Tournament } from "@/types";
+import { Tournament, TournamentStatus } from "@/types";
 
-export const MOCK_TOURNAMENTS: Tournament[] = [
+/**
+ * 大会の終了日を推定する。
+ * displayDate に「〜16」のような終了日が含まれていれば、それを使用。
+ * なければ date（開始日）の翌日を終了日とみなす。
+ */
+function getEndDate(tournament: Tournament): Date {
+    if (tournament.displayDate) {
+        // 「2026/1/12〜16」 → 終了日 = 同月の16日
+        // 「2026/9/9〜12」 → 終了日 = 同月の12日
+        const match = tournament.displayDate.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})〜(\d{1,2})/);
+        if (match) {
+            const [, year, month, , endDay] = match;
+            return new Date(Number(year), Number(month) - 1, Number(endDay), 23, 59, 59);
+        }
+    }
+    // 単日開催 → 当日の23:59を終了とする
+    const d = new Date(tournament.date);
+    d.setHours(23, 59, 59);
+    return d;
+}
+
+/**
+ * 日付ベースでステータスを自動計算する。
+ * - 「受付中」は手動設定のみ（日付からは判定不能）のため、そのまま維持
+ * - 終了日を過ぎていれば「開催終了」
+ * - それ以外は元のステータスを維持
+ */
+function computeStatus(tournament: Tournament): TournamentStatus {
+    // 「受付中」は運営が手動で設定するステータスなので自動変更しない
+    if (tournament.status === '受付中') {
+        return '受付中';
+    }
+
+    const now = new Date();
+    const endDate = getEndDate(tournament);
+
+    if (now > endDate) {
+        return '開催終了';
+    }
+
+    return tournament.status;
+}
+
+/** ステータスが自動計算されたトーナメント一覧 */
+export function getTournaments(): Tournament[] {
+    return MOCK_TOURNAMENTS.map((t) => ({
+        ...t,
+        status: computeStatus(t),
+    }));
+}
+
+const MOCK_TOURNAMENTS: Tournament[] = [
     // 1. ROUND1 GRAND CHAMPIONSHIP BOWLING FINAL
     {
         id: "1",
@@ -57,16 +108,16 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
     {
         id: "4",
         title: "iO.LEAGUE 2026 チーム戦",
-        date: "2026-12-12T09:00:00Z",
-        displayDate: "2026/12/12〜16",
+        date: "2026-01-12T09:00:00Z",
+        displayDate: "2026/1/12〜16",
         location: "MKボウル上賀茂 VIPレーン (京都)",
         type: "プロ公式戦",
         prizePool: "チーム順位による",
         entryFee: "チーム単位",
         organizer: "JPBA",
-        description: "新しい形式のチーム戦リーグ（詳細発表待ち）。",
+        description: "男女トッププロ5チームによるチーム戦リーグ。スカイAで全5日間完全生中継。",
         imageUrl: "/images/tournament_japan_open.png",
-        status: "開催予定",
+        status: "開催終了",
         maxParticipants: 50,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
@@ -82,8 +133,8 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "参加費：要確認",
         organizer: "JPBA関西",
         description: "男子プロボウラーによるシーズントライアル。冬シリーズ。",
-        imageUrl: "/images/tournament_championship.png",
-        status: "開催予定",
+        imageUrl: "/images/tournament_japan_open.png",
+        status: "開催終了",
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
@@ -99,7 +150,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "一般 8,500円 / 学生・Jr 7,500円",
         organizer: "関西地区ボウリング連盟",
         description: "関西地区のアマチュアボウラーNo.1を決める伝統の一戦。",
-        imageUrl: "/images/tournament_rookie.png",
+        imageUrl: "/images/tournament_championship.png",
         status: "開催終了",
         maxParticipants: 200,
         currentParticipants: 0,
@@ -117,8 +168,8 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "一般 約6,000円 / 会員 約5,000円",
         organizer: "大阪府ボウリング連盟",
         description: "大阪府のボウラーが集う選手権大会。府知事賞を目指して。",
-        imageUrl: "/images/tournament_rookie.png",
-        status: "開催予定",
+        imageUrl: "/images/tournament_championship.png",
+        status: "開催終了",
         maxParticipants: 150,
         currentParticipants: 0,
         sourceUrl: "",
@@ -152,7 +203,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "1人あたり約6,000〜7,000円",
         organizer: "関西地区ボウリング連盟",
         description: "関西地区のクラブチームによる対抗戦。チームの絆が試される。",
-        imageUrl: "/images/tournament_charity.png",
+        imageUrl: "/images/tournament_japan_open.png",
         status: "開催予定",
         maxParticipants: 120,
         currentParticipants: 0,
@@ -240,11 +291,11 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "10,000円 (決勝 5,000円)",
         organizer: "京都府ボウリング連盟",
         description: "京都府ボウリング連盟主催の選手権大会。",
-        imageUrl: "/images/tournament_rookie.png",
+        imageUrl: "/images/tournament_championship.png",
         status: "開催終了",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 15. 第2回 京都府ミドルオープン競技大会 2025
     {
@@ -257,11 +308,11 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "4,800円",
         organizer: "京都府ボウリング連盟",
         description: "年齢条件なし・男女混合のオープン大会。",
-        imageUrl: "/images/tournament_rookie.png",
+        imageUrl: "/images/tournament_completed.png",
         status: "開催終了",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 16. 第2回 京都府シニアオープン競技大会 2025
     {
@@ -274,11 +325,11 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "4,800円",
         organizer: "京都府ボウリング連盟",
         description: "50歳以上のシニアオープン大会。西日本シニア予選も兼ねる。",
-        imageUrl: "/images/tournament_charity.png",
+        imageUrl: "/images/tournament_completed.png",
         status: "開催終了",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 17. 京都府北部オープン競技大会
     {
@@ -291,11 +342,11 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "要確認",
         organizer: "京都府ボウリング連盟",
         description: "京都府北部のオープン競技大会。",
-        imageUrl: "/images/tournament_rookie.png",
+        imageUrl: "/images/tournament_japan_open.png",
         status: "開催予定",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 18. 京都府選抜選手権大会（男子）
     {
@@ -312,7 +363,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 19. 京都府支部対抗競技大会
     {
@@ -325,11 +376,11 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "要確認",
         organizer: "京都府ボウリング連盟",
         description: "京都府連の支部対抗戦。",
-        imageUrl: "/images/tournament_rookie.png",
+        imageUrl: "/images/tournament_charity.png",
         status: "開催予定",
         maxParticipants: 100,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 20. 京都府ジュニアチャンピオン決定戦
     {
@@ -346,7 +397,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 50,
         currentParticipants: 0,
-        sourceUrl: "http://bowling-kyoto.com/",
+        sourceUrl: "", // http://bowling-kyoto.com/ (Temporarily removed due to site down)
     },
     // 21. 大阪府知事杯ボウリング競技大会 2025
     {
@@ -394,7 +445,7 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         entryFee: "要確認",
         organizer: "大阪市スポーツ推進委員協議会、大阪市",
         description: "オータム・チャレンジ・スポーツ2025内の親子ボウリング大会。",
-        imageUrl: "/images/tournament_rookie.png",
+        imageUrl: "/images/tournament_charity.png",
         status: "開催終了",
         maxParticipants: 50,
         currentParticipants: 0,
@@ -452,10 +503,10 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
     },
-    // 27. スカイAカップ 第38回関西オープン[男子]ボウリングトーナメント
+    // 27. スカイAカップ 関西オープン[男子]ボウリングトーナメント
     {
         id: "27",
-        title: "スカイAカップ 第38回関西オープン[男子]",
+        title: "スカイAカップ 関西オープン[男子]",
         date: "2026-01-31T09:00:00Z",
         displayDate: "2026/1/31〜2/2",
         location: "要確認 (大阪予定)",
@@ -463,9 +514,9 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         prizePool: "要確認",
         entryFee: "要確認",
         organizer: "JPBA",
-        description: "関西オープン男子大会。会場調整中。",
+        description: "関西オープン男子大会。（※正確な回数はJPBA公式で確認中）",
         imageUrl: "/images/tournament_championship.png",
-        status: "開催予定",
+        status: "開催終了",
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
@@ -512,12 +563,12 @@ export const MOCK_TOURNAMENTS: Tournament[] = [
         title: "第38回 オールジャパンレディス with MEN",
         date: "2026-12-11T09:00:00Z",
         displayDate: "2026/12/11〜13",
-        location: "神戸六甲ボウル (兵庫)",
+        location: "要確認（2025年大会は川崎グランドボウルで開催）",
         type: "JB",
         prizePool: "要確認",
         entryFee: "要確認",
         organizer: "JAPAN BOWLING",
-        description: "オールジャパンレディス大会。",
+        description: "オールジャパンレディス大会。会場は未確定（例年12月開催）。",
         imageUrl: "/images/tournament_ladies.png",
         status: "開催予定",
         maxParticipants: 150,

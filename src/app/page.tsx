@@ -1,10 +1,15 @@
 import { Hero } from "@/components/Hero";
 import { TournamentCard } from "@/components/TournamentCard";
-import { MOCK_TOURNAMENTS } from "@/data/mockTournaments";
+import { getTournaments } from "@/data/mockTournaments";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
+    const allTournaments = getTournaments();
+    // ホームページは注目の大会のみ表示（開催予定・受付中の最大8件）
+    const featuredTournaments = allTournaments
+        .filter(t => t.status !== '開催終了' && t.status !== '完了')
+        .slice(0, 8);
     return (
         <div className="flex flex-col gap-12 pb-20">
             <Hero />
@@ -22,7 +27,7 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                    {MOCK_TOURNAMENTS.map((tournament) => (
+                    {featuredTournaments.map((tournament) => (
                         <TournamentCard key={tournament.id} tournament={tournament} />
                     ))}
                 </div>

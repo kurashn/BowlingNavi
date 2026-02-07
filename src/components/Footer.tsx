@@ -39,6 +39,7 @@ export function Footer() {
                         <li><Link href="/help" className="hover:text-white transition-colors">ヘルプセンター</Link></li>
                         <li><Link href="/contact" className="hover:text-white transition-colors">お問い合わせ</Link></li>
                         <li><Link href="/terms" className="hover:text-white transition-colors">利用規約</Link></li>
+                        <li><Link href="/privacy" className="hover:text-white transition-colors">プライバシーポリシー</Link></li>
                     </ul>
                 </div>
             </div>

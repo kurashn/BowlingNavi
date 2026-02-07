@@ -1,6 +1,7 @@
 "use client";
 
-import { MOCK_TOURNAMENTS } from "@/data/mockTournaments";
+import { getTournaments } from "@/data/mockTournaments";
+import { Tournament } from "@/types";
 import { ArrowLeft, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,15 +19,23 @@ export default function ApplicationPage({ params }: PageProps) {
     const router = useRouter();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [resolvedParams, setResolvedParams] = useState<{ id: string } | null>(null);
-    const [tournament, setTournament] = useState<typeof MOCK_TOURNAMENTS[0] | null>(null);
+    const [tournament, setTournament] = useState<Tournament | null>(null);
 
     // Unwrap params and find tournament
     if (!resolvedParams) {
         params.then(p => {
             setResolvedParams(p);
-            const t = MOCK_TOURNAMENTS.find((t) => t.id === p.id);
-            if (t) setTournament(t);
-            else notFound();
+            const t = getTournaments().find((t) => t.id === p.id);
+            if (t) {
+                // 開催終了の大会はエントリーフォームを表示しない
+                if (t.status === '開催終了' || t.status === '完了') {
+                    router.push(`/tournaments/${p.id}`);
+                    return;
+                }
+                setTournament(t);
+            } else {
+                notFound();
+            }
         });
     }
 
@@ -167,13 +176,17 @@ export default function ApplicationPage({ params }: PageProps) {
                         <div className="flex justify-between mb-2">
                             <span>参加費</span>
                             <span className="text-white">
-                                {tournament.entryFee ? `¥${tournament.entryFee.toLocaleString()}` : '要確認'}
+                                {tournament.entryFee
+                                    ? (typeof tournament.entryFee === 'number' ? `¥${tournament.entryFee.toLocaleString()}` : tournament.entryFee)
+                                    : '要確認'}
                             </span>
                         </div>
                         <div className="flex justify-between border-t border-white/10 pt-2">
                             <span className="font-bold text-white">合計</span>
                             <span className="font-bold text-blue-400">
-                                {tournament.entryFee ? `¥${tournament.entryFee.toLocaleString()}` : '要確認'}
+                                {tournament.entryFee
+                                    ? (typeof tournament.entryFee === 'number' ? `¥${tournament.entryFee.toLocaleString()}` : tournament.entryFee)
+                                    : '要確認'}
                             </span>
                         </div>
                     </div>

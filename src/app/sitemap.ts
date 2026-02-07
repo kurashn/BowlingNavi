@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { MOCK_TOURNAMENTS } from '@/data/mockTournaments'
+import { getTournaments } from '@/data/mockTournaments'
 import { MOCK_ARTICLES } from '@/data/mockArticles'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
 
     // Dynamic tournament pages
-    const tournaments = MOCK_TOURNAMENTS.map((tournament) => ({
+    const tournaments = getTournaments().map((tournament) => ({
         url: `${baseUrl}/tournaments/${tournament.id}`,
         lastModified: new Date(tournament.date),
         changeFrequency: 'weekly' as const,

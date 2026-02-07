@@ -27,16 +27,6 @@ export interface Tournament {
     sourceUrl?: string;
 }
 
-export interface Player {
-    id: string;
-    name: string;
-    nameKana: string;
-    type: 'Pro' | 'Amateur';
-    rank?: string; // e.g., "JPBA 1234" or "National Team"
-    avatarUrl: string;
-    bio: string;
-    achievements: string[];
-}
 
 export interface Article {
     id: string;

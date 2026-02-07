@@ -2,7 +2,7 @@
 
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { TournamentCard } from "@/components/TournamentCard";
-import { MOCK_TOURNAMENTS } from "@/data/mockTournaments";
+import { getTournaments } from "@/data/mockTournaments";
 import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
@@ -10,6 +10,7 @@ function TournamentsContent() {
     const searchParams = useSearchParams();
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+    const [selectedStatuses, setSelectedStatuses] = useState<string[]>([]);
     const [selectedLocation, setSelectedLocation] = useState("");
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
@@ -34,8 +35,18 @@ function TournamentsContent() {
         );
     };
 
+    const handleStatusChange = (status: string) => {
+        setSelectedStatuses((prev) =>
+            prev.includes(status)
+                ? prev.filter((s) => s !== status)
+                : [...prev, status]
+        );
+    };
+
+    const allTournaments = useMemo(() => getTournaments(), []);
+
     const filteredTournaments = useMemo(() => {
-        return MOCK_TOURNAMENTS.filter((tournament) => {
+        return allTournaments.filter((tournament) => {
             // Search filter
             const matchesSearch =
                 tournament.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -46,6 +57,10 @@ function TournamentsContent() {
             const matchesType =
                 selectedTypes.length === 0 || selectedTypes.includes(tournament.type);
 
+            // Status filter
+            const matchesStatus =
+                selectedStatuses.length === 0 || selectedStatuses.includes(tournament.status);
+
             // Location filter
             const matchesLocation =
                 selectedLocation === "" || tournament.location.includes(selectedLocation);
@@ -55,9 +70,9 @@ function TournamentsContent() {
             const matchesStartDate = startDate === "" || tournamentDate >= new Date(startDate);
             const matchesEndDate = endDate === "" || tournamentDate <= new Date(endDate);
 
-            return matchesSearch && matchesType && matchesLocation && matchesStartDate && matchesEndDate;
+            return matchesSearch && matchesType && matchesStatus && matchesLocation && matchesStartDate && matchesEndDate;
         }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-    }, [searchQuery, selectedTypes, selectedLocation, startDate, endDate]);
+    }, [searchQuery, selectedTypes, selectedStatuses, selectedLocation, startDate, endDate]);
 
     return (
         <div className="container mx-auto px-4 py-8">
@@ -74,6 +89,8 @@ function TournamentsContent() {
                             onSearchChange={setSearchQuery}
                             selectedTypes={selectedTypes}
                             onTypeChange={handleTypeChange}
+                            selectedStatuses={selectedStatuses}
+                            onStatusChange={handleStatusChange}
                             selectedLocation={selectedLocation}
                             onLocationChange={setSelectedLocation}
                             startDate={startDate}
