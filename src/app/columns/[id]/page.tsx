@@ -2,6 +2,8 @@ import { MOCK_ARTICLES } from "@/data/mockArticles";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Tag, CheckCircle2, Quote } from "lucide-react";
+import AffiliateProductCard from "@/components/AffiliateProductCard";
+import ArticleContent from "@/components/ArticleContent";
 
 interface PageProps {
     params: Promise<{ id: string }>;
@@ -136,10 +138,28 @@ export default async function ColumnDetailPage({ params }: PageProps) {
                         /* Images */
                         prose-img:rounded-xl prose-img:shadow-lg prose-img:ring-1 prose-img:ring-slate-900/5
                     ">
-                        <div dangerouslySetInnerHTML={{ __html: article.content }} />
+                        <ArticleContent html={article.content} />
                     </div>
+
+                    {/* Recommended Items Section */}
+                    {article.recommendedItems && article.recommendedItems.length > 0 && (
+                        <div id="recommended-items" className="mt-16 pt-16 border-t border-slate-200">
+                            <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600">
+                                    <CheckCircle2 className="size-5" />
+                                </span>
+                                この記事で紹介したおすすめアイテム
+                            </h2>
+                            <div className="grid grid-cols-1 gap-6">
+                                {article.recommendedItems.map((item) => (
+                                    <AffiliateProductCard key={item.id} item={item} />
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </article>
             </div>
+
         </div>
     );
 }

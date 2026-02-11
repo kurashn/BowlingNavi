@@ -28,6 +28,19 @@ export interface Tournament {
 }
 
 
+export interface RecommendedItem {
+    id: string;
+    name: string;
+    price: string;
+    description: string;
+    affiliateLinks: {
+        amazon?: string;
+        rakuten?: string;
+        moshimo?: string;
+    };
+    imageUrl: string;
+}
+
 export interface Article {
     id: string;
     title: string;
@@ -36,4 +49,5 @@ export interface Article {
     category: 'Guide' | 'Report' | 'Gear' | 'Technique';
     publishedAt: string;
     thumbnailUrl: string;
+    recommendedItems?: RecommendedItem[];
 }
