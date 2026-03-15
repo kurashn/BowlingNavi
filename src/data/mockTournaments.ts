@@ -91,8 +91,8 @@ const MOCK_TOURNAMENTS: Tournament[] = [
     {
         id: "13",
         title: "第19回 MKチャリティカップ 2026",
-        date: "2026-09-09T09:00:00Z",
-        displayDate: "2026/9/9〜12",
+        date: "2026-09-26T09:00:00Z",
+        displayDate: "2026/9/26〜27",
         location: "MKボウル上賀茂 (京都)",
         type: "プロアマ",
         prizePool: "要確認",

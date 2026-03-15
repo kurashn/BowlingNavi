@@ -224,11 +224,19 @@ export default async function TournamentDetailPage({ params }: PageProps) {
                             </div>
 
                             {tournament.status === '受付中' ? (
-                                <Link href={`/tournaments/${tournament.id}/apply`}>
-                                    <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02]">
-                                        申し込む
-                                    </button>
-                                </Link>
+                                tournament.id === '32' ? (
+                                    <a href="tel:06-6909-2311" className="block w-full">
+                                        <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02]">
+                                            電話で申し込む
+                                        </button>
+                                    </a>
+                                ) : (
+                                    <Link href={`/tournaments/${tournament.id}/apply`}>
+                                        <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02]">
+                                            申し込む
+                                        </button>
+                                    </Link>
+                                )
                             ) : tournament.sourceUrl ? (
                                 <a
                                     href={tournament.sourceUrl}
