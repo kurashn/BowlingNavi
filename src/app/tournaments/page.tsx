@@ -2,12 +2,15 @@
 
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { TournamentCard } from "@/components/TournamentCard";
+import { CalendarView } from "@/components/CalendarView";
 import { getTournaments } from "@/data/mockTournaments";
 import { useState, useMemo, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import { LayoutGrid, Calendar as CalendarIcon } from "lucide-react";
 
 function TournamentsContent() {
     const searchParams = useSearchParams();
+    const [viewMode, setViewMode] = useState<'list' | 'calendar'>('list');
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
     const [selectedStatuses, setSelectedStatuses] = useState<string[]>([]);
@@ -76,9 +79,35 @@ function TournamentsContent() {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <div className="mb-8">
-                <h1 className="text-3xl font-bold text-white">大会一覧</h1>
-                <p className="text-slate-400">開催予定のボウリング大会を探してエントリーしよう。</p>
+            <div className="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div>
+                    <h1 className="text-3xl font-bold text-white mb-2">大会一覧</h1>
+                    <p className="text-slate-400">開催予定のボウリング大会を探してエントリーしよう。</p>
+                </div>
+                
+                {/* View Toggle */}
+                <div className="flex bg-slate-900 border border-white/10 rounded-lg p-1">
+                    <button
+                        onClick={() => setViewMode('list')}
+                        className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
+                            ${viewMode === 'list' 
+                                ? 'bg-blue-600 text-white shadow-sm' 
+                                : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
+                    >
+                        <LayoutGrid className="size-4" />
+                        リスト
+                    </button>
+                    <button
+                        onClick={() => setViewMode('calendar')}
+                        className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
+                            ${viewMode === 'calendar' 
+                                ? 'bg-blue-600 text-white shadow-sm' 
+                                : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
+                    >
+                        <CalendarIcon className="size-4" />
+                        カレンダー
+                    </button>
+                </div>
             </div>
 
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
@@ -102,17 +131,23 @@ function TournamentsContent() {
                 </aside>
 
                 <div className="lg:col-span-3">
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        {filteredTournaments.length > 0 ? (
-                            filteredTournaments.map((tournament) => (
-                                <TournamentCard key={tournament.id} tournament={tournament} />
-                            ))
-                        ) : (
-                            <div className="col-span-full py-12 text-center text-slate-500">
-                                条件に一致する大会が見つかりませんでした。
-                            </div>
-                        )}
-                    </div>
+                    {viewMode === 'calendar' ? (
+                        <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                            <CalendarView tournaments={filteredTournaments} />
+                        </div>
+                    ) : (
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                            {filteredTournaments.length > 0 ? (
+                                filteredTournaments.map((tournament) => (
+                                    <TournamentCard key={tournament.id} tournament={tournament} />
+                                ))
+                            ) : (
+                                <div className="col-span-full py-12 text-center text-slate-500">
+                                    条件に一致する大会が見つかりませんでした。
+                                </div>
+                            )}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
