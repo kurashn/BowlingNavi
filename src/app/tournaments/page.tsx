@@ -85,8 +85,8 @@ function TournamentsContent() {
                     <p className="text-slate-400">開催予定のボウリング大会を探してエントリーしよう。</p>
                 </div>
                 
-                {/* View Toggle */}
-                <div className="flex bg-slate-900 border border-white/10 rounded-lg p-1">
+                {/* View Toggle (Desktop Only) */}
+                <div className="hidden sm:flex bg-slate-900 border border-white/10 rounded-lg p-1">
                     <button
                         onClick={() => setViewMode('list')}
                         className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
@@ -131,6 +131,30 @@ function TournamentsContent() {
                 </aside>
 
                 <div className="lg:col-span-3">
+                    {/* View Toggle (Mobile Only) */}
+                    <div className="flex sm:hidden mb-6 bg-slate-900 border border-white/10 rounded-lg p-1 w-full max-w-sm mx-auto">
+                        <button
+                            onClick={() => setViewMode('list')}
+                            className={`flex-1 flex justify-center items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
+                                ${viewMode === 'list' 
+                                    ? 'bg-blue-600 text-white shadow-sm' 
+                                    : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
+                        >
+                            <LayoutGrid className="size-4" />
+                            リスト
+                        </button>
+                        <button
+                            onClick={() => setViewMode('calendar')}
+                            className={`flex-1 flex justify-center items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
+                                ${viewMode === 'calendar' 
+                                    ? 'bg-blue-600 text-white shadow-sm' 
+                                    : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
+                        >
+                            <CalendarIcon className="size-4" />
+                            カレンダー
+                        </button>
+                    </div>
+
                     {viewMode === 'calendar' ? (
                         <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
                             <CalendarView tournaments={filteredTournaments} />

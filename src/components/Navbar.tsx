@@ -101,25 +101,25 @@ export function Navbar() {
 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="border-t border-white/10 bg-slate-950 px-4 py-6 md:hidden">
+                <div className="border-t border-slate-200 bg-white px-4 py-6 md:hidden shadow-xl">
                     <nav className="flex flex-col gap-4">
                         <Link
                             href="/tournaments"
-                            className="text-base font-medium text-slate-300 transition-colors hover:text-white"
+                            className="text-base font-medium text-slate-800 transition-colors hover:text-blue-600"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             大会一覧
                         </Link>
                         <Link
                             href="/columns"
-                            className="text-base font-medium text-slate-300 transition-colors hover:text-white"
+                            className="text-base font-medium text-slate-800 transition-colors hover:text-blue-600"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             コラム
                         </Link>
                         <Link
                             href="/about"
-                            className="text-base font-medium text-slate-300 transition-colors hover:text-white"
+                            className="text-base font-medium text-slate-800 transition-colors hover:text-blue-600"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             BowlingNaviについて
