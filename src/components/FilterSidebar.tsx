@@ -69,7 +69,7 @@ export function FilterSidebar({
             <div>
                 <h3 className="mb-4 text-sm font-semibold text-slate-400 uppercase tracking-wider">ステータス</h3>
                 <div className="space-y-2">
-                    {['開催予定', '開催終了'].map((status) => (
+                    {['受付中', '開催予定'].map((status) => (
                         <label key={status} className="flex items-center gap-2 cursor-pointer group">
                             <input
                                 type="checkbox"
@@ -77,10 +77,7 @@ export function FilterSidebar({
                                 onChange={() => onStatusChange(status)}
                                 className="rounded border-white/10 bg-slate-900 text-blue-600 focus:ring-blue-500 focus:ring-offset-slate-950"
                             />
-                            <span className={`text-sm group-hover:text-white transition-colors ${status === '開催予定' ? 'text-yellow-400' :
-                                status === '受付中' ? 'text-green-400' :
-                                    'text-slate-400'
-                                }`}>{status}</span>
+                            <span className="text-sm text-slate-300 group-hover:text-white transition-colors">{status}</span>
                         </label>
                     ))}
                 </div>
