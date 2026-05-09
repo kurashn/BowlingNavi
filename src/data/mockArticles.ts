@@ -223,13 +223,13 @@ export const MOCK_ARTICLES: Article[] = [
             ボウリングにおいて、最も重要なターゲットエリアを指します。</p>
         `,
         category: "Guide",
-        publishedAt: "2025-12-05T10:00:00Z",
+        publishedAt: "2026-12-05T10:00:00Z",
         thumbnailUrl: "/images/article_terms.jpg",
     },
 
 
     {
-        id: "bowling-shoes-recommendation-2025",
+        id: "bowling-shoes-recommendation-2026",
         title: "【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ【初心者必見】",
         excerpt: "「ボウリング場に行くたびに300円〜500円の貸靴代を払うのはもったいない」そんな悩みはありませんか？実はマイシューズは3,000円台で購入可能。10回行けば元が取れる圧倒的コスパの秘密と、初心者におすすめのシューズを紹介します。",
         content: `
@@ -494,20 +494,20 @@ export const MOCK_ARTICLES: Article[] = [
             新しいシューズを履いて、ぜひ大会デビューしてみてください。</p>
 
             <p><strong>次はマイボールを選んでみよう</strong><br>
-            <strong><a href="/columns/bowling-ball-recommendation-2025">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
+            <strong><a href="/columns/bowling-ball-recommendation-2026">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
 
             <p><strong>練習の成果を試すならプロチャレンジ！</strong><br>
-            <strong><a href="/columns/pro-challenge-guide-2025">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
+            <strong><a href="/columns/pro-challenge-guide-2026">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
 
             <p><strong>近くのボウリング場の大会を探す</strong><br>
             <a href="https://bowlingnavi.com">BowlingNaviトップページへ</a></p>
         `,
         category: "Guide",
-        publishedAt: "2025-12-07T16:00:00Z",
+        publishedAt: "2026-12-07T16:00:00Z",
         thumbnailUrl: "/images/article_shoes.jpg", // Placeholder
     },
     {
-        id: "bowling-ball-recommendation-2025",
+        id: "bowling-ball-recommendation-2026",
         title: "【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選と重さの目安",
         excerpt: "「テレビで見るような、カッコいいカーブを投げたい」そんな悩みを持っていませんか？実は、ハウスボールが曲がらないのは「曲がらないように作られているから」です。マイボールに変えるだけで、誰でも簡単にカーブが投げられるようになります。",
         content: `
@@ -697,7 +697,7 @@ export const MOCK_ARTICLES: Article[] = [
             <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM ROTOGRIP HI-SPORTS】 SB24-DF 1ボールケース</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <p><strong>失敗しないバッグの選び方はこちら</strong><br>
-            <strong><a href="/columns/bowling-bag-recommendation-2025">【失敗しない】ボウリングバッグのおすすめ3選！1個用キャスター付きが最強な理由</a></strong></p>
+            <strong><a href="/columns/bowling-bag-recommendation-2026">【失敗しない】ボウリングバッグのおすすめ3選！1個用キャスター付きが最強な理由</a></strong></p>
 
             <h3>5-2. ボールクリーナー</h3>
             <p>リアクティブボールは、レーンの油を吸い込む性質があります。<br>
@@ -726,20 +726,20 @@ export const MOCK_ARTICLES: Article[] = [
             ストライクの音、ピンが弾け飛ぶ爽快感を、ぜひ自分のボールで味わってください。</p>
 
             <p><strong>まだマイシューズを持っていない方はこちら</strong><br>
-            <strong><a href="/columns/bowling-shoes-recommendation-2025">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+            <strong><a href="/columns/bowling-shoes-recommendation-2026">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
             <p><strong>もっと曲げたい！カーブの投げ方はこちら</strong><br>
-            <strong><a href="/columns/how-to-throw-curve-2025">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
+            <strong><a href="/columns/how-to-throw-curve-2026">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
 
             <p><strong>練習の成果を大会で試そう！</strong><br>
             <strong><a href="https://bowlingnavi.com" target="_blank" rel="noopener noreferrer">近くのボウリング大会・プロチャレンジを探す（BowlingNaviトップ）</a></strong></p>
         `,
         category: "Guide",
-        publishedAt: "2025-12-08T10:00:00Z",
+        publishedAt: "2026-12-08T10:00:00Z",
         thumbnailUrl: "/images/article_ball.jpg",
     },
     {
-        id: "how-to-throw-curve-2025",
+        id: "how-to-throw-curve-2026",
         title: "【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方",
         excerpt: "「テレビで見るプロのように、グググッと曲がるボールを投げたい！」そんな憧れを持っていませんか？実は、あなたのボールが曲がらない最大の原因は、投げ方ではなく「使っているボール」にある可能性が高いのです。カーブを習得するためのコツと衝撃の事実を解説します。",
         content: `
@@ -862,20 +862,20 @@ export const MOCK_ARTICLES: Article[] = [
             1万円台の投資で、ボウリングの楽しさが100倍になりますよ！</p>
 
             <p><strong>絶対に曲がる！初心者におすすめのボール3選はこちら</strong><br>
-            <strong><a href="/columns/bowling-ball-recommendation-2025">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
+            <strong><a href="/columns/bowling-ball-recommendation-2026">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
 
             <p><strong>まだレンタルの靴を履いていますか？</strong><br>
-            <strong><a href="/columns/bowling-shoes-recommendation-2025">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+            <strong><a href="/columns/bowling-shoes-recommendation-2026">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
             <p><strong>カーブを覚えたらプロチャレンジに出てみよう！</strong><br>
-            <strong><a href="/columns/pro-challenge-guide-2025">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
+            <strong><a href="/columns/pro-challenge-guide-2026">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
         `,
         category: "Technique",
-        publishedAt: "2025-12-09T10:00:00Z",
+        publishedAt: "2026-12-09T10:00:00Z",
         thumbnailUrl: "/images/article_curve.jpg",
     },
     {
-        id: "bowling-bag-recommendation-2025",
+        id: "bowling-bag-recommendation-2026",
         title: "【失敗しない】ボウリングバッグのおすすめ3選！1個用キャスター付きが最強な理由",
         excerpt: "「マイボールを買ったけど、どうやって持ち運べばいいの？」そんな悩みを解決します。実は、バッグ選びには「初心者が必ず後悔する落とし穴」があります。失敗しない選び方と、楽に移動できるおすすめのキャスター付きバッグを紹介します。",
         content: `
@@ -987,7 +987,7 @@ export const MOCK_ARTICLES: Article[] = [
                 本気で上達したいなら、買い替えの手間がない2個用が結果的に安上がりになります。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10007577%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10007692%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【Brunswick】BB220 ブランズウィック・ダブルローラーバッグ(2025)</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10007577%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10007692%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【Brunswick】BB220 ブランズウィック・ダブルローラーバッグ(2026)</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
 
             <hr>
 
@@ -1009,20 +1009,20 @@ export const MOCK_ARTICLES: Article[] = [
             マイボールとマイシューズを持って、さっそく練習に出かけましょう！</p>
 
             <p><strong>中に入れる「マイボール」は決まりましたか？</strong><br>
-            <strong><a href="/columns/bowling-ball-recommendation-2025">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
+            <strong><a href="/columns/bowling-ball-recommendation-2026">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
 
             <p><strong>マイシューズもバッグに忘れず入れましょう</strong><br>
-            <strong><a href="/columns/bowling-shoes-recommendation-2025">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+            <strong><a href="/columns/bowling-shoes-recommendation-2026">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
             <p><strong>道具が揃ったら大会へGO！</strong><br>
-            <strong><a href="/columns/pro-challenge-guide-2025">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
+            <strong><a href="/columns/pro-challenge-guide-2026">【初心者必見】プロチャレンジは怖くない！参加方法やマナーを完全ガイド</a></strong></p>
         `,
         category: "Gear",
-        publishedAt: "2025-12-10T10:00:00Z",
+        publishedAt: "2026-12-10T10:00:00Z",
         thumbnailUrl: "/images/article_bag.jpg",
     },
     {
-        id: "pro-challenge-guide-2025",
+        id: "pro-challenge-guide-2026",
         title: "【初心者必見】プロチャレンジは怖くない！参加方法やマナー、当日の流れを完全ガイド",
         excerpt: "「プロボウラーと一緒に投げる『プロチャレンジ』に出てみたいけど、なんか怖い…」そんな不安を解消します。実は、プロチャレンジは初心者にこそ参加してほしい「お祭りイベント」です。申し込み方法から当日のマナーまで完全ガイドします。",
         content: `
@@ -1093,9 +1093,9 @@ export const MOCK_ARTICLES: Article[] = [
             <h3>持ち物リスト</h3>
             <ul>
                 <li><strong>マイボール＆マイシューズ</strong><br>
-                まだ持っていない人はこちら <a href="/columns/bowling-shoes-recommendation-2025">おすすめシューズ</a> / <a href="/columns/bowling-ball-recommendation-2025">おすすめボール</a></li>
+                まだ持っていない人はこちら <a href="/columns/bowling-shoes-recommendation-2026">おすすめシューズ</a> / <a href="/columns/bowling-ball-recommendation-2026">おすすめボール</a></li>
                 <li><strong>ボールバッグ</strong><br>
-                <a href="/columns/bowling-bag-recommendation-2025">おすすめバッグ</a></li>
+                <a href="/columns/bowling-bag-recommendation-2026">おすすめバッグ</a></li>
                 <li><strong>タオル・クリーナー</strong></li>
                 <li><strong>飲み物代・参加費</strong>（3,000円〜4,000円程度が多いです）</li>
             </ul>
@@ -1160,18 +1160,18 @@ export const MOCK_ARTICLES: Article[] = [
             推しのプロがいるなら、会いに行ってみませんか？</p>
 
             <p><strong>大会で勝つためにカーブを覚えよう</strong><br>
-            <strong><a href="/columns/how-to-throw-curve-2025">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
+            <strong><a href="/columns/how-to-throw-curve-2026">【初心者必見】ボウリングでカーブを投げるコツ！曲がらない最大の原因と手首の使い方</a></strong></p>
 
             <p><strong>全国のおすすめ大会・プロチャレンジを検索する</strong><br>
             <strong><a href="/">BowlingNaviトップページへ（大会検索）</a></strong></p>
         `,
         category: "Guide",
-        publishedAt: "2025-12-11T10:00:00Z",
+        publishedAt: "2026-12-11T10:00:00Z",
         thumbnailUrl: "/images/article_pro_challenge.jpg",
     },
     {
         id: "bowling-average-score-guide",
-        title: "【2025年最新】ボウリング平均スコア男女別目安！脱初心者100点の壁を超えるコツ",
+        title: "【2026年最新】ボウリング平均スコア男女別目安！脱初心者100点の壁を超えるコツ",
         excerpt: "「自分のスコアは低い？」ボウリングの男女・年代別平均スコア一覧を紹介。脱初心者と言われる100点の壁を突破し、アベレージ150を目指すための「靴の選び方」や「投げ方のコツ」をプロが解説します。",
         content: `
             <p>「会社のボウリング大会があるけれど、恥をかかないか心配」<br>
@@ -1388,7 +1388,7 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>Amazonで3,000円程度で買えるもので十分です。これだけで、アプローチでのふらつきがなくなり、コントロールが驚くほど安定します。レンタル代も浮くので、一石二鳥です。</p>
 
-            <p><strong><a href="/columns/bowling-shoes-recommendation-2025">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
+            <p><strong><a href="/columns/bowling-shoes-recommendation-2026">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
             <h3>2. テーピングで指の抜けを良くする</h3>
             <p>「投げる時に指が引っかかる」「皮がむけて痛い」<br>
@@ -1404,7 +1404,7 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>自分専用のマイボール（特にリアクティブ素材のもの）を使えば、<strong>驚くほど簡単にグイッと曲がるカーブ</strong>が投げられます。ストライクの確率が倍増し、アベレージ150点も夢ではありません。</p>
 
-            <p><strong><a href="/columns/bowling-ball-recommendation-2025">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選と重さの目安</a></strong></p>
+            <p><strong><a href="/columns/bowling-ball-recommendation-2026">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選と重さの目安</a></strong></p>
 
             <hr>
 
@@ -1449,7 +1449,7 @@ export const MOCK_ARTICLES: Article[] = [
             重いボールを持って歩き、投げる動作は全身運動です。楽しみながらカロリー消費できるため、ダイエットにも適しています。</p>
         `,
         category: "Guide",
-        publishedAt: "2025-12-11T17:55:00Z",
+        publishedAt: "2026-12-11T17:55:00Z",
         thumbnailUrl: "/images/article_average_score.jpg",
     },
     {
@@ -1749,7 +1749,7 @@ export const MOCK_ARTICLES: Article[] = [
             まずは「同じ場所に立つ」「同じスパットを通す」という基本を徹底しましょう。</p>
         `,
         category: "Technique",
-        publishedAt: "2025-12-11T19:00:00Z",
+        publishedAt: "2026-12-11T19:00:00Z",
         thumbnailUrl: "/images/article_tips_beginner.jpg",
     },
     {
@@ -2040,7 +2040,7 @@ export const MOCK_ARTICLES: Article[] = [
             ボウリングは、自分に合う道具を根気よく探すことから始まります。</p>
         `,
         category: "Guide",
-        publishedAt: "2025-12-30T12:00:00Z",
+        publishedAt: "2026-12-30T12:00:00Z",
         thumbnailUrl: "/images/article_ball_selection.jpg",
     }
 ];
@@ -2073,7 +2073,7 @@ if (averageScoreArticle) {
 }
 
 // Add recommended items to the Shoe Recommendation Guide
-const shoeArticle = MOCK_ARTICLES.find(a => a.id === "bowling-shoes-recommendation-2025");
+const shoeArticle = MOCK_ARTICLES.find(a => a.id === "bowling-shoes-recommendation-2026");
 if (shoeArticle) {
     shoeArticle.recommendedItems = [
         {
@@ -2110,7 +2110,7 @@ if (shoeArticle) {
 }
 
 // Add recommended items to the Ball Recommendation Guide
-const ballArticle = MOCK_ARTICLES.find(a => a.id === "bowling-ball-recommendation-2025");
+const ballArticle = MOCK_ARTICLES.find(a => a.id === "bowling-ball-recommendation-2026");
 if (ballArticle) {
     ballArticle.recommendedItems = [
         {
@@ -2147,7 +2147,7 @@ if (ballArticle) {
 }
 
 // Add recommended items to the Bag Recommendation Guide
-const bagArticle = MOCK_ARTICLES.find(a => a.id === "bowling-bag-recommendation-2025");
+const bagArticle = MOCK_ARTICLES.find(a => a.id === "bowling-bag-recommendation-2026");
 if (bagArticle) {
     bagArticle.recommendedItems = [
         {
