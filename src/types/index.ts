@@ -25,6 +25,12 @@ export interface Tournament {
     currentParticipants?: number;
     results?: TournamentResult[];
     sourceUrl?: string;
+    /** 参加方法（例: "JB公式サイトからエントリー", "電話受付"） */
+    entryMethod?: string;
+    /** 参加条件（例: "JB登録会員であること"） */
+    entryRequirements?: string;
+    /** 受付状況の補足（例: "2026年7月上旬〜受付開始予定"） */
+    entryStatus?: string;
 }
 
 

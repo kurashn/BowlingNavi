@@ -221,6 +221,24 @@ export default async function TournamentDetailPage({ params }: PageProps) {
                                     <span className="text-slate-400">ステータス</span>
                                     <span className="font-medium text-white">{tournament.status}</span>
                                 </div>
+                                {tournament.entryStatus && (
+                                    <div className="flex flex-col gap-1 text-sm border-t border-white/10 pt-3">
+                                        <span className="text-slate-400">受付状況</span>
+                                        <span className="font-medium text-white">{tournament.entryStatus}</span>
+                                    </div>
+                                )}
+                                {tournament.entryRequirements && (
+                                    <div className="flex flex-col gap-1 text-sm border-t border-white/10 pt-3">
+                                        <span className="text-slate-400">参加条件</span>
+                                        <span className="font-medium text-white leading-relaxed">{tournament.entryRequirements}</span>
+                                    </div>
+                                )}
+                                {tournament.entryMethod && (
+                                    <div className="flex flex-col gap-1 text-sm border-t border-white/10 pt-3">
+                                        <span className="text-slate-400">参加方法</span>
+                                        <span className="font-medium text-white leading-relaxed">{tournament.entryMethod}</span>
+                                    </div>
+                                )}
                             </div>
 
                             {tournament.status === '受付中' ? (

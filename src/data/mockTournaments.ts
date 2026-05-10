@@ -69,6 +69,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
+        entryMethod: "JPBA公式サイトまたは各予選会場からエントリー",
+        entryRequirements: "プロボウラーまたはアマチュア予選通過者",
+        entryStatus: "公式サイトで要確認",
     },
     // 12. ROUND1 GRAND CHAMPIONSHIP BOWLING 2026 FINAL
     {
@@ -86,6 +89,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 200,
         currentParticipants: 0,
         sourceUrl: "https://www.round1.co.jp/",
+        entryMethod: "JB公式ホームページまたはNBF公式からエントリー（アマチュア予選）",
+        entryRequirements: "JPBAプロボウラー資格保持者は不可（プロは別枠）。JB/NBF会員でなくても参加可能",
+        entryStatus: "オンライン予選・フリータイム予選にて順次受付",
     },
     // 13. 第19回 MKチャリティカップ 2026
     {
@@ -104,6 +110,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 150,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/information/tournament/tournament2025/PDF/2026_TournamentSchedule_251128.pdf",
+        entryMethod: "大会事務局（075-721-5030）へ問い合わせ、またはJPBA/MKグループ特設サイトから",
+        entryRequirements: "アマチュアは事前の予選会を通過した者",
+        entryStatus: "要確認（開催時期が近づくと要項公開）",
     },
 
 
@@ -123,6 +132,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
+        entryMethod: "JB公式またはNBF公式からのアマチュア予選エントリー",
+        entryRequirements: "プロ資格を持たないアマチュアボウラー",
+        entryStatus: "公式サイトで要確認",
     },
     // 25. 第42回 六甲クイーンズオープンボウリングトーナメント
     {
@@ -141,6 +153,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
+        entryMethod: "アマチュア予選会からエントリー（本戦は予選通過者のみ）",
+        entryRequirements: "プロボウラーまたはアマチュア予選通過者",
+        entryStatus: "予選会は別途要確認",
     },
     // 26. ROUND1 GRAND CHAMPIONSHIP BOWLING 2026 JPBA予選ラウンドL（大阪会場）
     {
@@ -158,6 +173,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
+        entryMethod: "JB公式またはNBF公式からのアマチュア予選エントリー",
+        entryRequirements: "プロ資格を持たないアマチュアボウラー",
+        entryStatus: "公式サイトで要確認",
     },
     // 28. 第59回 全日本新人ボウリング選手権大会
     {
@@ -176,6 +194,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 150,
         currentParticipants: 0,
         sourceUrl: "https://www.japan-bowling.or.jp/",
+        entryMethod: "各都道府県のボウリング連盟を通じて申し込み",
+        entryRequirements: "当該年度のJB登録会員で、入会初年度から3年間（規定あり）",
+        entryStatus: "各都道府県連盟にて要確認",
     },
     // 30. 第38回 オールジャパンレディスボウリングトーナメント with MEN
     {
@@ -194,6 +215,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 150,
         currentParticipants: 0,
         sourceUrl: "https://www.japan-bowling.or.jp/",
+        entryMethod: "各都道府県のボウリング連盟および学生連合を通じて申し込み",
+        entryRequirements: "当該年度のJB登録会員（女性、または女性1名+男性1名のペア）",
+        entryStatus: "要確認",
     },
     // 31. 文部科学大臣杯 第33回全国高等学校対抗ボウリング選手権大会
     {
@@ -212,6 +236,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.japan-bowling.or.jp/",
+        entryMethod: "所属校のボウリング部（顧問）および都道府県連盟へ申し込み",
+        entryRequirements: "当該年度のJB高等学校登録会員またはジュニア会員（満18歳未満）で、同一校の生徒2名でチーム編成",
+        entryStatus: "要確認",
     },
     // ジュニアジャパン認定会（西日本地区）
     {
@@ -230,6 +257,9 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 100,
         currentParticipants: 0,
         sourceUrl: "https://www.japan-bowling.or.jp/",
+        entryMethod: "各都道府県連盟からの推薦・選考",
+        entryRequirements: "JB会員で中1〜高3（満12歳〜17歳）、連盟代表者の推薦が必要",
+        entryStatus: "要確認",
     },
     // 第58回全国大学個人ボウリング選手権
     {
@@ -248,5 +278,8 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         maxParticipants: 150,
         currentParticipants: 0,
         sourceUrl: "https://www.japan-bowling.or.jp/",
+        entryMethod: "所属する学生連合や各加盟団体を通じてE-mail等で申し込み",
+        entryRequirements: "当該年度の全日本学生ボウリング連合会員または大学在学の個人正会員",
+        entryStatus: "要確認",
     },
 ];
