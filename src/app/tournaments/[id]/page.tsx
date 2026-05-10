@@ -242,18 +242,17 @@ export default async function TournamentDetailPage({ params }: PageProps) {
                             </div>
 
                             {tournament.status === '受付中' ? (
-                                tournament.id === '32' ? (
-                                    <a href="tel:06-6909-2311" className="block w-full">
-                                        <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02]">
-                                            電話で申し込む
+                                tournament.sourceUrl ? (
+                                    <a href={tournament.sourceUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
+                                        <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02] flex items-center justify-center gap-2">
+                                            公式サイトで申し込む
+                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                                         </button>
                                     </a>
                                 ) : (
-                                    <Link href={`/tournaments/${tournament.id}/apply`}>
-                                        <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02]">
-                                            申し込む
-                                        </button>
-                                    </Link>
+                                    <div className="block w-full rounded-xl py-4 text-base font-bold text-center transition-all bg-slate-800/50 text-slate-500 cursor-not-allowed">
+                                        申し込み先は要確認
+                                    </div>
                                 )
                             ) : tournament.sourceUrl ? (
                                 <a
@@ -262,7 +261,7 @@ export default async function TournamentDetailPage({ params }: PageProps) {
                                     rel="noopener noreferrer"
                                     className="block w-full rounded-xl py-4 text-base font-bold text-center transition-all bg-slate-800 text-white hover:bg-slate-700 hover:scale-[1.02]"
                                 >
-                                    詳細を見る
+                                    公式サイトを見る
                                 </a>
                             ) : (
                                 <div className="block w-full rounded-xl py-4 text-base font-bold text-center transition-all bg-slate-800/50 text-slate-500 cursor-not-allowed">
