@@ -1,7 +1,7 @@
 import { getWPPostBySlug } from "@/lib/wordpress";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronRight } from "lucide-react";
 import ArticleContent from "@/components/ArticleContent";
 
 interface PageProps {
@@ -51,27 +51,47 @@ export default async function ArticlePage({ params }: PageProps) {
                         {article.title}
                     </h1>
 
-                    {/* Writer & Supervisor Row */}
-                    <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                        <div className="flex items-center gap-4 px-2">
-                            <span className="px-3 py-1 bg-[#F7F9FC] border border-slate-200 text-slate-600 text-xs font-bold rounded shadow-sm tracking-wider">編集 / ライター</span>
-                            <div className="flex items-center gap-2">
-                                <div className="size-8 rounded-full bg-white flex items-center justify-center overflow-hidden border border-slate-200 shadow-sm p-0.5">
-                                    <img src="/images/bownavikun2.png" alt="ボウナビくん" className="w-full h-full object-contain rounded-full" />
+                    {/* Supervisor Card */}
+                    <div className="bg-white border border-slate-200 rounded-xl p-5 mb-4 shadow-sm max-w-2xl">
+                        <div className="flex gap-5 sm:gap-6">
+                            {/* Left: Avatar & Badge */}
+                            <div className="flex flex-col items-center shrink-0">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-[3px] border-[#D4AF37] p-0.5">
+                                    <div className="w-full h-full rounded-full overflow-hidden">
+                                        <img src="/images/yamashita_hideto.jpg" alt="山下 秀人" className="w-full h-full object-cover" />
+                                    </div>
                                 </div>
-                                <span className="text-sm font-bold text-slate-800">ボウナビ編集部</span>
+                                <span className="mt-2 px-3 py-0.5 bg-[#334155] text-white text-[11px] font-bold rounded">
+                                    監修者
+                                </span>
+                            </div>
+                            
+                            {/* Right: Info */}
+                            <div className="flex flex-col justify-center">
+                                <Link href="/players/yamashita-shuto" className="flex items-center gap-1 group w-fit">
+                                    <span className="text-lg sm:text-xl font-black text-slate-800 group-hover:text-blue-600 transition-colors">山下 秀人</span>
+                                    <ChevronRight className="size-4 text-slate-400 group-hover:text-blue-600 transition-colors" />
+                                </Link>
+                                <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                                    日本プロボウリング協会（JPBA）公認プロボウラー。<br className="hidden sm:block" />常に進化を続けるストライカー。次世代のボウリング界を牽引する。
+                                </p>
+                                <Link href="/players/yamashita-shuto" className="text-xs text-slate-400 mt-2 hover:text-blue-600 transition-colors">
+                                    ...続きを読む
+                                </Link>
                             </div>
                         </div>
+                    </div>
 
-                        {/* Supervisor */}
-                        <div className="flex items-center gap-4 px-2">
-                            <span className="px-3 py-1 bg-[#F7F9FC] border border-slate-200 text-slate-600 text-xs font-bold rounded shadow-sm tracking-wider">監修者</span>
-                            <Link href="/players/yamashita-shuto" className="flex items-center gap-2 group">
-                                <div className="size-8 rounded-full bg-white flex items-center justify-center overflow-hidden border border-slate-200 shadow-sm p-0.5 group-hover:border-blue-400 transition-colors">
-                                    <img src="/images/yamashita_hideto.jpg" alt="山下 秀人" className="w-full h-full object-cover rounded-full" />
-                                </div>
-                                <span className="text-sm font-bold text-slate-800 group-hover:text-blue-600 transition-colors">プロボウラー 山下 秀人</span>
-                            </Link>
+                    {/* Writer Row */}
+                    <div className="flex items-center gap-3 mb-12 pl-1">
+                        <span className="px-3 py-1 bg-[#F1F5F9] border border-slate-200 text-slate-600 text-[11px] font-bold rounded">
+                            編集/ライター
+                        </span>
+                        <div className="flex items-center gap-2">
+                            <div className="size-7 rounded-full bg-slate-200 flex items-center justify-center overflow-hidden">
+                                <img src="/images/bownavikun2.png" alt="ボウナビくん" className="w-full h-full object-cover" />
+                            </div>
+                            <span className="text-sm font-bold text-slate-700">ボウナビ編集部</span>
                         </div>
                     </div>
                 </div>
