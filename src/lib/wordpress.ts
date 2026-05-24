@@ -68,6 +68,15 @@ export interface WPPostsResponse {
     totalItems: number;
 }
 
+// モックデータをWPArticle型に変換
+const WP_MOCK_ARTICLES: WPArticle[] = MOCK_ARTICLES.map(a => ({
+    ...a,
+    categoryName: a.category === 'Gear' ? 'ギア・道具' : 
+                  a.category === 'Guide' ? '初心者ガイド' : 
+                  a.category === 'Technique' ? 'スキルアップ' : 
+                  a.category
+}));
+
 // --- ヘルパー関数 ---
 
 /** HTMLタグを除去してプレーンテキストにする */
@@ -157,7 +166,7 @@ export async function getWPPosts(options?: {
         }
 
         // モックデータ（既存の記事）をマージ
-        let allPosts = [...wpPosts, ...MOCK_ARTICLES];
+        let allPosts = [...wpPosts, ...WP_MOCK_ARTICLES];
 
         // カテゴリー絞り込み（モックデータ用）
         if (options?.categorySlug) {
@@ -171,7 +180,7 @@ export async function getWPPosts(options?: {
         const startIndex = (page - 1) * perPage;
         const endIndex = startIndex + perPage;
         const paginatedPosts = allPosts.slice(startIndex, endIndex);
-        const finalTotalItems = totalItems + MOCK_ARTICLES.length;
+        const finalTotalItems = totalItems + WP_MOCK_ARTICLES.length;
         const finalTotalPages = Math.ceil(finalTotalItems / perPage);
 
         return {
@@ -183,7 +192,7 @@ export async function getWPPosts(options?: {
         console.error("Failed to fetch WordPress posts:", error);
         
         // エラー時でもモックデータを返す
-        let fallbackPosts = [...MOCK_ARTICLES];
+        let fallbackPosts = [...WP_MOCK_ARTICLES];
         if (options?.categorySlug) {
             fallbackPosts = fallbackPosts.filter(p => p.category.toLowerCase() === options.categorySlug?.toLowerCase());
         }
@@ -205,9 +214,9 @@ export async function getWPPosts(options?: {
  */
 export async function getWPPostBySlug(slug: string): Promise<WPArticle | null> {
     // まずモックデータ（既存の記事）から探す
-    const mockArticle = MOCK_ARTICLES.find(a => a.id === slug);
+    const mockArticle = WP_MOCK_ARTICLES.find(a => a.id === slug);
     if (mockArticle) {
-        return mockArticle as WPArticle;
+        return mockArticle;
     }
 
     try {
