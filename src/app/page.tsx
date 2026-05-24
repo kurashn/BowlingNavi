@@ -203,13 +203,13 @@ export default function Home() {
                         </div>
                         <div className="flex flex-col gap-3 mt-auto">
                             {[
-                                { name: "ABS S-380 (左右兼用)", price: "¥3,500〜", icon: "#icon-spark", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F", tag: "コスパ最強シューズ" },
-                                { name: "Brunswick ライノ", price: "¥12,000〜", icon: "#icon-bowling", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F", tag: "初心者向けボール" },
-                                { name: "Storm トロピカルサージ", price: "¥13,000〜", icon: "#icon-star", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F", tag: "定番エントリー" }
+                                { name: "ABS S-380 (左右兼用)", price: "¥3,500〜", imgUrl: "https://shop.r10s.jp/b-primeiro/cabinet/abs-shoes/s-380-003.jpg", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F", tag: "コスパ最強シューズ" },
+                                { name: "Brunswick ライノ", price: "¥12,000〜", imgUrl: "https://shop.r10s.jp/b-primeiro/cabinet/brunswick-ball/rhino-05.jpg", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F", tag: "初心者向けボール" },
+                                { name: "Storm トロピカルサージ", price: "¥13,000〜", imgUrl: "https://shop.r10s.jp/ajimura4861/cabinet/1043-4/b07q3m2hm6.jpg", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F", tag: "定番エントリー" }
                             ].map((item, idx) => (
                                 <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 hover:-translate-y-1 transition-all group">
-                                    <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-[#16274d] to-[#0a1224] border border-white/10 flex items-center justify-center shrink-0">
-                                        <svg className="w-5 h-5 text-[#29d2f3] drop-shadow-md"><use href={item.icon} /></svg>
+                                    <div className="w-12 h-12 rounded-lg bg-white overflow-hidden flex items-center justify-center shrink-0 border border-white/10">
+                                        <img src={item.imgUrl} alt={item.name} className="w-full h-full object-contain" />
                                     </div>
                                     <div className="flex flex-col flex-1 min-w-0 justify-center">
                                         <span className="text-[#20d487] text-[9px] font-black leading-none mb-1">{item.tag}</span>
