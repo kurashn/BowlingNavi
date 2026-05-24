@@ -184,7 +184,7 @@ export default function Home() {
                                     <time className="text-[#5877ae] text-[11px] font-semibold">{new Date(article.publishedAt).toLocaleDateString('ja-JP').replace(/\//g, '.')}</time>
                                 </div>
                             </div>
-                            <Link className="absolute inset-0 z-20 focus:outline-none" href={`/columns/${article.id}`}>
+                            <Link className="absolute inset-0 z-20 focus:outline-none" href={`/${article.id}`}>
                                 <span className="sr-only">詳細を見る</span>
                             </Link>
                         </article>
