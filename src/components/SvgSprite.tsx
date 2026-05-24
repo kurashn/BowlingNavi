@@ -44,6 +44,11 @@ export function SvgSprite() {
       <symbol id="icon-shield" viewBox="0 0 24 24">
         <path d="M12 2.8 19 6v5.5c0 4.4-2.8 8-7 9.7-4.2-1.7-7-5.3-7-9.7V6l7-3.2zm3.8 7-4.6 4.7-2.3-2.2-1.4 1.4 3.7 3.6 6-6.1-1.4-1.4z" fill="currentColor" />
       </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21" />
+        <line x1="9" y1="3" x2="9" y2="21" />
+        <line x1="15" y1="3" x2="15" y2="21" />
+      </symbol>
     </svg>
   );
 }
