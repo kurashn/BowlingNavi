@@ -56,30 +56,35 @@ export default async function ColumnsPage({ searchParams }: ColumnsPageProps) {
 
                 {/* Category Filters */}
                 {categories.length > 0 && (
-                    <div className="mb-12 flex overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:justify-center sm:pb-0 gap-3 snap-x scrollbar-hide">
-                        <Link
-                            href="/columns"
-                            className={`shrink-0 snap-start px-5 py-2 rounded-full text-sm font-bold transition-colors ${
-                                !categoryQuery
-                                    ? "bg-blue-600 text-white shadow-md"
-                                    : "bg-white text-slate-600 border border-slate-200 hover:border-blue-300 hover:text-blue-600 shadow-sm"
-                            }`}
-                        >
-                            すべて
-                        </Link>
-                        {categories.map((cat) => (
+                    <div className="relative mb-12 -mx-4 sm:mx-0">
+                        {/* Right edge fade indicator for mobile scroll */}
+                        <div className="absolute right-0 top-0 bottom-4 w-12 bg-gradient-to-l from-slate-50 to-transparent pointer-events-none sm:hidden z-10"></div>
+                        
+                        <div className="flex overflow-x-auto pb-4 px-4 sm:px-0 sm:flex-wrap sm:justify-center sm:pb-0 gap-3 snap-x scrollbar-hide after:content-[''] after:w-1 after:shrink-0 sm:after:hidden">
                             <Link
-                                key={cat.slug}
-                                href={`/columns?category=${cat.slug}`}
+                                href="/columns"
                                 className={`shrink-0 snap-start px-5 py-2 rounded-full text-sm font-bold transition-colors ${
-                                    categoryQuery === cat.slug
+                                    !categoryQuery
                                         ? "bg-blue-600 text-white shadow-md"
                                         : "bg-white text-slate-600 border border-slate-200 hover:border-blue-300 hover:text-blue-600 shadow-sm"
                                 }`}
                             >
-                                {cat.name}
+                                すべて
                             </Link>
-                        ))}
+                            {categories.map((cat) => (
+                                <Link
+                                    key={cat.slug}
+                                    href={`/columns?category=${cat.slug}`}
+                                    className={`shrink-0 snap-start px-5 py-2 rounded-full text-sm font-bold transition-colors ${
+                                        categoryQuery === cat.slug
+                                            ? "bg-blue-600 text-white shadow-md"
+                                            : "bg-white text-slate-600 border border-slate-200 hover:border-blue-300 hover:text-blue-600 shadow-sm"
+                                    }`}
+                                >
+                                    {cat.name}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 )}
 
