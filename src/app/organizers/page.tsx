@@ -1,4 +1,4 @@
-import { ArrowLeft, Send, TrendingUp, Users, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowLeft, TrendingUp, Users, ShieldCheck, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { OrganizerForm } from "./OrganizerForm";
 

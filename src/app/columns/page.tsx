@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getWPPosts, getWPCategories } from "@/lib/wordpress";
 import Link from "next/link";
 import { Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";

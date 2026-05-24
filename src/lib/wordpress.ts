@@ -155,11 +155,11 @@ export async function getWPPosts(options?: {
         });
 
         let wpPosts: WPArticle[] = [];
-        let totalPages = 1;
+        // let totalPages = 1;
         let totalItems = 0;
 
         if (res.ok) {
-            totalPages = parseInt(res.headers.get("X-WP-TotalPages") || "1", 10);
+            // totalPages = parseInt(res.headers.get("X-WP-TotalPages") || "1", 10);
             totalItems = parseInt(res.headers.get("X-WP-Total") || "0", 10);
             const data: WPPost[] = await res.json();
             wpPosts = data.map(mapPost);

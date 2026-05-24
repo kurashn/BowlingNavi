@@ -74,7 +74,7 @@ export function CalendarView({ tournaments }: CalendarViewProps) {
                     ))}
 
                     {/* Days */}
-                    {daysInMonth.map((day, idx) => {
+                    {daysInMonth.map((day) => {
                         const dayTournaments = tournaments.filter(t => isSameDay(new Date(t.date), day));
                         const isCurrentMonth = isSameMonth(day, currentMonth);
 

@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import { MOCK_PLAYERS } from "@/data/mockPlayers";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Trophy, Target, Star, Mail, ChevronRight, Share2, Award, Briefcase, Quote } from "lucide-react";
+import { ArrowLeft, Target, Star, Mail, ChevronRight, Award, Briefcase, Quote } from "lucide-react";
 
 interface PageProps {
     params: Promise<{ id: string }>;

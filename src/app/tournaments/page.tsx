@@ -4,7 +4,7 @@ import { FilterSidebar } from "@/components/FilterSidebar";
 import { TournamentCard } from "@/components/TournamentCard";
 import { CalendarView } from "@/components/CalendarView";
 import { getTournaments } from "@/data/mockTournaments";
-import { useState, useMemo, useEffect, Suspense } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { LayoutGrid, Calendar as CalendarIcon } from "lucide-react";
 

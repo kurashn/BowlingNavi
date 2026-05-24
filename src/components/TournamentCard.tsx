@@ -1,5 +1,5 @@
 import { Tournament } from "@/types";
-import { Calendar, MapPin, Trophy, Users } from "lucide-react";
+import { Calendar, MapPin, Trophy } from "lucide-react";
 
 import Link from "next/link";
 

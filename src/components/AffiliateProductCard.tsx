@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { RecommendedItem } from "@/types";
 import { ShoppingCart } from "lucide-react";
 

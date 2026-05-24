@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { getTournaments } from "@/data/mockTournaments";
 import { MOCK_ARTICLES } from "@/data/mockArticles";

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Mail, Send } from "lucide-react";
+import { ArrowLeft, Mail } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

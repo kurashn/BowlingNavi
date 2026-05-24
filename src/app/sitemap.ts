@@ -33,7 +33,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Dynamic article pages
     const wpArticles = await getWPPosts();
-    const articles = wpArticles.map((article) => ({
+    const articles = wpArticles.posts.map((article) => ({
         url: `${baseUrl}/${article.id}`,
         lastModified: new Date(article.publishedAt),
         changeFrequency: 'weekly' as const,

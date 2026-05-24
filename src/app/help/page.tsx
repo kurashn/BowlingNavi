@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, HelpCircle, Mail, ChevronRight, CheckCircle2, MessageSquare } from "lucide-react";
+import { ArrowLeft, Mail, ChevronRight, CheckCircle2, MessageSquare } from "lucide-react";
 
 export const metadata = {
     title: 'ヘルプセンター（よくある質問） | BowlingNavi -ボウナビ-',
