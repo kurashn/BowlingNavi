@@ -251,21 +251,36 @@ export async function getWPPostBySlug(slug: string): Promise<WPArticle | null> {
  * カテゴリー一覧を取得
  */
 export async function getWPCategories(): Promise<WPCategory[]> {
+    const MOCK_CATEGORIES: WPCategory[] = [
+        { id: 1, name: "ギア・道具", slug: "Gear", count: 1, description: "" },
+        { id: 2, name: "初心者ガイド", slug: "Guide", count: 1, description: "" },
+        { id: 3, name: "スキルアップ", slug: "Technique", count: 1, description: "" },
+    ];
+
     try {
         const res = await fetch(`${WP_API_URL}/categories?per_page=100&hide_empty=true`, {
             next: { revalidate: 300 }, // 5分間キャッシュ
         });
 
         if (!res.ok) {
-            return [];
+            return MOCK_CATEGORIES;
         }
 
         const data: WPCategory[] = await res.json();
-        // 「未分類」は除外
-        return data.filter((cat) => cat.slug !== "uncategorized");
+        const wpCats = data.filter((cat) => cat.slug !== "uncategorized");
+        
+        // WPとモックをマージ（重複するスラッグはWP優先）
+        const merged = [...wpCats];
+        MOCK_CATEGORIES.forEach(mockCat => {
+            if (!merged.find(c => c.slug.toLowerCase() === mockCat.slug.toLowerCase())) {
+                merged.push(mockCat);
+            }
+        });
+        
+        return merged;
     } catch (error) {
         console.error("Failed to fetch WordPress categories:", error);
-        return [];
+        return MOCK_CATEGORIES;
     }
 }
 
