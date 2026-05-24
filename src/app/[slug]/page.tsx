@@ -48,7 +48,7 @@ export default async function ArticlePage({ params }: PageProps) {
                     </div>
 
                     {/* Title */}
-                    <h1 className="text-3xl font-bold leading-tight tracking-tight text-slate-900 md:text-4xl lg:text-[2.5rem] lg:leading-[1.25] mb-12">
+                    <h1 className="text-2xl font-bold leading-tight tracking-tight text-slate-900 md:text-3xl lg:text-4xl lg:leading-[1.3] mb-10">
                         {article.title}
                     </h1>
 

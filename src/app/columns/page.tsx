@@ -56,10 +56,10 @@ export default async function ColumnsPage({ searchParams }: ColumnsPageProps) {
 
                 {/* Category Filters */}
                 {categories.length > 0 && (
-                    <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
+                    <div className="mb-12 flex overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:justify-center sm:pb-0 gap-3 snap-x scrollbar-hide">
                         <Link
                             href="/columns"
-                            className={`px-5 py-2 rounded-full text-sm font-bold transition-colors ${
+                            className={`shrink-0 snap-start px-5 py-2 rounded-full text-sm font-bold transition-colors ${
                                 !categoryQuery
                                     ? "bg-blue-600 text-white shadow-md"
                                     : "bg-white text-slate-600 border border-slate-200 hover:border-blue-300 hover:text-blue-600 shadow-sm"
@@ -71,7 +71,7 @@ export default async function ColumnsPage({ searchParams }: ColumnsPageProps) {
                             <Link
                                 key={cat.slug}
                                 href={`/columns?category=${cat.slug}`}
-                                className={`px-5 py-2 rounded-full text-sm font-bold transition-colors ${
+                                className={`shrink-0 snap-start px-5 py-2 rounded-full text-sm font-bold transition-colors ${
                                     categoryQuery === cat.slug
                                         ? "bg-blue-600 text-white shadow-md"
                                         : "bg-white text-slate-600 border border-slate-200 hover:border-blue-300 hover:text-blue-600 shadow-sm"
