@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next'
 import { getTournaments } from '@/data/mockTournaments'
-import { MOCK_ARTICLES } from '@/data/mockArticles'
+import { getWPPosts } from '@/lib/wordpress'
 import { MOCK_PLAYERS } from '@/data/mockPlayers'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://bowlingnavi.com'
 
     // Static pages
@@ -32,8 +32,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
 
     // Dynamic article pages
-    const articles = MOCK_ARTICLES.map((article) => ({
-        url: `${baseUrl}/columns/${article.id}`,
+    const wpArticles = await getWPPosts();
+    const articles = wpArticles.map((article) => ({
+        url: `${baseUrl}/${article.id}`,
         lastModified: new Date(article.publishedAt),
         changeFrequency: 'weekly' as const,
         priority: 0.7,
