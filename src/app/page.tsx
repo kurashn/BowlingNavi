@@ -62,11 +62,11 @@ export default function Home() {
                         
                         <div className="flex flex-wrap gap-2.5 mt-6" aria-label="大会カテゴリ">
                             {[
-                                { name: "プロ公式戦", href: "?type=pro", icon: "#icon-pin" },
-                                { name: "アマチュア", href: "?type=amateur", icon: "#icon-shield" },
-                                { name: "プロアマ", href: "?type=proam", icon: "#icon-bowling" },
-                                { name: "ジュニア", href: "?type=junior", icon: "#icon-bowling" },
-                                { name: "レディース", href: "?type=ladies", icon: "#icon-users" }
+                                { name: "プロ公式戦", href: "?type=プロ公式戦", icon: "#icon-pin" },
+                                { name: "アマチュア", href: "?type=アマチュア", icon: "#icon-shield" },
+                                { name: "プロアマ", href: "?type=プロアマ", icon: "#icon-bowling" },
+                                { name: "ジュニア", href: "?q=ジュニア", icon: "#icon-bowling" },
+                                { name: "レディース", href: "?q=レディース", icon: "#icon-users" }
                             ].map(cat => (
                                 <Link key={cat.name} href={`/tournaments${cat.href}`} className="inline-flex items-center gap-1.5 h-8 px-4 text-[#dceaff] border border-white/5 rounded-full bg-white/5 backdrop-blur-md shadow-sm text-xs font-bold whitespace-nowrap hover:bg-white/10 hover:border-white/20 hover:-translate-y-0.5 transition-all duration-300">
                                     <svg className="w-3.5 h-3.5 text-[#e335d7]"><use href={cat.icon} /></svg>
@@ -84,7 +84,7 @@ export default function Home() {
                     {[
                         { title: "注目の大会", desc: "今チェックすべき\n大会をピックアップ", icon: "#icon-trophy", href: "/tournaments", gradient: "from-[#7d35ff]/80 to-[#261b67]/90" },
                         { title: "直近開催", desc: "今週・今月の\n大会を一覧で確認", icon: "#icon-calendar", href: "/tournaments?tab=schedule", gradient: "from-[#2b87ff]/80 to-[#0e3b8a]/90" },
-                        { title: "エリアから探す", desc: "都道府県・エリアから\n会場・大会を検索", icon: "#icon-map", href: "/tournaments?tab=location", gradient: "from-[#ff6b6b]/80 to-[#8a1c1c]/90" },
+                        { title: "エリアから探す", desc: "都道府県・エリアから\n会場・大会を検索", icon: "#icon-map", href: "/tournaments#location-filter", gradient: "from-[#ff6b6b]/80 to-[#8a1c1c]/90" },
                         { title: "初心者向け", desc: "ルールや投げ方の\n基本をやさしく解説", icon: "#icon-spark", href: "/columns?category=Guide", gradient: "from-[#20d487]/80 to-[#0a5232]/90" },
                         { title: "大会主催者向け", desc: "大会の掲載・運営を\nサポートします", icon: "#icon-shield", href: "/organizers", gradient: "from-[#ffc545]/80 to-[#8a6a1c]/90" }
                     ].map((card, idx) => (

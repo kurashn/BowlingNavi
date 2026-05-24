@@ -39,9 +39,6 @@ export function Footer() {
                         <nav className="flex flex-col gap-3 text-sm font-bold text-[#8fa3c7]" aria-label="サポート">
                             <Link href="/help" className="whitespace-nowrap hover:text-white hover:translate-x-1 transition-all duration-200">ヘルプセンター</Link>
                             <Link href="/contact" className="whitespace-nowrap hover:text-white hover:translate-x-1 transition-all duration-200">お問い合わせ</Link>
-                            <Link href="/terms" className="whitespace-nowrap hover:text-white hover:translate-x-1 transition-all duration-200">利用規約</Link>
-                            <Link href="/privacy" className="whitespace-nowrap hover:text-white hover:translate-x-1 transition-all duration-200">プライバシーポリシー</Link>
-                            <Link href="/legal" className="whitespace-nowrap hover:text-white hover:translate-x-1 transition-all duration-200">特定商取引法</Link>
                         </nav>
                     </div>
 

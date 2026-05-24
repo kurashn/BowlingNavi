@@ -99,6 +99,7 @@ export function FilterSidebar({
             <div>
                 <h3 className="mb-4 text-xs font-black text-slate-400 uppercase tracking-wider">開催地</h3>
                 <select
+                    id="location-filter"
                     value={selectedLocation}
                     onChange={(e) => onLocationChange(e.target.value)}
                     className="w-full rounded-xl border border-white/5 bg-[#0a1224] py-2.5 px-4 text-sm text-white focus:border-[#2b87ff] focus:outline-none focus:ring-1 focus:ring-[#2b87ff]/50 transition-all shadow-inner appearance-none cursor-pointer"
