@@ -43,9 +43,9 @@ export default function Home() {
                             <span className="whitespace-nowrap">すべてのボウラーへ、</span><br />
                             <span className="bg-gradient-to-r from-[#2b87ff] via-[#8a34ff] to-[#e335d7] bg-clip-text text-transparent drop-shadow-lg">最高の舞台を。</span>
                         </h1>
-                        <p className="mt-4 md:mt-6 text-[#9eb2d0] text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-[600px] drop-shadow-md">
-                            <span className="inline-block">全国の大会スケジュールから、ボウリング上達のヒントまで。</span><br className="hidden sm:block" />
-                            <span className="inline-block">より高いスコアを目指す、すべての挑戦者を全力でサポートします。</span>
+                        <p className="mt-4 md:mt-6 text-[#9eb2d0] text-[13px] sm:text-base md:text-lg font-medium leading-relaxed max-w-[600px] drop-shadow-md">
+                            全国の大会スケジュールから、<br className="block sm:hidden" />ボウリング上達のヒントまで。<br />
+                            より高いスコアを目指す、<br className="block sm:hidden" />すべての挑戦者を全力でサポートします。
                         </p>
                         
                         {/* Premium Search Bar */}
@@ -168,7 +168,7 @@ export default function Home() {
                         <article key={article.id} className="group relative flex flex-col p-4 border border-white/5 rounded-2xl bg-[#061124]/80 backdrop-blur-md shadow-[0_8px_20px_rgba(0,0,0,0.2)] hover:-translate-y-1.5 hover:shadow-[0_15px_30px_rgba(0,0,0,0.3)] hover:border-white/10 transition-all duration-500 overflow-hidden">
                             <div className="relative h-[140px] w-full mb-4 rounded-xl overflow-hidden">
                                 <div className="absolute inset-0 bg-[#020813]/20 group-hover:bg-transparent transition-colors z-10"></div>
-                                <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src={`/assets/article-${idx === 0 ? 'bowler' : idx === 1 ? 'notes' : 'balls'}.png`} alt="" />
+                                <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" src={article.thumbnailUrl || `/assets/article-${idx === 0 ? 'bowler' : idx === 1 ? 'notes' : 'balls'}.png`} alt={article.title} />
                             </div>
                             <div className="flex flex-col flex-1">
                                 <h3 className="text-white text-[15px] font-black leading-snug line-clamp-2 mb-2 group-hover:text-[#29d2f3] transition-colors">
