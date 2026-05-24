@@ -101,6 +101,7 @@ export default function ContactPage() {
                                 <option value="">選択してください</option>
                                 <option value="tournament">大会について</option>
                                 <option value="system">システムについて</option>
+                                <option value="sponsorship">スポンサーについて</option>
                                 <option value="other">その他</option>
                             </select>
                         </div>
