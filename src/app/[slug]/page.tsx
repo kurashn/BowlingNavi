@@ -52,7 +52,7 @@ export default async function ArticlePage({ params }: PageProps) {
                     </h1>
 
                     {/* Supervisor Card */}
-                    <div className="bg-white border border-slate-200 rounded-xl p-5 mb-4 shadow-sm max-w-2xl">
+                    <div className="bg-white border border-slate-200 rounded-xl p-5 mb-4 shadow-sm w-full">
                         <div className="flex gap-5 sm:gap-6">
                             {/* Left: Avatar & Badge */}
                             <div className="flex flex-col items-center shrink-0">
