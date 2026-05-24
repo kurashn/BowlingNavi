@@ -1,7 +1,10 @@
 /**
  * WordPress REST API クライアント
  * cms.bowlingnavi.com からコラム記事を取得する
+ * (モックデータとマージして両方を表示します)
  */
+
+import { MOCK_ARTICLES } from "@/data/mockArticles";
 
 const WP_API_URL = process.env.WORDPRESS_API_URL || "http://cms.bowlingnavi.com/wp-json/wp/v2";
 
@@ -142,27 +145,58 @@ export async function getWPPosts(options?: {
             next: { revalidate: 60 }, // ISR: 1分間キャッシュ
         });
 
-        if (!res.ok) {
-            // 400エラー（ページ範囲外など）は空結果として扱う
-            if (res.status === 400) {
-                return { posts: [], totalPages: 0, totalItems: 0 };
-            }
-            console.error(`WordPress API error: ${res.status} ${res.statusText}`);
-            return { posts: [], totalPages: 0, totalItems: 0 };
+        let wpPosts: WPArticle[] = [];
+        let totalPages = 1;
+        let totalItems = 0;
+
+        if (res.ok) {
+            totalPages = parseInt(res.headers.get("X-WP-TotalPages") || "1", 10);
+            totalItems = parseInt(res.headers.get("X-WP-Total") || "0", 10);
+            const data: WPPost[] = await res.json();
+            wpPosts = data.map(mapPost);
         }
 
-        const totalPages = parseInt(res.headers.get("X-WP-TotalPages") || "1", 10);
-        const totalItems = parseInt(res.headers.get("X-WP-Total") || "0", 10);
-        const data: WPPost[] = await res.json();
+        // モックデータ（既存の記事）をマージ
+        let allPosts = [...wpPosts, ...MOCK_ARTICLES];
+
+        // カテゴリー絞り込み（モックデータ用）
+        if (options?.categorySlug) {
+            allPosts = allPosts.filter(p => p.category.toLowerCase() === options.categorySlug?.toLowerCase());
+        }
+
+        // 日付順にソート
+        allPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+
+        // ページネーション処理（マージ後の配列に対して）
+        const startIndex = (page - 1) * perPage;
+        const endIndex = startIndex + perPage;
+        const paginatedPosts = allPosts.slice(startIndex, endIndex);
+        const finalTotalItems = totalItems + MOCK_ARTICLES.length;
+        const finalTotalPages = Math.ceil(finalTotalItems / perPage);
 
         return {
-            posts: data.map(mapPost),
-            totalPages,
-            totalItems,
+            posts: paginatedPosts,
+            totalPages: finalTotalPages,
+            totalItems: finalTotalItems,
         };
     } catch (error) {
         console.error("Failed to fetch WordPress posts:", error);
-        return { posts: [], totalPages: 0, totalItems: 0 };
+        
+        // エラー時でもモックデータを返す
+        let fallbackPosts = [...MOCK_ARTICLES];
+        if (options?.categorySlug) {
+            fallbackPosts = fallbackPosts.filter(p => p.category.toLowerCase() === options.categorySlug?.toLowerCase());
+        }
+        fallbackPosts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+        
+        const startIndex = (page - 1) * perPage;
+        const paginatedFallback = fallbackPosts.slice(startIndex, startIndex + perPage);
+
+        return { 
+            posts: paginatedFallback, 
+            totalPages: Math.ceil(fallbackPosts.length / perPage), 
+            totalItems: fallbackPosts.length 
+        };
     }
 }
 
@@ -170,6 +204,12 @@ export async function getWPPosts(options?: {
  * スラッグで個別記事を取得
  */
 export async function getWPPostBySlug(slug: string): Promise<WPArticle | null> {
+    // まずモックデータ（既存の記事）から探す
+    const mockArticle = MOCK_ARTICLES.find(a => a.id === slug);
+    if (mockArticle) {
+        return mockArticle as WPArticle;
+    }
+
     try {
         const params = new URLSearchParams({
             _embed: "true",
