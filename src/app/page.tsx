@@ -203,9 +203,9 @@ export default function Home() {
                         </div>
                         <div className="flex flex-col gap-3 mt-auto">
                             {[
-                                { name: "STORM ピッチ・ブラック", price: "¥24,800〜", icon: "#icon-bowling", url: "https://search.rakuten.co.jp/search/mall/STORM+%E3%83%94%E3%83%83%E3%83%81%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF/", tag: "大人気ウレタン" },
-                                { name: "Dexter THE 9 HT", price: "¥32,500〜", icon: "#icon-cap", url: "https://search.rakuten.co.jp/search/mall/Dexter+THE+9+HT/", tag: "ハイエンドシューズ" },
-                                { name: "ABS 2ボールカートバッグ", price: "¥8,900〜", icon: "#icon-shield", url: "https://search.rakuten.co.jp/search/mall/ABS+2%E3%83%9C%E3%83%BC%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%88%E3%83%90%E3%83%83%E3%82%B0/", tag: "定番キャリー" }
+                                { name: "ABS S-380 (左右兼用)", price: "¥3,500〜", icon: "#icon-spark", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F", tag: "コスパ最強シューズ" },
+                                { name: "Brunswick ライノ", price: "¥12,000〜", icon: "#icon-bowling", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F", tag: "初心者向けボール" },
+                                { name: "Storm トロピカルサージ", price: "¥13,000〜", icon: "#icon-star", url: "https://af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F", tag: "定番エントリー" }
                             ].map((item, idx) => (
                                 <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/20 hover:-translate-y-1 transition-all group">
                                     <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-[#16274d] to-[#0a1224] border border-white/10 flex items-center justify-center shrink-0">
