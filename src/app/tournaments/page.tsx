@@ -19,12 +19,11 @@ function TournamentsContent() {
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
 
-    useEffect(() => {
-        const q = searchParams.get("q");
-        if (q !== null && q !== searchQuery) {
-            setSearchQuery(q);
-        }
-    }, [searchParams]);
+    const [prevQ, setPrevQ] = useState(searchParams.get("q") || "");
+    if ((searchParams.get("q") || "") !== prevQ) {
+        setPrevQ(searchParams.get("q") || "");
+        setSearchQuery(searchParams.get("q") || "");
+    }
 
     const handleTypeChange = (type: string) => {
         setSelectedTypes((prev) =>

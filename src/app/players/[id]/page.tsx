@@ -176,11 +176,11 @@ export default async function PlayerProfilePage({ params }: PageProps) {
                                 ))}
                             </div>
 
-                            <a href="/contact" className="w-full py-3 sm:py-4 px-2 bg-slate-900 hover:bg-blue-600 text-white text-sm sm:text-base font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 sm:gap-2 group shadow-md text-center leading-snug">
+                            <Link href="/contact" className="w-full py-3 sm:py-4 px-2 bg-slate-900 hover:bg-blue-600 text-white text-sm sm:text-base font-bold rounded-xl transition-colors flex items-center justify-center gap-1.5 sm:gap-2 group shadow-md text-center leading-snug">
                                 <Mail className="size-4 shrink-0" />
                                 <span>お問い合わせ</span>
                                 <ChevronRight className="size-4 shrink-0 transition-transform group-hover:translate-x-1" />
-                            </a>
+                            </Link>
                             <p className="text-[10px] text-slate-400 mt-3 text-center">
                                 ※具体的なプラン（金額・露出条件など）については、お問い合わせ後に個別にご案内させていただきます。
                             </p>
