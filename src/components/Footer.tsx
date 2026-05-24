@@ -50,9 +50,9 @@ export function Footer() {
                             最新の大会情報やお得なエントリー枠情報を<br className="hidden lg:block" />LINEでいち早くお届けします。
                         </p>
                         <form className="mt-auto relative group">
-                            <a href="https://line.me/ja/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 w-full h-10 px-6 rounded-xl bg-[#06C755] text-white text-xs font-black shadow-[0_4px_15px_rgba(6,199,85,0.3)] hover:shadow-[0_8px_25px_rgba(6,199,85,0.5)] hover:-translate-y-0.5 transition-all">
-                                友だち追加する
-                            </a>
+                            <button type="button" disabled className="flex items-center justify-center gap-2 w-full h-10 px-6 rounded-xl bg-slate-800 text-slate-400 text-xs font-black border border-slate-700/50 cursor-not-allowed">
+                                準備中
+                            </button>
                         </form>
                     </div>
                 </div>

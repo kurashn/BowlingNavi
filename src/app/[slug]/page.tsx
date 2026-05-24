@@ -51,8 +51,8 @@ export default async function ArticlePage({ params }: PageProps) {
                         {article.title}
                     </h1>
 
-                    {/* Writer Row */}
-                    <div className="flex flex-col gap-4 mb-8">
+                    {/* Writer & Supervisor Row */}
+                    <div className="flex flex-col sm:flex-row gap-4 mb-8">
                         <div className="flex items-center gap-4 px-2">
                             <span className="px-3 py-1 bg-[#F7F9FC] border border-slate-200 text-slate-600 text-xs font-bold rounded shadow-sm tracking-wider">編集 / ライター</span>
                             <div className="flex items-center gap-2">
@@ -60,6 +60,17 @@ export default async function ArticlePage({ params }: PageProps) {
                                     <img src="/images/bownavikun2.png" alt="ボウナビくん" className="w-full h-full object-contain rounded-full" />
                                 </div>
                                 <span className="text-sm font-bold text-slate-800">ボウナビ編集部</span>
+                            </div>
+                        </div>
+
+                        {/* Supervisor */}
+                        <div className="flex items-center gap-4 px-2">
+                            <span className="px-3 py-1 bg-[#F7F9FC] border border-slate-200 text-slate-600 text-xs font-bold rounded shadow-sm tracking-wider">監修者</span>
+                            <div className="flex items-center gap-2">
+                                <div className="size-8 rounded-full bg-slate-100 flex items-center justify-center overflow-hidden border border-slate-200 shadow-sm p-0.5">
+                                    <span className="text-xs font-bold text-slate-400">監修</span>
+                                </div>
+                                <span className="text-sm font-bold text-slate-800">準備中</span>
                             </div>
                         </div>
                     </div>
