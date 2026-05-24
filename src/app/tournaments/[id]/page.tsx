@@ -1,7 +1,7 @@
 import { getTournaments } from "@/data/mockTournaments";
 import { JsonLd } from "@/components/JsonLd";
 import { Metadata } from "next";
-import { Calendar, MapPin, Trophy, Users, ArrowLeft } from "lucide-react";
+import { Calendar, MapPin, Trophy, Users, ArrowLeft, ExternalLink, Info, CheckCircle2, ChevronRight, ClipboardList } from "lucide-react";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -60,139 +60,158 @@ export default async function TournamentDetailPage({ params }: PageProps) {
         minute: "2-digit",
     });
 
-    return (
-        <div className="min-h-screen pb-20">
-            <JsonLd tournament={tournament} />
-            {/* Hero Header */}
-            <div className="relative w-full bg-slate-900 border-b border-white/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-slate-900 to-purple-900/20" />
+    const isFinished = tournament.status === '開催終了';
+    const isAccepting = tournament.status === '受付中';
 
-                <div className="relative container mx-auto px-4 py-12 md:py-16">
+    return (
+        <div className="min-h-screen bg-slate-50 pb-20">
+            <JsonLd tournament={tournament} />
+            
+            {/* Hero Section (Premium Dark Mode Style) */}
+            <div className="relative pt-24 pb-20 lg:pt-32 lg:pb-28 overflow-hidden bg-[#020d20]">
+                {/* Background Effects */}
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,_rgba(43,135,255,0.15),_transparent_40%)]"></div>
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,_rgba(41,210,243,0.1),_transparent_40%)]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#020d20]/50 to-slate-50"></div>
+                </div>
+
+                <div className="container mx-auto px-4 relative z-10 max-w-5xl">
                     <Link
                         href="/tournaments"
-                        className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                        className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors group"
                     >
-                        <ArrowLeft className="size-4" />
+                        <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" />
                         大会一覧に戻る
                     </Link>
 
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6 max-w-4xl">
                         <div className="flex flex-wrap items-center gap-3">
-                            <span className="rounded-md bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-400 border border-blue-500/20">
+                            <span className="rounded-full bg-blue-600/20 px-4 py-1.5 text-xs font-bold text-blue-400 border border-blue-500/30 flex items-center gap-1.5">
+                                <Trophy className="size-3.5" />
                                 {tournament.type}
                             </span>
-                            <span className={`rounded-md px-3 py-1 text-sm font-medium border ${tournament.status === '受付中' ? 'bg-green-500/10 text-green-400 border-green-500/20' :
-                                tournament.status === '開催予定' ? 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20' :
-                                    'bg-slate-500/10 text-slate-400 border-slate-500/20'
-                                }`}>
+                            <span className={`rounded-full px-4 py-1.5 text-xs font-bold border flex items-center gap-1.5 ${
+                                isAccepting ? 'bg-green-500/20 text-green-400 border-green-500/30' :
+                                isFinished ? 'bg-slate-500/20 text-slate-400 border-slate-500/30' :
+                                'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
+                            }`}>
+                                <Info className="size-3.5" />
                                 {tournament.status}
                             </span>
                         </div>
 
-                        <h1 className="text-3xl font-bold text-white md:text-5xl max-w-4xl leading-tight">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
                             {tournament.title}
                         </h1>
+                        
+                        <div className="flex flex-wrap items-center gap-6 mt-4 text-slate-300 font-medium">
+                            <div className="flex items-center gap-2">
+                                <Calendar className="size-5 text-blue-400" />
+                                {formattedDate}
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <MapPin className="size-5 text-purple-400" />
+                                {tournament.location}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 pt-8">
-                <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
-                    {/* Main Content */}
-                    <div className="lg:col-span-2 space-y-12">
-                        <section>
-                            <h2 className="mb-6 text-xl font-bold text-white">大会について</h2>
-                            <p className="text-lg leading-relaxed text-slate-300">
+            {/* Main Content Area */}
+            <div className="container mx-auto px-4 max-w-5xl -mt-12 relative z-20">
+                <div className="flex flex-col-reverse lg:grid lg:grid-cols-3 gap-8">
+                    
+                    {/* Left Column (Main Details) */}
+                    <div className="lg:col-span-2 space-y-8">
+                        
+                        {/* Description Section */}
+                        <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
+                            <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                                <span className="w-1.5 h-6 bg-blue-600 rounded-full"></span>
+                                大会について
+                            </h2>
+                            <p className="text-slate-700 leading-relaxed text-lg">
                                 {tournament.description}
                             </p>
-                        </section>
+                        </div>
 
-                        <section className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                            <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6">
-                                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-blue-500/20 text-blue-400">
-                                    <Calendar className="size-5" />
+                        {/* Grid Highlights */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex items-start gap-4">
+                                <div className="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center shrink-0">
+                                    <Trophy className="size-6 text-yellow-500" />
                                 </div>
-                                <h3 className="mb-1 text-sm font-medium text-slate-400">日時</h3>
-                                <p className="text-lg font-semibold text-white">{formattedDate}</p>
-                            </div>
-
-                            <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6">
-                                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-purple-500/20 text-purple-400">
-                                    <MapPin className="size-5" />
+                                <div>
+                                    <h3 className="text-sm font-bold text-slate-500 mb-1">賞金総額・表彰</h3>
+                                    <p className="text-lg font-black text-slate-900">
+                                        {tournament.prizePool ? (typeof tournament.prizePool === 'number' ? `¥${tournament.prizePool.toLocaleString()}` : tournament.prizePool) : '未定'}
+                                    </p>
                                 </div>
-                                <h3 className="mb-1 text-sm font-medium text-slate-400">場所</h3>
-                                <p className="text-lg font-semibold text-white">{tournament.location}</p>
                             </div>
-
-                            <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6">
-                                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-yellow-500/20 text-yellow-400">
-                                    <Trophy className="size-5" />
+                            
+                            <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex items-start gap-4">
+                                <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center shrink-0">
+                                    <Users className="size-6 text-green-500" />
                                 </div>
-                                <h3 className="mb-1 text-sm font-medium text-slate-400">賞金総額</h3>
-                                <p className="text-lg font-semibold text-white">
-                                    {tournament.prizePool
-                                        ? (typeof tournament.prizePool === 'number' ? `¥${tournament.prizePool.toLocaleString()}` : tournament.prizePool)
-                                        : '未定'}
-                                </p>
-                            </div>
-
-                            <div className="mb-6">
-                                <span className="block text-sm text-slate-400 mb-1">情報源</span>
-                                {tournament.sourceUrl ? (
-                                    <a
-                                        href={tournament.sourceUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="text-blue-400 hover:text-blue-300 underline break-all"
-                                    >
-                                        {tournament.sourceUrl}
-                                    </a>
-                                ) : (
-                                    <span className="text-white">不明</span>
-                                )}
-                            </div>
-
-                            <div className="rounded-2xl border border-white/10 bg-slate-900/50 p-6">
-                                <div className="mb-4 flex size-10 items-center justify-center rounded-full bg-green-500/20 text-green-400">
-                                    <Users className="size-5" />
+                                <div>
+                                    <h3 className="text-sm font-bold text-slate-500 mb-1">主催・運営</h3>
+                                    <p className="text-lg font-black text-slate-900">
+                                        {tournament.organizer}
+                                    </p>
                                 </div>
-                                <h3 className="mb-1 text-sm font-medium text-slate-400">主催</h3>
-                                <p className="text-lg font-semibold text-white">{tournament.organizer}</p>
                             </div>
-                        </section>
+                        </div>
+
+                        {/* Information Source */}
+                        <div className="bg-slate-100 rounded-2xl p-6 border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div className="flex items-center gap-3">
+                                <Info className="size-5 text-slate-500" />
+                                <span className="text-sm font-bold text-slate-700">公式情報源（リンク）</span>
+                            </div>
+                            {tournament.sourceUrl ? (
+                                <a href={tournament.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold flex items-center gap-1.5 transition-colors text-sm bg-white px-4 py-2 rounded-lg shadow-sm">
+                                    公式サイトを確認する
+                                    <ExternalLink className="size-4" />
+                                </a>
+                            ) : (
+                                <span className="text-slate-500 text-sm font-medium">不明</span>
+                            )}
+                        </div>
 
                         {/* Results Section */}
-                        {tournament.status === '完了' && tournament.results && (
-                            <section>
-                                <h2 className="mb-6 text-xl font-bold text-white flex items-center gap-2">
-                                    <Trophy className="text-yellow-500" />
-                                    大会結果
+                        {isFinished && tournament.results && (
+                            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
+                                <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                                    <span className="w-1.5 h-6 bg-yellow-500 rounded-full"></span>
+                                    大会結果（最終成績）
                                 </h2>
-                                <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
-                                    <table className="w-full text-left text-sm text-slate-400">
-                                        <thead className="bg-slate-900 text-xs uppercase text-slate-300">
+                                <div className="overflow-hidden rounded-xl border border-slate-200">
+                                    <table className="w-full text-left text-sm text-slate-600">
+                                        <thead className="bg-slate-50 text-xs uppercase font-bold text-slate-500 border-b border-slate-200">
                                             <tr>
-                                                <th className="px-6 py-4 font-medium">順位</th>
-                                                <th className="px-6 py-4 font-medium">選手名</th>
-                                                <th className="px-6 py-4 font-medium">スコア</th>
-                                                <th className="px-6 py-4 font-medium text-right">賞金</th>
+                                                <th className="px-6 py-4">順位</th>
+                                                <th className="px-6 py-4">選手名</th>
+                                                <th className="px-6 py-4">スコア</th>
+                                                <th className="px-6 py-4 text-right">賞金 / ポイント</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-white/5">
+                                        <tbody className="divide-y divide-slate-100">
                                             {tournament.results.map((result) => (
-                                                <tr key={result.rank} className="hover:bg-white/5 transition-colors">
+                                                <tr key={result.rank} className="hover:bg-slate-50 transition-colors">
                                                     <td className="px-6 py-4">
-                                                        <span className={`inline-flex size-6 items-center justify-center rounded-full font-bold ${result.rank === 1 ? 'bg-yellow-500/20 text-yellow-500' :
-                                                            result.rank === 2 ? 'bg-slate-400/20 text-slate-400' :
-                                                                result.rank === 3 ? 'bg-orange-500/20 text-orange-500' :
-                                                                    'text-slate-500'
+                                                        <span className={`inline-flex size-7 items-center justify-center rounded-full font-black text-xs ${result.rank === 1 ? 'bg-yellow-100 text-yellow-700' :
+                                                            result.rank === 2 ? 'bg-slate-200 text-slate-700' :
+                                                                result.rank === 3 ? 'bg-orange-100 text-orange-700' :
+                                                                    'bg-slate-100 text-slate-500'
                                                             }`}>
                                                             {result.rank}
                                                         </span>
                                                     </td>
-                                                    <td className="px-6 py-4 font-medium text-white">{result.playerName}</td>
-                                                    <td className="px-6 py-4">{result.score}</td>
-                                                    <td className="px-6 py-4 text-right font-medium text-white">
+                                                    <td className="px-6 py-4 font-bold text-slate-900">{result.playerName}</td>
+                                                    <td className="px-6 py-4 font-medium">{result.score}</td>
+                                                    <td className="px-6 py-4 text-right font-bold text-slate-700">
                                                         {result.prize ? `¥${result.prize.toLocaleString()}` : '-'}
                                                     </td>
                                                 </tr>
@@ -200,72 +219,81 @@ export default async function TournamentDetailPage({ params }: PageProps) {
                                         </tbody>
                                     </table>
                                 </div>
-                            </section>
+                            </div>
                         )}
                     </div>
 
-                    {/* Sidebar */}
+                    {/* Right Column (Sidebar / Entry Box) */}
                     <div className="lg:col-span-1">
-                        <div className="sticky top-24 rounded-2xl border border-white/10 bg-slate-900 p-6 shadow-xl">
-                            <div className="mb-6">
-                                <span className="block text-sm text-slate-400 mb-1">参加費</span>
-                                <span className="text-3xl font-bold text-white">
-                                    {tournament.entryFee
-                                        ? (typeof tournament.entryFee === 'number' ? `¥${tournament.entryFee.toLocaleString()}` : tournament.entryFee)
-                                        : '要確認'}
+                        <div className="sticky top-24 bg-white rounded-2xl p-6 md:p-8 shadow-xl border-2 border-blue-50">
+                            
+                            <div className="mb-8 text-center pb-8 border-b border-slate-100">
+                                <span className="block text-sm font-bold text-slate-500 mb-2">参加費（エントリー費）</span>
+                                <span className="text-4xl font-black text-slate-900">
+                                    {tournament.entryFee ? (typeof tournament.entryFee === 'number' ? `¥${tournament.entryFee.toLocaleString()}` : tournament.entryFee) : '要確認'}
                                 </span>
                             </div>
 
-                            <div className="mb-8 space-y-4">
-                                <div className="flex items-center justify-between text-sm">
-                                    <span className="text-slate-400">ステータス</span>
-                                    <span className="font-medium text-white">{tournament.status}</span>
+                            <div className="space-y-6 mb-8">
+                                <div className="flex gap-4">
+                                    <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5">
+                                        <CheckCircle2 className="size-4 text-slate-600" />
+                                    </div>
+                                    <div>
+                                        <div className="text-xs font-bold text-slate-500 mb-1">現在のステータス</div>
+                                        <div className="font-bold text-slate-900">{tournament.status}</div>
+                                    </div>
                                 </div>
+
                                 {tournament.entryStatus && (
-                                    <div className="flex flex-col gap-1 text-sm border-t border-white/10 pt-3">
-                                        <span className="text-slate-400">受付状況</span>
-                                        <span className="font-medium text-white">{tournament.entryStatus}</span>
+                                    <div className="flex gap-4">
+                                        <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5">
+                                            <ClipboardList className="size-4 text-slate-600" />
+                                        </div>
+                                        <div>
+                                            <div className="text-xs font-bold text-slate-500 mb-1">受付状況</div>
+                                            <div className="font-bold text-slate-900">{tournament.entryStatus}</div>
+                                        </div>
                                     </div>
                                 )}
+
                                 {tournament.entryRequirements && (
-                                    <div className="flex flex-col gap-1 text-sm border-t border-white/10 pt-3">
-                                        <span className="text-slate-400">参加条件</span>
-                                        <span className="font-medium text-white leading-relaxed">{tournament.entryRequirements}</span>
-                                    </div>
-                                )}
-                                {tournament.entryMethod && (
-                                    <div className="flex flex-col gap-1 text-sm border-t border-white/10 pt-3">
-                                        <span className="text-slate-400">参加方法</span>
-                                        <span className="font-medium text-white leading-relaxed">{tournament.entryMethod}</span>
+                                    <div className="flex gap-4">
+                                        <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5">
+                                            <Users className="size-4 text-slate-600" />
+                                        </div>
+                                        <div>
+                                            <div className="text-xs font-bold text-slate-500 mb-1">参加条件</div>
+                                            <div className="font-medium text-slate-700 text-sm leading-relaxed">{tournament.entryRequirements}</div>
+                                        </div>
                                     </div>
                                 )}
                             </div>
 
-                            {tournament.status === '受付中' ? (
+                            {/* Entry CTA Button */}
+                            {isAccepting ? (
                                 tournament.sourceUrl ? (
                                     <a href={tournament.sourceUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
-                                        <button className="w-full rounded-xl bg-blue-600 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/25 transition-all hover:bg-blue-700 hover:scale-[1.02] flex items-center justify-center gap-2">
-                                            公式サイトで申し込む
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                                        <button className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 py-4 text-base font-bold text-white shadow-[0_8px_20px_rgba(59,105,255,0.3)] transition-all hover:shadow-[0_10px_25px_rgba(59,105,255,0.4)] hover:-translate-y-0.5 flex items-center justify-center gap-2 group">
+                                            公式サイトでエントリー
+                                            <ChevronRight className="size-5 transition-transform group-hover:translate-x-1" />
                                         </button>
                                     </a>
                                 ) : (
-                                    <div className="block w-full rounded-xl py-4 text-base font-bold text-center transition-all bg-slate-800/50 text-slate-500 cursor-not-allowed">
-                                        申し込み先は要確認
+                                    <div className="block w-full rounded-xl py-4 text-base font-bold text-center bg-slate-100 text-slate-400 cursor-not-allowed">
+                                        申し込み先URLがありません
                                     </div>
                                 )
                             ) : tournament.sourceUrl ? (
-                                <a
-                                    href={tournament.sourceUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block w-full rounded-xl py-4 text-base font-bold text-center transition-all bg-slate-800 text-white hover:bg-slate-700 hover:scale-[1.02]"
-                                >
-                                    公式サイトを見る
+                                <a href={tournament.sourceUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
+                                    <button className="w-full rounded-xl bg-slate-900 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-blue-600 hover:-translate-y-0.5 flex items-center justify-center gap-2 group">
+                                        公式サイトを確認する
+                                        <ExternalLink className="size-4 transition-transform group-hover:scale-110" />
+                                    </button>
                                 </a>
                             ) : (
-                                <div className="block w-full rounded-xl py-4 text-base font-bold text-center transition-all bg-slate-800/50 text-slate-500 cursor-not-allowed">
-                                    詳細不明
+                                <div className="block w-full rounded-xl py-4 text-base font-bold text-center bg-slate-100 text-slate-400 cursor-not-allowed">
+                                    公式サイトURLがありません
                                 </div>
                             )}
                         </div>

@@ -1,24 +1,55 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 2, 6, 23;
-  /* slate-950 */
-  --background-end-rgb: 15, 23, 42;
-  /* slate-900 */
+@theme {
+  --color-bg-base: #03142b;
+  --color-bg-deep: #020d20;
+  --color-panel: rgba(13, 35, 69, 0.82);
+  --color-panel-soft: rgba(17, 42, 78, 0.72);
+  --color-line: rgba(109, 145, 202, 0.28);
+  --color-line-strong: rgba(121, 81, 255, 0.58);
+  
+  --color-brand-blue: #2b87ff;
+  --color-brand-purple: #7d35ff;
+  --color-brand-pink: #e335d7;
+  --color-brand-cyan: #29d2f3;
+  --color-brand-green: #20d487;
+  --color-brand-yellow: #ffc545;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  min-height: 100vh;
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  html {
+    background: var(--color-bg-deep);
+  }
+
+  body {
+    background: radial-gradient(circle at 83% 12%, rgba(93, 38, 183, 0.15), transparent 28%),
+      radial-gradient(circle at 29% 9%, rgba(18, 95, 197, 0.1), transparent 23%),
+      radial-gradient(circle at 10% 36%, rgba(17, 112, 215, 0.08), transparent 26%),
+      linear-gradient(180deg, #041127 0%, #03162f 46%, #03152d 74%, #021126 100%);
+    background-attachment: fixed;
+    color: #f7fbff;
+    font-family: "Inter", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    min-height: 100vh;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .glass-panel {
+    @apply bg-slate-900/60 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

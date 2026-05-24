@@ -10,23 +10,19 @@ import { LayoutGrid, Calendar as CalendarIcon } from "lucide-react";
 
 function TournamentsContent() {
     const searchParams = useSearchParams();
-    const [viewMode, setViewMode] = useState<'list' | 'calendar'>('list');
-    const [searchQuery, setSearchQuery] = useState("");
-    const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+    const [viewMode, setViewMode] = useState<'list' | 'calendar'>(searchParams.get("tab") === "schedule" ? "calendar" : "list");
+    const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
+    const initialType = searchParams.get("type");
+    const [selectedTypes, setSelectedTypes] = useState<string[]>(initialType ? [initialType] : []);
     const [selectedStatuses, setSelectedStatuses] = useState<string[]>([]);
     const [selectedLocation, setSelectedLocation] = useState("");
     const [startDate, setStartDate] = useState("");
     const [endDate, setEndDate] = useState("");
 
     useEffect(() => {
-        const query = searchParams.get("q");
-        if (query) {
-            setSearchQuery(query);
-        }
-
-        const typeParam = searchParams.get("type");
-        if (typeParam) {
-            setSelectedTypes([typeParam]);
+        const q = searchParams.get("q");
+        if (q !== null && q !== searchQuery) {
+            setSearchQuery(q);
         }
     }, [searchParams]);
 
@@ -75,40 +71,45 @@ function TournamentsContent() {
 
             return matchesSearch && matchesType && matchesStatus && matchesLocation && matchesStartDate && matchesEndDate;
         }).sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
-    }, [searchQuery, selectedTypes, selectedStatuses, selectedLocation, startDate, endDate]);
+    }, [allTournaments, searchQuery, selectedTypes, selectedStatuses, selectedLocation, startDate, endDate]);
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            <div className="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-                <div>
-                    <h1 className="text-3xl font-bold text-white mb-2">大会一覧</h1>
-                    <p className="text-slate-400">開催予定のボウリング大会を探してエントリーしよう。</p>
+        <div className="relative min-h-screen bg-[#020813] selection:bg-[#3b69ff] selection:text-white pb-24">
+            {/* Premium Animated Background Gradients */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(59,105,255,0.1),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(227,53,215,0.05),transparent_40%)] mix-blend-screen pointer-events-none z-0 fixed"></div>
+            
+            <div className="container relative z-10 mx-auto px-4 py-8 md:py-12">
+                <div className="mb-10 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+                    <div className="relative">
+                        <div className="absolute -left-4 -top-4 w-20 h-20 bg-blue-500/20 blur-2xl rounded-full"></div>
+                        <h1 className="relative text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-3 tracking-tight">大会一覧</h1>
+                        <p className="relative text-slate-400 text-sm md:text-base font-medium">開催予定のボウリング大会を探してエントリーしよう。</p>
+                    </div>
+                    
+                    {/* View Toggle (Desktop Only) */}
+                    <div className="hidden sm:flex bg-[#061124]/80 backdrop-blur-md border border-white/10 rounded-xl p-1 shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+                        <button
+                            onClick={() => setViewMode('list')}
+                            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all text-sm font-bold
+                                ${viewMode === 'list' 
+                                    ? 'bg-blue-600/90 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]' 
+                                    : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
+                        >
+                            <LayoutGrid className="size-4" />
+                            リスト
+                        </button>
+                        <button
+                            onClick={() => setViewMode('calendar')}
+                            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all text-sm font-bold
+                                ${viewMode === 'calendar' 
+                                    ? 'bg-blue-600/90 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]' 
+                                    : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
+                        >
+                            <CalendarIcon className="size-4" />
+                            カレンダー
+                        </button>
+                    </div>
                 </div>
-                
-                {/* View Toggle (Desktop Only) */}
-                <div className="hidden sm:flex bg-slate-900 border border-white/10 rounded-lg p-1">
-                    <button
-                        onClick={() => setViewMode('list')}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
-                            ${viewMode === 'list' 
-                                ? 'bg-blue-600 text-white shadow-sm' 
-                                : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
-                    >
-                        <LayoutGrid className="size-4" />
-                        リスト
-                    </button>
-                    <button
-                        onClick={() => setViewMode('calendar')}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
-                            ${viewMode === 'calendar' 
-                                ? 'bg-blue-600 text-white shadow-sm' 
-                                : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
-                    >
-                        <CalendarIcon className="size-4" />
-                        カレンダー
-                    </button>
-                </div>
-            </div>
 
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
                 <aside className="lg:col-span-1">
@@ -132,12 +133,12 @@ function TournamentsContent() {
 
                 <div className="lg:col-span-3">
                     {/* View Toggle (Mobile Only) */}
-                    <div className="flex sm:hidden mb-6 bg-slate-900 border border-white/10 rounded-lg p-1 w-full max-w-sm mx-auto">
+                    <div className="flex sm:hidden mb-6 bg-[#061124]/80 backdrop-blur-md border border-white/10 rounded-xl p-1 w-full max-w-sm mx-auto shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
                         <button
                             onClick={() => setViewMode('list')}
-                            className={`flex-1 flex justify-center items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
+                            className={`flex-1 flex justify-center items-center gap-2 px-4 py-2.5 rounded-lg transition-all text-sm font-bold
                                 ${viewMode === 'list' 
-                                    ? 'bg-blue-600 text-white shadow-sm' 
+                                    ? 'bg-blue-600/90 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]' 
                                     : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
                         >
                             <LayoutGrid className="size-4" />
@@ -145,9 +146,9 @@ function TournamentsContent() {
                         </button>
                         <button
                             onClick={() => setViewMode('calendar')}
-                            className={`flex-1 flex justify-center items-center gap-2 px-4 py-2 rounded-md transition-all text-sm font-medium
+                            className={`flex-1 flex justify-center items-center gap-2 px-4 py-2.5 rounded-lg transition-all text-sm font-bold
                                 ${viewMode === 'calendar' 
-                                    ? 'bg-blue-600 text-white shadow-sm' 
+                                    ? 'bg-blue-600/90 text-white shadow-[0_0_15px_rgba(37,99,235,0.5)]' 
                                     : 'text-slate-400 hover:text-white hover:bg-white/5'}`}
                         >
                             <CalendarIcon className="size-4" />
@@ -174,6 +175,7 @@ function TournamentsContent() {
                     )}
                 </div>
             </div>
+        </div>
         </div>
     );
 }

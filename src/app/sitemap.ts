@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { getTournaments } from '@/data/mockTournaments'
 import { MOCK_ARTICLES } from '@/data/mockArticles'
+import { MOCK_PLAYERS } from '@/data/mockPlayers'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://bowlingnavi.com'
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/about',
         '/tournaments',
         '/columns',
+        '/organizers',
         '/contact',
         '/terms',
         '/privacy',
@@ -37,5 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }))
 
-    return [...routes, ...tournaments, ...articles]
+    // Dynamic player pages
+    const players = MOCK_PLAYERS.map((player) => ({
+        url: `${baseUrl}/players/${player.id}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }))
+
+    return [...routes, ...tournaments, ...articles, ...players]
 }

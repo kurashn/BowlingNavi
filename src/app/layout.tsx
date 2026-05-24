@@ -3,12 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { SvgSprite } from "@/components/SvgSprite";
 
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://bowlingnavi.com'),
     title: {
         default: "BowlingNavi -ボウナビ- | 関西のボウリング大会情報サイト",
         template: "%s | BowlingNavi -ボウナビ-",
@@ -65,6 +67,7 @@ export default function RootLayout({
                 </Script>
             </head>
             <body className={inter.className}>
+                <SvgSprite />
                 <div className="flex min-h-screen flex-col">
                     <Navbar />
                     <main className="flex-1">{children}</main>
