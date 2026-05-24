@@ -1,5 +1,6 @@
-import { ArrowLeft, ArrowRight, Send, TrendingUp, Users, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowLeft, Send, TrendingUp, Users, ShieldCheck, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { OrganizerForm } from "./OrganizerForm";
 
 export const metadata = {
     title: "大会主催者様へ（掲載のご案内）",
@@ -73,32 +74,21 @@ export default function OrganizersPage() {
                     </div>
                 </div>
 
-                {/* CTA Section */}
-                <div className="relative overflow-hidden rounded-3xl border border-blue-500/20 bg-gradient-to-b from-[#0a1936] to-[#020813] p-10 md:p-16 text-center shadow-2xl">
+                {/* CTA / Form Section */}
+                <div className="relative overflow-hidden rounded-3xl border border-blue-500/20 bg-gradient-to-b from-[#0a1936] to-[#020813] p-6 md:p-12 shadow-2xl max-w-4xl mx-auto">
                     <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-lg h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
                     
-                    <h2 className="mb-6 text-2xl md:text-3xl font-bold text-white">
-                        今すぐ大会情報を掲載申請する
-                    </h2>
-                    <p className="mb-10 text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                        以下の申請フォームより必要事項（大会名、日時、場所、参加費など）をご記入の上、送信してください。内容を確認後、担当者がサイトに掲載させていただきます。
-                    </p>
+                    <div className="text-center mb-10">
+                        <h2 className="mb-4 text-2xl md:text-3xl font-bold text-white">
+                            今すぐ大会情報を掲載申請する
+                        </h2>
+                        <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                            以下の申請フォームより必要事項をご記入の上、送信してください。<br className="hidden md:block" />
+                            内容を確認後、担当者がサイトに掲載させていただきます。
+                        </p>
+                    </div>
                     
-                    <a
-                        href="https://forms.gle/h6BXp1y7UVzmxGjRA"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 px-10 py-5 text-lg font-bold text-white transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(59,105,255,0.4)] relative group overflow-hidden"
-                    >
-                        <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out"></div>
-                        <Send className="size-5 relative z-10" />
-                        <span className="relative z-10">Googleフォームで申請する</span>
-                        <ArrowRight className="size-5 relative z-10 transition-transform group-hover:translate-x-1" />
-                    </a>
-                    
-                    <p className="mt-6 text-xs text-slate-500">
-                        ※クリックすると外部サイト（Googleフォーム）へ移動します。
-                    </p>
+                    <OrganizerForm />
                 </div>
             </div>
         </div>
