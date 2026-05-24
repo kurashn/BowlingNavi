@@ -49,7 +49,6 @@ export const MOCK_PLAYERS: PlayerProfile[] = [
         achievements: [],
         stats: [
             { label: "最高スコア", value: "300" },
-            { label: "公認パーフェクト", value: "3回" },
             { label: "アベレージ", value: "220+" },
         ],
         sponsorshipBenefits: [
