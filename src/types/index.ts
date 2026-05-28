@@ -52,7 +52,7 @@ export interface Article {
     title: string;
     excerpt: string;
     content: string; // HTML content for now
-    category: 'Guide' | 'Report' | 'Gear' | 'Technique';
+    category: string;
     publishedAt: string;
     thumbnailUrl: string;
     recommendedItems?: RecommendedItem[];
