@@ -17,6 +17,18 @@ export default async function ArticlePage({ params }: PageProps) {
         notFound();
     }
 
+    let processedContent = article.content
+        // 目次のラップ
+        .replace(/(<h2>目次.*?<\/h2>\s*<(?:ul|ol)>.*?<\/(?:ul|ol)>)/gs, '<div class="toc-wrapper">$1</div>')
+        // FAQのQ&Aのラップ
+        .replace(/<h3>Q\.\s*(.*?)<\/h3>(.*?(?=<h[23]>|$))/gs, (match, qText, aHtml) => {
+            let cleanA = aHtml.replace(/^\s*<p>A\.\s*/, '<p>');
+            return `<div class="faq-card">
+                      <div class="faq-q"><span class="faq-icon-q">Q</span><span class="faq-text">${qText}</span></div>
+                      <div class="faq-a"><span class="faq-icon-a">A</span><div class="faq-text-content">${cleanA}</div></div>
+                    </div>`;
+        });
+
     return (
         <div className="min-h-screen bg-slate-50 pb-20 text-slate-800">
             {/* Header Section */}
@@ -121,8 +133,9 @@ export default async function ArticlePage({ params }: PageProps) {
                         prose-h2:before:content-none prose-h2:border-b-0
                         
                         /* H3 Styling */
-                        prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-xl prose-h3:font-bold prose-h3:text-slate-800
-                        prose-h3:border-l-0 prose-h3:bg-transparent prose-h3:pl-0 prose-h3:border-b prose-h3:border-slate-200 prose-h3:pb-2
+                        prose-h3:mt-10 prose-h3:mb-6 prose-h3:text-[1.4rem] prose-h3:font-extrabold prose-h3:text-slate-900
+                        prose-h3:border-l-[6px] prose-h3:border-blue-500 prose-h3:bg-gradient-to-r prose-h3:from-blue-50 prose-h3:to-transparent prose-h3:pl-5 prose-h3:py-4 prose-h3:rounded-r-lg
+                        prose-h3:shadow-[0_2px_4px_rgba(0,0,0,0.02)]
                         
                         /* Paragraphs */
                         prose-p:leading-[1.8] prose-p:text-slate-700 prose-p:mb-6
@@ -141,14 +154,15 @@ export default async function ArticlePage({ params }: PageProps) {
                         prose-li:text-slate-700 prose-li:leading-[1.8]
                         
                         /* Unordered Lists (UL) */
-                        prose-ul:my-6 prose-ul:list-none prose-ul:pl-4 prose-ul:pr-4 prose-ul:py-4 prose-ul:space-y-2 [&_ul]:bg-slate-50 [&_ul]:rounded-xl [&_ul]:border [&_ul]:border-slate-100
-                        [&_ul>li]:relative [&_ul>li]:pl-6
-                        [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-3 [&_ul>li]:before:size-1.5 [&_ul>li]:before:rounded-full [&_ul>li]:before:bg-blue-500
+                        prose-ul:my-6 prose-ul:list-none prose-ul:px-6 prose-ul:py-5 prose-ul:space-y-3 [&_ul]:bg-white [&_ul]:rounded-xl [&_ul]:shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] [&_ul]:border [&_ul]:border-slate-100
+                        [&_ul>li]:relative [&_ul>li]:pl-7 [&_ul>li]:text-slate-700
+                        [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-[10px] [&_ul>li]:before:size-2 [&_ul>li]:before:rounded-full [&_ul>li]:before:bg-blue-500 [&_ul>li]:before:shadow-[0_0_8px_rgba(59,130,246,0.5)]
                         
                         /* Ordered Lists (OL) */
-                        prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-10 prose-ol:pr-4 prose-ol:py-4 prose-ol:space-y-2 [&_ol]:bg-slate-50 [&_ol]:rounded-xl [&_ol]:border [&_ol]:border-slate-100
-                        [&_ol>li]:pl-2
-                        [&_ol>li::marker]:font-bold [&_ol>li::marker]:text-blue-600
+                        prose-ol:my-6 prose-ol:list-none prose-ol:px-6 prose-ol:py-5 prose-ol:space-y-3 [&_ol]:bg-white [&_ol]:rounded-xl [&_ol]:shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] [&_ol]:border [&_ol]:border-slate-100
+                        [&_ol>li]:relative [&_ol>li]:pl-9 [&_ol>li]:text-slate-700
+                        [counter-reset:ol-counter] [&_ol>li]:counter-increment-[ol-counter]
+                        [&_ol>li]:before:content-[counter(ol-counter)] [&_ol>li]:before:absolute [&_ol>li]:before:left-0 [&_ol>li]:before:top-[2px] [&_ol>li]:before:flex [&_ol>li]:before:items-center [&_ol>li]:before:justify-center [&_ol>li]:before:size-6 [&_ol>li]:before:rounded-full [&_ol>li]:before:bg-blue-600 [&_ol>li]:before:text-white [&_ol>li]:before:text-[11px] [&_ol>li]:before:font-bold
                         
                         /* Tables */
                         prose-table:my-8 prose-table:w-full prose-table:border-separate prose-table:border-spacing-0 prose-table:rounded-lg prose-table:border prose-table:border-slate-200

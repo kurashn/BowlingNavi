@@ -86,4 +86,99 @@
     padding: 0 0.2em;
     border-radius: 2px;
   }
+
+  /* TOC (目次) */
+  .toc-wrapper {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 40px 0;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);
+  }
+  .toc-wrapper h2 {
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    font-size: 1.25rem !important;
+    border: none !important;
+    background: none !important;
+    padding: 0 !important;
+    text-align: center;
+    color: #334155 !important;
+  }
+  .toc-wrapper ul, .toc-wrapper ol {
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* FAQ */
+  .faq-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin: 24px 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px -2px rgb(0 0 0 / 0.05);
+  }
+  .faq-q {
+    background: #f1f5f9;
+    padding: 16px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .faq-a {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .faq-icon-q {
+    background: #3b82f6;
+    color: white;
+    font-weight: 900;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+  }
+  .faq-icon-a {
+    background: #ef4444;
+    color: white;
+    font-weight: 900;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+  }
+  .faq-text {
+    font-weight: bold;
+    color: #1e293b;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+  .faq-text-content {
+    color: #334155;
+    line-height: 1.7;
+    margin-top: 2px;
+  }
+  .faq-text-content p {
+    margin: 0 0 12px 0 !important;
+  }
+  .faq-text-content p:last-child {
+    margin: 0 !important;
+  }
 }
