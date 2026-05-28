@@ -31,6 +31,7 @@ export function OrganizerForm() {
                 setIsSubmitting(false);
             }
         } catch (error) {
+            console.error("大会掲載申請エラー:", error);
             alert("エラーが発生しました。");
             setIsSubmitting(false);
         }

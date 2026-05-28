@@ -33,6 +33,7 @@ export default function ContactPage() {
                 setIsSubmitting(false);
             }
         } catch (error) {
+            console.error("お問い合わせ送信エラー:", error);
             alert("エラーが発生しました。");
             setIsSubmitting(false);
         }

@@ -5,8 +5,16 @@
  */
 
 import { MOCK_ARTICLES } from "@/data/mockArticles";
+import { draftMode } from "next/headers";
 
 const WP_API_URL = process.env.WORDPRESS_API_URL || "http://cms.bowlingnavi.com/wp-json/wp/v2";
+
+// Basic Auth for fetching drafts
+const WP_USER = process.env.WP_USER || "shun";
+const WP_APP_PASSWORD = process.env.WP_APP_PASSWORD || "d8FQSfgZljMLhZVsVJytgB11";
+const getAuthHeader = () => {
+    return `Basic ${Buffer.from(`${WP_USER}:${WP_APP_PASSWORD}`).toString('base64')}`;
+};
 
 // --- WordPress API レスポンス型 ---
 
@@ -220,13 +228,25 @@ export async function getWPPostBySlug(slug: string): Promise<WPArticle | null> {
     }
 
     try {
+        const { isEnabled } = await draftMode();
+        
         const params = new URLSearchParams({
             _embed: "true",
             slug,
         });
 
+        if (isEnabled) {
+            params.set("status", "any");
+        }
+
+        const headers: HeadersInit = {};
+        if (isEnabled) {
+            headers["Authorization"] = getAuthHeader();
+        }
+
         const res = await fetch(`${WP_API_URL}/posts?${params.toString()}`, {
-            next: { revalidate: 60 },
+            headers,
+            next: { revalidate: isEnabled ? 0 : 60 },
         });
 
         if (!res.ok) {
@@ -243,6 +263,40 @@ export async function getWPPostBySlug(slug: string): Promise<WPArticle | null> {
         return mapPost(data[0]);
     } catch (error) {
         console.error("Failed to fetch WordPress post:", error);
+        return null;
+    }
+}
+
+/**
+ * IDで個別記事を取得 (プレビュー用)
+ */
+export async function getWPPostById(id: number | string): Promise<WPArticle | null> {
+    try {
+        const { isEnabled } = await draftMode();
+        
+        const params = new URLSearchParams({
+            _embed: "true",
+        });
+
+        const headers: HeadersInit = {};
+        if (isEnabled) {
+            headers["Authorization"] = getAuthHeader();
+        }
+
+        const res = await fetch(`${WP_API_URL}/posts/${id}?${params.toString()}`, {
+            headers,
+            next: { revalidate: 0 }, // プレビュー時は常に最新
+        });
+
+        if (!res.ok) {
+            console.error(`WordPress API error: ${res.status}`);
+            return null;
+        }
+
+        const data: WPPost = await res.json();
+        return mapPost(data);
+    } catch (error) {
+        console.error("Failed to fetch WordPress post by ID:", error);
         return null;
     }
 }
