@@ -138,7 +138,7 @@ export default async function PreviewArticlePage({ params }: PageProps) {
                         prose-strong:font-bold prose-strong:text-slate-900
                         
                         /* Mark (Highlighter) */
-                        [&_mark]:bg-cyan-100 [&_mark]:text-slate-900 [&_mark]:px-1 [&_mark]:rounded [&_mark]:font-bold
+                        [&_mark]:bg-transparent [&_mark]:text-slate-900 [&_mark]:px-1 [&_mark]:rounded [&_mark]:font-bold
                         
                         /* Lists */
                         prose-li:text-slate-700 prose-li:leading-[1.8]
