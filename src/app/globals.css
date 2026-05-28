@@ -63,3 +63,27 @@
     display: none;
   }
 }
+
+@layer components {
+  /* スマホ等でテーブルが縦に潰れないように横スクロール化 */
+  .prose table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prose th, .prose td {
+    white-space: nowrap !important;
+    min-width: 100px;
+  }
+  
+  /* マーカー装飾 */
+  .prose mark {
+    background: linear-gradient(transparent 60%, rgba(255, 235, 59, 0.6) 60%);
+    color: inherit;
+    font-weight: bold;
+    padding: 0 0.2em;
+    border-radius: 2px;
+  }
+}
