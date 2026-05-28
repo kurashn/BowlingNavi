@@ -47,6 +47,9 @@ export interface WPPost {
             slug: string;
         }>>;
     };
+    fcb_seo_title?: string;
+    fcb_seo_keyword?: string;
+    fcb_seo_description?: string;
 }
 
 export interface WPCategory {
@@ -68,6 +71,9 @@ export interface WPArticle {
     categoryName: string;
     publishedAt: string;
     thumbnailUrl: string;
+    seoTitle?: string;
+    seoKeyword?: string;
+    seoDescription?: string;
 }
 
 export interface WPPostsResponse {
@@ -79,9 +85,15 @@ export interface WPPostsResponse {
 // モックデータをWPArticle型に変換
 const WP_MOCK_ARTICLES: WPArticle[] = MOCK_ARTICLES.map(a => ({
     ...a,
-    categoryName: a.category === 'Gear' ? 'ギア・道具' : 
-                  a.category === 'Guide' ? '初心者ガイド' : 
-                  a.category === 'Technique' ? 'スキルアップ' : 
+    categoryName: a.category === 'gear' ? 'ボウリング用品' :
+                  a.category === 'technique' ? 'スキルアップ' :
+                  a.category === 'knowledge' ? 'ルール・知識' :
+                  a.category === 'guide' ? '初心者ガイド' :
+                  a.category === 'others' ? 'その他' :
+                  // 旧スラッグの後方互換
+                  a.category === 'Gear' ? 'ボウリング用品' :
+                  a.category === 'Technique' ? 'スキルアップ' :
+                  a.category === 'Guide' ? '初心者ガイド' :
                   a.category
 }));
 
@@ -98,11 +110,14 @@ function mapPost(post: WPPost): WPArticle {
     let thumbnailUrl = "";
     if (post._embedded?.["wp:featuredmedia"]?.[0]) {
         const media = post._embedded["wp:featuredmedia"][0];
-        thumbnailUrl =
+        const rawUrl =
             media.media_details?.sizes?.large?.source_url ||
             media.media_details?.sizes?.full?.source_url ||
             media.source_url ||
             "";
+        // http://cms.bowlingnavi.com/wp-content/... を /wp-content/... に変換
+        // → Next.jsのrewritesでプロキシされるためMixed Content問題を解消
+        thumbnailUrl = rawUrl.replace(/^https?:\/\/cms\.bowlingnavi\.com/, "");
     }
 
     // カテゴリー情報取得
@@ -123,6 +138,9 @@ function mapPost(post: WPPost): WPArticle {
         categoryName,
         publishedAt: post.date,
         thumbnailUrl,
+        seoTitle: post.fcb_seo_title || "",
+        seoKeyword: post.fcb_seo_keyword || "",
+        seoDescription: post.fcb_seo_description || "",
     };
 }
 
@@ -278,10 +296,9 @@ export async function getWPPostById(id: number | string): Promise<WPArticle | nu
             _embed: "true",
         });
 
-        const headers: HeadersInit = {};
-        if (isEnabled) {
-            headers["Authorization"] = getAuthHeader();
-        }
+        const headers: HeadersInit = {
+            "Authorization": getAuthHeader()
+        };
 
         const res = await fetch(`${WP_API_URL}/posts/${id}?${params.toString()}`, {
             headers,
@@ -306,9 +323,11 @@ export async function getWPPostById(id: number | string): Promise<WPArticle | nu
  */
 export async function getWPCategories(): Promise<WPCategory[]> {
     const MOCK_CATEGORIES: WPCategory[] = [
-        { id: 1, name: "ギア・道具", slug: "Gear", count: 1, description: "" },
-        { id: 2, name: "初心者ガイド", slug: "Guide", count: 1, description: "" },
-        { id: 3, name: "スキルアップ", slug: "Technique", count: 1, description: "" },
+        { id: 1, name: "ルール・知識",   slug: "knowledge", count: 1, description: "" },
+        { id: 2, name: "スキルアップ",   slug: "technique", count: 1, description: "" },
+        { id: 3, name: "ボウリング用品", slug: "gear",      count: 1, description: "" },
+        { id: 4, name: "初心者ガイド",   slug: "guide",     count: 1, description: "" },
+        { id: 5, name: "その他",         slug: "others",    count: 1, description: "" },
     ];
 
     try {

@@ -1,4 +1,292 @@
-Main KW,ENG Topic,SV,KD,Long tail KWs,Status,Assigned to,WP URL,Published URL
-ボウリング 親指 抜けない 原因 対策,bowling thumb stuck,1000,10,,Draft,Antigravity,http://cms.bowlingnavi.com/wp-admin/post.php?post=9&action=edit,
-ボウリング 200アップ,bowling 200 score,2000,20,,,,,
-ボウリング 大会 探し方,how to find bowling tournaments,500,5,,,,,
+Category,Main KW,Long tail KWs,Slug,Status,WP URL,Published URL
+gear,ハウスボール 選び方,"ハウスボール 選び方
+ハウスボール 重さ",bowling-ball-selection-complete-guide,Published,,https://www.bowlingnavi.com/bowling-ball-selection-complete-guide
+technique,ボウリング ストライク,"ボウリング ストライク コツ
+ボウリング ストライク 狙い方",bowling-tips-beginner,Published,,https://www.bowlingnavi.com/bowling-tips-beginner
+knowledge,ボウリング 平均スコア,"ボウリング 平均スコア 男性
+ボウリング 平均スコア 女性",bowling-average-score-guide,Published,,https://www.bowlingnavi.com/bowling-average-score-guide
+knowledge,プロチャレンジ 参加方法,"プロチャレンジ 参加方法
+プロチャレンジ マナー",pro-challenge-guide-2026,Published,,https://www.bowlingnavi.com/pro-challenge-guide-2026
+gear,ボウリングバッグ おすすめ,"ボウリングバッグ 1個用
+ボウリングバッグ キャスター",bowling-bag-recommendation-2026,Published,,https://www.bowlingnavi.com/bowling-bag-recommendation-2026
+technique,ボウリング カーブ,"ボウリング カーブ 投げ方
+ボウリング カーブ 曲がらない",how-to-throw-curve-2026,Published,,https://www.bowlingnavi.com/how-to-throw-curve-2026
+gear,マイボール 選び方,"マイボール 選び方 初心者
+マイボール 重さ",bowling-ball-recommendation-2026,Published,,https://www.bowlingnavi.com/bowling-ball-recommendation-2026
+gear,ボウリングシューズ おすすめ,"ボウリングシューズ おすすめ 安い
+ボウリングシューズ 3000円",bowling-shoes-recommendation-2026,Published,,https://www.bowlingnavi.com/bowling-shoes-recommendation-2026
+knowledge,ボウリング 用語集,"ボウリング 用語 初心者
+ボウリング 用語解説",bowling-terms-beginner,Published,,https://www.bowlingnavi.com/bowling-terms-beginner
+gear,ボウリング マイボール 初心者セット,"ボウリング マイボール 初心者セット
+ボウリング スターターセット おすすめ
+ボウリング マイボール 安い",my-ball-starter-set,Draft,http://cms.bowlingnavi.com/wp-admin/post.php?post=19&action=edit,
+gear,ボウリング ボール メーカー 比較,"ボウリング ボール メーカー 比較
+ボウリング ボール 種類 違い
+ストーム ブランズウィック 違い",ball-maker-comparison,Not Started,,
+gear,ボウリング ボール 最新,"ボウリング ボール 最新 2026
+ボウリング ボール 新作 評価
+ボウリング ボール 最新 おすすめ",ball-latest-2026,Not Started,,
+gear,ボウリング シューズ メーカー 比較,"ボウリング シューズ メーカー 比較
+ボウリング シューズ デクスター abs 違い
+ボウリング シューズ 選び方",shoes-maker-comparison,Not Started,,
+gear,ボウリング シューズ デクスター,"ボウリング シューズ デクスター おすすめ
+ボウリング シューズ デクスター サイズ感
+ボウリング シューズ デクスター 評判",shoes-dexter,Not Started,,
+gear,ボウリング シューズ ABS,"ボウリング シューズ abs おすすめ
+ボウリング シューズ abs S-380
+ボウリング シューズ abs サイズ感",shoes-abs,Not Started,,
+gear,ボウリング シューズ ダイヤル式,"ボウリング シューズ ダイヤル式 おすすめ
+ボウリング シューズ Boa
+ボウリング シューズ 紐なし",shoes-dial,Not Started,,
+gear,ボウリング クリーナー おすすめ,"ボウリング クリーナー おすすめ
+ボウリング クリーナー 効果
+ボウリング クリーナー 使い方",cleaner-recommendation,Not Started,,
+gear,ボウリング クリーナー 代用,"ボウリング クリーナー 代用
+ボウリング ボール 拭くもの 代用
+ボウリング マイペット 代用",cleaner-substitute,Not Started,,
+gear,ボウリング テープ おすすめ,"ボウリング テープ おすすめ
+ボウリング 親指 テープ おすすめ
+ボウリング インサートテープ 比較",tape-recommendation,Not Started,,
+gear,ボウリング リスタイ おすすめ,"ボウリング リスタイ おすすめ
+ボウリング リスタイ 初心者
+ボウリング リスタイ メカテクター 違い",wrist-support-recommendation,Not Started,,
+gear,ボウリング メカテクター 比較,"ボウリング メカテクター 比較
+ボウリング メカテクター MD-4
+ボウリング メカテクター おすすめ",mechatector-comparison,Not Started,,
+gear,ボウリング グローブ おすすめ,"ボウリング グローブ おすすめ
+ボウリング グローブ 初心者
+ボウリング グローブ 効果",glove-recommendation,Not Started,,
+gear,ボウリング バッグ 2個用,"ボウリング バッグ 2個用 おすすめ
+ボウリング バッグ 2個用 キャスター
+ボウリング バッグ 2個用 コンパクト",bag-2ball,Not Started,,
+gear,ボウリング バッグ 3個用,"ボウリング バッグ 3個用 おすすめ
+ボウリング バッグ 3個用 キャスター
+ボウリング バッグ 3個用 比較",bag-3ball,Not Started,,
+gear,ボウリング ウェア メンズ,"ボウリング ウェア メンズ おすすめ
+ボウリング ウェア メンズ おしゃれ
+ボウリング ウェア メンズ プロ",wear-mens,Not Started,,
+gear,ボウリング ウェア レディース,"ボウリング ウェア レディース おすすめ
+ボウリング ウェア レディース 韓国
+ボウリング ウェア レディース おしゃれ",wear-womens,Not Started,,
+gear,ボウリング ポロシャツ おしゃれ,"ボウリング ポロシャツ おしゃれ
+ボウリング ユニフォーム ポロシャツ
+ボウリング ポロシャツ チーム",polo-shirt-stylish,Not Started,,
+gear,ボウリング インサートテープ 貼り方,"ボウリング インサートテープ 貼り方
+ボウリング インサートテープ 枚数
+ボウリング インサートテープ 剥がれる",insert-tape-how-to,Not Started,,
+gear,ボウリング サポーター 肘,"ボウリング サポーター 肘
+ボウリング 肘 痛い サポーター
+ボウリング 肘 サポーター おすすめ",supporter-elbow,Not Started,,
+gear,ボウリング サポーター 手首,"ボウリング サポーター 手首
+ボウリング 腱鞘炎 手首 サポーター
+ボウリング 手首 サポーター 選び方",supporter-wrist,Not Started,,
+gear,ボウリング タオル おすすめ,"ボウリング タオル おすすめ
+ボウリング ボール拭き タオル
+ボウリング マイクロファイバー タオル",towel-recommendation,Not Started,,
+gear,ボウリング シャミー おすすめ,"ボウリング シャミー おすすめ
+ボウリング シャミー 洗い方
+ボウリング シャミー 効果",shammy-recommendation,Not Started,,
+gear,ボウリング アームスリーブ,"ボウリング アームスリーブ 効果
+ボウリング アームカバー おすすめ
+ボウリング アームスリーブ プロ",arm-sleeve,Not Started,,
+gear,ボウリング 用品 どこで買う,"ボウリング 用品 どこで買う
+ボウリング 用品 ネットショップ おすすめ
+ボウリング 用品 安い",where-to-buy-gear,Not Started,,
+knowledge,ボウリング場 大阪 安い,"ボウリング場 大阪 安い
+ボウリング 大阪 安い 学生
+ボウリング 大阪 投げ放題 安い",osaka-cheap-alley,Not Started,,
+knowledge,ボウリング場 大阪 投げ放題,"ボウリング場 大阪 投げ放題
+ボウリング 大阪 投げ放題 土日
+ボウリング 大阪 投げ放題 おすすめ",osaka-all-you-can-play,Not Started,,
+knowledge,ボウリング場 京都 安い,"ボウリング場 京都 安い
+ボウリング 京都 安い 学生
+ボウリング 京都 おすすめ",kyoto-cheap-alley,Not Started,,
+knowledge,ボウリング場 京都 投げ放題,"ボウリング場 京都 投げ放題
+ボウリング 京都 投げ放題 安い
+ボウリング 京都 投げ放題 土日",kyoto-all-you-can-play,Not Started,,
+knowledge,ボウリング場 兵庫 安い,"ボウリング場 兵庫 安い
+ボウリング場 神戸 安い
+ボウリング 兵庫 安い 学生",hyogo-cheap-alley,Not Started,,
+knowledge,ボウリング場 神戸 投げ放題,"ボウリング場 神戸 投げ放題
+ボウリング 神戸 投げ放題 安い
+ボウリング 三宮 投げ放題",kobe-all-you-can-play,Not Started,,
+knowledge,ボウリング ラウンドワン 料金 大阪,"ボウリング ラウンドワン 料金 大阪
+ラウンドワン 大阪 梅田 料金
+ラウンドワン 千日前 ボウリング 料金",round1-osaka-price,Not Started,,
+knowledge,ボウリング 大会 探し方,"ボウリング 大会 探し方
+ボウリング アマチュア 大会 探し方
+ボウリング 承認大会 探し方",how-to-find-tournaments,Not Started,,
+knowledge,ボウリング アマチュア 大会,"ボウリング アマチュア 大会
+ボウリング 草大会
+ボウリング 大会 初心者",amateur-tournaments,Not Started,,
+knowledge,ボウリング リーグ戦 参加,"ボウリング リーグ戦 参加方法
+ボウリング リーグ戦 初心者
+ボウリング リーグ戦 メリット",join-league,Not Started,,
+knowledge,ボウリング 競技 初心者,"ボウリング 競技 初心者
+マイボウラー 初心者 大会
+ボウリング 競技化",competitive-beginner,Not Started,,
+knowledge,ボウリング 競技 人口,"ボウリング 競技 人口
+ボウリング マイボウラー 人口
+ボウリング 競技人口 推移",competitive-population,Not Started,,
+knowledge,ボウリング プロボウラー 関西,"ボウリング プロボウラー 関西
+関西 プロチャレ
+大阪 プロボウラー 予定",kansai-pro-bowlers,Not Started,,
+knowledge,ボウリング 大会 種類,"ボウリング 大会 種類
+ボウリング 公式戦 種類
+ボウリング 承認大会とは",tournament-types,Not Started,,
+knowledge,ボウリング ハンデ 計算 大会,"ボウリング ハンデ 計算 大会
+ボウリング 大会 オフィシャルハンデ
+ボウリング ハンデ 決め方",tournament-handicap,Not Started,,
+technique,ボウリング 投げ方 コツ,"ボウリング 投げ方 コツ
+ボウリング 投げ方 初心者
+ボウリング 投げ方 基本",throw-basics,Not Started,,
+technique,ボウリング ストレート 投げ方,"ボウリング ストレート 投げ方
+ボウリング ストレート コツ
+ボウリング ストレート 威力",straight-throw-tips,Not Started,,
+technique,ボウリング 両手投げ やり方,"ボウリング 両手投げ やり方
+ボウリング 両手投げ コツ
+ボウリング 両手投げ プロ",two-handed-tips,Not Started,,
+technique,ボウリング サムレス 投げ方,"ボウリング サムレス 投げ方
+ボウリング サムレス コツ
+ボウリング サムレス メリット",thumbless-tips,Not Started,,
+technique,ボウリング ローダウン やり方,"ボウリング ローダウン やり方
+ボウリング ローダウン 練習
+ボウリング ローダウン 手首",lowdown-tips,Not Started,,
+technique,ボウリング アプローチ 助走,"ボウリング アプローチ 助走
+ボウリング 助走 コツ
+ボウリング 助走 歩数",approach-steps,Not Started,,
+technique,ボウリング 5歩助走 コツ,"ボウリング 5歩助走 コツ
+ボウリング 5歩助走 メリット
+ボウリング 4歩助走 5歩助走 違い",5-step-approach,Not Started,,
+technique,ボウリング リリース 手首,"ボウリング リリース 手首
+ボウリング リリース コツ
+ボウリング リリース 位置",release-wrist,Not Started,,
+technique,ボウリング スパット 狙い方,"ボウリング スパット 狙い方
+ボウリング スパット 見方
+ボウリング 立ち位置 スパット",aiming-spats,Not Started,,
+technique,ボウリング 立ち位置 合わせ方,"ボウリング 立ち位置 合わせ方
+ボウリング 立ち位置 基本
+ボウリング 立ち位置 ストライク",standing-position-adjust,Not Started,,
+technique,ボウリング 回転 かけ方,"ボウリング 回転 かけ方
+ボウリング 回転 コツ
+ボウリング 回転数 上げる",how-to-spin,Not Started,,
+technique,ボウリング スピード 上げ方,"ボウリング スピード 上げ方
+ボウリング スピード 出ない
+ボウリング 球速 理想",increase-speed,Not Started,,
+technique,ボウリング コントロール 良くする,"ボウリング コントロール 良くする
+ボウリング コントロール 安定
+ボウリング コントロール 練習",improve-control,Not Started,,
+technique,ボウリング 親指 抜けない,"ボウリング 親指 抜けない
+ボウリング 親指 痛い
+ボウリング 親指 向き",thumb-release,Not Started,,
+technique,ボウリング 薬指 痛い,"ボウリング 薬指 痛い
+ボウリング 指 痛い
+ボウリング 指の入れ方",finger-pain,Not Started,,
+technique,ボウリング フォーム 綺麗,"ボウリング フォーム 綺麗
+ボウリング フォーム 基本
+ボウリング 投球フォーム 安定",beautiful-form,Not Started,,
+technique,ボウリング スペア コツ,"ボウリング スペア コツ
+ボウリング スペア 取り方
+ボウリング スペア アングル",spare-tips,Not Started,,
+technique,ボウリング スプリット 取り方,"ボウリング スプリット 取り方
+ボウリング スプリット 確率
+ボウリング スプリット メイク",split-make,Not Started,,
+technique,ボウリング ガター 防止,"ボウリング ガター 防止
+ボウリング ガターばかり
+ボウリング ガター 原因",gutter-prevention,Not Started,,
+technique,ボウリング 左利き メリット,"ボウリング 左利き メリット
+ボウリング 左利き 有利
+ボウリング 左利き レーン",left-handed-advantage,Not Started,,
+technique,ボウリング 構え方 ボールの位置,"ボウリング 構え方 ボールの位置
+ボウリング 構え方 基本
+ボウリング 構え方 高さ",stance-position,Not Started,,
+technique,ボウリング スイング 軌道,"ボウリング スイング 軌道
+ボウリング スイング まっすぐ
+ボウリング スイング 力む",swing-path,Not Started,,
+technique,ボウリング フックボール 投げ方,"ボウリング フックボール 投げ方
+ボウリング フック カーブ 違い
+ボウリング フック コツ",hook-ball-tips,Not Started,,
+technique,ボウリング カーブ 曲がりすぎる,"ボウリング カーブ 曲がりすぎる
+ボウリング カーブ 曲がらない
+ボウリング カーブ 調整",curve-adjust,Not Started,,
+technique,ボウリング 狙う場所,"ボウリング 狙う場所
+ボウリング 狙う場所 初心者
+ボウリング 狙う場所 コツ",where-to-aim,Not Started,,
+knowledge,ボウリング ルール 簡単,"ボウリング ルール 簡単
+ボウリング ルール 子供
+ボウリング ルール 点数",rules-simple,Not Started,,
+knowledge,ボウリング スコア 計算方法,"ボウリング スコア 計算方法
+ボウリング スコア 計算 アプリ
+ボウリング スコア 見方",score-calculation-method,Not Started,,
+knowledge,ボウリング 10フレーム 計算,"ボウリング 10フレーム 計算
+ボウリング 10フレーム 3回
+ボウリング 10フレーム ストライク",10th-frame-rules,Not Started,,
+knowledge,ボウリング ターキー 確率,"ボウリング ターキー 確率
+ボウリング ターキー 点数
+ボウリング ターキー 語源",turkey-probability,Not Started,,
+knowledge,ボウリング パーフェクト 賞金,"ボウリング パーフェクト 賞金
+ボウリング パーフェクト 確率
+ボウリング パーフェクト 難易度",perfect-game-prize,Not Started,,
+knowledge,ボウリング アメリカン方式,"ボウリング アメリカン方式
+ボウリング ヨーロピアン方式
+ボウリング アメリカン方式 理由",american-style-rules,Not Started,,
+knowledge,ボウリング 歴史 起源,"ボウリング 歴史 起源
+ボウリング 歴史 日本
+ボウリング 歴史 エジプト",bowling-history-origin,Not Started,,
+knowledge,ボウリング マナー 服装,"ボウリング マナー 服装
+ボウリング マナー 同時
+ボウリング マナー 悪い",bowling-manners-outfit,Not Started,,
+knowledge,ボウリング プロテスト 合格率,"ボウリング プロテスト 合格率
+ボウリング プロテスト 2026
+ボウリング プロテスト 費用",pro-test-pass-rate,Not Started,,
+knowledge,ボウリング ピン 配置,"ボウリング ピン 配置
+ボウリング ピン 番号
+ボウリング ピン 重さ",pin-layout,Not Started,,
+knowledge,ボウリング オイル パターン,"ボウリング オイル パターン
+ボウリング オイル 読み方
+ボウリング オイル 変化",oil-pattern,Not Started,,
+others,ボウリング デート 服装,"ボウリング デート 服装
+ボウリング デート 脈あり
+ボウリング デート スコア",date-outfit,Not Started,,
+others,ボウリング 筋肉痛 腕,"ボウリング 筋肉痛 腕
+ボウリング 筋肉痛 お尻
+ボウリング 筋肉痛 いつ治る",muscle-pain-arm,Not Started,,
+others,ボウリング 腰痛 原因,"ボウリング 腰痛 原因
+ボウリング 腰痛 対策
+ボウリング 腰痛 ストレッチ",lower-back-pain-cause,Not Started,,
+others,ボウリング ダイエット 消費カロリー,"ボウリング ダイエット 消費カロリー
+ボウリング ダイエット 効果
+ボウリング ダイエット 頻度",diet-calories,Not Started,,
+others,ボウリング 痩せる 部位,"ボウリング 痩せる 部位
+ボウリング 痩せる 投げ方
+ボウリング 痩せる 理由",lose-weight-parts,Not Started,,
+others,ボウリング 子供 何歳から,"ボウリング 子供 何歳から
+ボウリング 幼児 いつから
+ボウリング 子供 料金",kids-bowling-age,Not Started,,
+others,ボウリング ガターなし 年齢,"ボウリング ガターなし 年齢
+ボウリング ガターなし いつまで
+ボウリング ガターなし 設定",no-gutter-age,Not Started,,
+others,ボウリング 飲み会 罰ゲーム,"ボウリング 飲み会 罰ゲーム
+ボウリング 飲み会 企画
+ボウリング 飲み会 盛り上がる",drinking-party-penalty,Not Started,,
+others,ボウリング イベント 景品,"ボウリング イベント 景品
+ボウリング 大会 景品 おすすめ
+ボウリング イベント 挨拶",event-prizes,Not Started,,
+others,ボウリング 靴下 忘れた,"ボウリング 靴下 忘れた
+ボウリング 靴下 必須
+ボウリング 靴下 販売",forgot-socks,Not Started,,
+knowledge,ボーリング ボウリング 違い,"ボーリング ボウリング 違い
+ボーリング ボウリング どっちが正しい
+ボーリング ボウリング 由来",bowling-spelling-diff,Not Started,,
+knowledge,ボウリング 漢字 当て字,"ボウリング 漢字 当て字
+ボウリング 漢字 表記
+ボウリング 漢字 由来",bowling-kanji-chars,Not Started,,
+knowledge,ボウリング 英語 発音,"ボウリング 英語 発音
+ボウリング 英語 スペル
+ボウリング をする 英語",bowling-english-pronunciation,Not Started,,
+knowledge,ボウリング アベレージ 150,"ボウリング アベレージ 150
+ボウリング アベレージ 150 レベル
+ボウリング アベレージ 150 行かない",average-150-level,Not Started,,
+knowledge,ボウリング アベレージ 200,"ボウリング アベレージ 200
+ボウリング アベレージ 200 レベル
+ボウリング アベレージ 200 割合",average-200-level,Not Started,,

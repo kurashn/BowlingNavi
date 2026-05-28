@@ -201,22 +201,26 @@ export async function generateMetadata({ params }: PageProps) {
         };
     }
 
+    const title = article.seoTitle || article.title;
+    const description = article.seoDescription || article.excerpt;
+
     return {
-        title: article.title,
-        description: article.excerpt,
+        title: title,
+        description: description,
+        keywords: article.seoKeyword || "",
         openGraph: {
-            title: article.title,
-            description: article.excerpt,
+            title: title,
+            description: description,
             type: "article",
             url: `/${article.id}`,
             images: article.thumbnailUrl
-                ? [{ url: article.thumbnailUrl, width: 1200, height: 630, alt: article.title }]
+                ? [{ url: article.thumbnailUrl, width: 1200, height: 630, alt: title }]
                 : [],
         },
         twitter: {
             card: "summary_large_image",
-            title: article.title,
-            description: article.excerpt,
+            title: title,
+            description: description,
             images: article.thumbnailUrl ? [article.thumbnailUrl] : [],
         },
     };
