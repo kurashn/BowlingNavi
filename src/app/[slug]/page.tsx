@@ -19,9 +19,9 @@ export default async function ArticlePage({ params }: PageProps) {
 
     let processedContent = article.content
         // 目次のラップ
-        .replace(/(<h2>目次.*?<\/h2>\s*<(?:ul|ol)>.*?<\/(?:ul|ol)>)/gs, '<div class="toc-wrapper">$1</div>')
+        .replace(/(<h2>目次[\s\S]*?<\/h2>\s*<(?:ul|ol)>[\s\S]*?<\/(?:ul|ol)>)/g, '<div class="toc-wrapper">$1</div>')
         // FAQのQ&Aのラップ
-        .replace(/<h3>Q\.\s*(.*?)<\/h3>(.*?(?=<h[23]>|$))/gs, (match, qText, aHtml) => {
+        .replace(/<h3>Q\.\s*([\s\S]*?)<\/h3>([\s\S]*?(?=<h[23]>|$))/g, (match, qText, aHtml) => {
             let cleanA = aHtml.replace(/^\s*<p>A\.\s*/, '<p>');
             return `<div class="faq-card">
                       <div class="faq-q"><span class="faq-icon-q">Q</span><span class="faq-text">${qText}</span></div>

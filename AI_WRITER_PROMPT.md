@@ -178,16 +178,12 @@ GET http://cms.bowlingnavi.com/wp-json/wp/v2/categories?slug=gear
 
 ## 9. アイキャッチ画像の自動生成・設定（ローカル生成スクリプト）
 
-DALL-E 3は使わず、**ローカルのPythonスクリプト**でサイト統一デザインのサムネイルを生成する。
-スクリプト: `/Users/shun/Web制作事業/AI制作/ボーリング/bowling-portal/generate_thumbnail.py`
+Next.jsのローカルOG生成APIを叩いて、サイト統一デザインのサムネイル画像を生成する。
 
-### Step A: サムネイルを生成
+### Step A: サムネイルを生成（ローカルAPIを使用）
 
 ```bash
-python3 /Users/shun/Web制作事業/AI制作/ボーリング/bowling-portal/generate_thumbnail.py \
-  "記事タイトル（自然な日本語・25文字程度に要約）" \
-  "カテゴリー表示名" \
-  /tmp/<slug>.png
+curl -s "http://localhost:3000/api/og?title=$(echo -n '記事タイトル（20文字程度に要約）' | jq -sRr @uri)&category=$(echo -n 'カテゴリー表示名' | jq -sRr @uri)" -o /tmp/<slug>.png
 ```
 
 カテゴリー表示名の対応表:
