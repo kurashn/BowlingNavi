@@ -141,17 +141,18 @@ export default async function ArticlePage({ params }: PageProps) {
                         prose-li:text-slate-700 prose-li:leading-[1.8]
                         
                         /* Unordered Lists (UL) */
-                        prose-ul:my-6 prose-ul:list-none prose-ul:pl-0 prose-ul:space-y-2
+                        prose-ul:my-6 prose-ul:list-none prose-ul:pl-4 prose-ul:pr-4 prose-ul:py-4 prose-ul:space-y-2 [&_ul]:bg-slate-50 [&_ul]:rounded-xl [&_ul]:border [&_ul]:border-slate-100
                         [&_ul>li]:relative [&_ul>li]:pl-6
                         [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-3 [&_ul>li]:before:size-1.5 [&_ul>li]:before:rounded-full [&_ul>li]:before:bg-blue-500
                         
                         /* Ordered Lists (OL) */
-                        prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
+                        prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-10 prose-ol:pr-4 prose-ol:py-4 prose-ol:space-y-2 [&_ol]:bg-slate-50 [&_ol]:rounded-xl [&_ol]:border [&_ol]:border-slate-100
                         [&_ol>li]:pl-2
                         [&_ol>li::marker]:font-bold [&_ol>li::marker]:text-blue-600
                         
                         /* Tables */
-                        prose-table:my-8 prose-table:w-full prose-table:border-separate prose-table:border-spacing-0 prose-table:rounded-lg prose-table:overflow-hidden prose-table:border prose-table:border-slate-200
+                        prose-table:my-8 prose-table:w-full prose-table:border-separate prose-table:border-spacing-0 prose-table:rounded-lg prose-table:border prose-table:border-slate-200
+                        [&_table]:block [&_table]:overflow-x-auto [&_table]:whitespace-nowrap [&_table]:hide-scrollbar [&_th]:min-w-[140px] [&_td]:min-w-[140px]
                         prose-th:bg-slate-50 prose-th:p-4 prose-th:text-left prose-th:font-bold prose-th:text-slate-900 prose-th:border-b prose-th:border-slate-200
                         prose-td:p-4 prose-td:text-slate-700 prose-td:border-b prose-td:border-slate-100
                         prose-tr:last:child:prose-td:border-b-0
