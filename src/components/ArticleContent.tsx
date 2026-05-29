@@ -43,18 +43,22 @@ export default function ArticleContent({ html, className }: ArticleContentProps)
     const processShortcodes = (rawHtml: string) => {
         if (!rawHtml) return "";
         
-        // HTMLエンティティ化されたクォーテーションを戻す
-        let processed = rawHtml.replace(/=&quot;/g, '="').replace(/&quot;/g, '"');
+        // HTMLエンティティ化されたクォーテーションとブラケットを戻す
+        let processed = rawHtml
+            .replace(/&#91;/g, '[')
+            .replace(/&#93;/g, ']')
+            .replace(/=&quot;/g, '="')
+            .replace(/&quot;/g, '"');
         
         // [cta_btn url="..."]...[/cta_btn] の置換
         processed = processed.replace(
-            /\[cta_btn\s+url="([^"]+)"(?:[^\]]*)\](.*?)\[\/cta_btn\]/g,
+            /\[cta_btn\s+url=["'”]?([^"'”\]]+)["'”]?[^\]]*\]([\s\S]*?)\[\/cta_btn\]/g,
             (match, url, btnText) => {
                 return `
                     <div class="not-prose my-10 flex justify-center w-full">
                         <a href="${url}" target="_blank" rel="nofollow noopener noreferrer" class="group relative flex items-center justify-center px-8 py-4 sm:py-5 w-full max-w-md text-lg sm:text-xl font-bold text-white transition-all duration-300 ease-out bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full shadow-[0_4px_15px_rgba(37,99,235,0.4)] hover:shadow-[0_8px_25px_rgba(37,99,235,0.5)] hover:-translate-y-1 no-underline">
                             <span class="relative flex items-center justify-center gap-2">
-                                ${btnText}
+                                ${btnText.replace(/<[^>]*>?/gm, '').trim()}
                                 <svg class="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                             </span>
                         </a>
