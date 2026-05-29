@@ -133,9 +133,8 @@ export default async function PreviewArticlePage({ params }: PageProps) {
                         prose-h2:before:content-none prose-h2:border-b-0
                         
                         /* H3 Styling */
-                        prose-h3:mt-10 prose-h3:mb-6 prose-h3:text-[1.4rem] prose-h3:font-extrabold prose-h3:text-slate-900
-                        prose-h3:border-l-[6px] prose-h3:border-blue-500 prose-h3:bg-gradient-to-r prose-h3:from-blue-50 prose-h3:to-transparent prose-h3:pl-5 prose-h3:py-4 prose-h3:rounded-r-lg
-                        prose-h3:shadow-[0_2px_4px_rgba(0,0,0,0.02)]
+                        prose-h3:mt-10 prose-h3:mb-6 prose-h3:text-xl prose-h3:font-bold prose-h3:text-slate-800
+                        prose-h3:border-b-2 prose-h3:border-blue-500 prose-h3:pb-2
                         
                         /* Paragraphs */
                         prose-p:leading-[1.8] prose-p:text-slate-700 prose-p:mb-6
