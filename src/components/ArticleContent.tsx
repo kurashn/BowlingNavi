@@ -62,6 +62,26 @@ export default function ArticleContent({ html, className }: ArticleContentProps)
                 `;
             }
         );
+
+        // [box_XXX]...[/box_XXX] の置換（背景ボックス装飾）
+        processed = processed.replace(
+            /\[box_([a-zA-Z0-9]+)\]([\s\S]*?)\[\/box_\1\]/g,
+            (match, type, content) => {
+                let bgClass = "bg-slate-50 border-slate-200 text-slate-800";
+                if (type === "gray") bgClass = "bg-slate-100 border-slate-200 text-slate-800";
+                else if (type === "info" || type === "blue") bgClass = "bg-blue-50 border-blue-200 text-blue-900";
+                else if (type === "alert" || type === "red") bgClass = "bg-red-50 border-red-200 text-red-900";
+                else if (type === "warning" || type === "yellow") bgClass = "bg-amber-50 border-amber-200 text-amber-900";
+                else if (type === "success" || type === "green") bgClass = "bg-emerald-50 border-emerald-200 text-emerald-900";
+
+                return `
+                    <div class="my-8 p-6 rounded-xl border ${bgClass} shadow-[0_2px_10px_rgba(0,0,0,0.02)]">
+                        ${content}
+                    </div>
+                `;
+            }
+        );
+
         return processed;
     };
 
