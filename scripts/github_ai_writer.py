@@ -85,7 +85,7 @@ def update_spreadsheet(row_idx, edit_url):
     except Exception as e:
         print(f"Webhook failed for row {row_idx}: {e}")
 
-def generate_article_with_ai(category, main_kw, long_tail_kws):
+def generate_article_with_ai(category, main_kw, long_tail_kws, available_links):
     openai_key = os.environ.get("OPENAI_API_KEY")
     if not openai_key:
         raise ValueError("OPENAI_API_KEY is not set.")
@@ -103,6 +103,13 @@ def generate_article_with_ai(category, main_kw, long_tail_kws):
 カテゴリ: {category}
 メインキーワード: {main_kw}
 関連（ロングテール）キーワード: {long_tail_kws}
+
+【利用可能な内部リンク一覧（必ずこの中から5〜10個を選び、自然な文脈でリンクを張ること）】
+{available_links}
+
+【文字数に関する超厳格な指示】
+必ず全体で最低3000文字〜5000文字以上出力してください。
+そのためには、各見出し（h3）に対して、具体的な解説・プロの視点・失敗例・具体的な数値を豊富に交え、最低でも500文字以上の詳しいテキストを記述してください。文字数が少ない場合はエラーとなります。
 
 【出力JSONフォーマット】
 {{
@@ -158,6 +165,13 @@ def main():
 
     header = all_rows[0]
     processed_count = 0
+    
+    # 内部リンク用のリストを作成（公開済み、または下書きの記事）
+    available_links_list = []
+    for r in all_rows[1:]:
+        if len(r) > 4 and r[4] in ["Published", "Draft"]:
+            available_links_list.append(f"- /{r[3]} ({r[1]})")
+    available_links_str = "\n".join(available_links_list)
 
     for idx, row in enumerate(all_rows):
         if idx == 0:
@@ -173,7 +187,7 @@ def main():
             print(f"\n--- Processing [{slug}] ({main_kw}) ---")
             
             # 1. Generate Article
-            article_data = generate_article_with_ai(category, main_kw, long_tail_kws)
+            article_data = generate_article_with_ai(category, main_kw, long_tail_kws, available_links_str)
             if not article_data:
                 continue
                 
