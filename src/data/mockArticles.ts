@@ -1390,7 +1390,12 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>👉 <strong><a href="/bowling-shoes-recommendation-2026">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
-            <p><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【ABS】 S-380 ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" class="btn-affiliate">
+                    楽天市場で「ABS S-380」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>2. テーピングで指の抜けを良くする</h3>
             <p>「投げる時に指が引っかかる」「皮がむけて痛い」<br>
@@ -1400,7 +1405,12 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>👉 <strong><a href="/tape-recommendation">ボウリングのテープおすすめと貼り方｜親指保護やサイズ調整</a></strong></p>
 
-            <p><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowling-shoes%2F4102%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowling-shoes%2Fi%2F10000031%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">ABS フィッティングテープ F-1 50mm ボウリング用品</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowling-shoes%2F4102%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowling-shoes%2Fi%2F10000031%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" class="btn-affiliate">
+                    楽天市場で「フィッティングテープ」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>3. マイボールでカーブを投げる</h3>
             <p>もしあなたが「130点の壁」にぶつかっているなら、ボールを作るタイミングです。<br>
@@ -1410,7 +1420,12 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>👉 <strong><a href="/bowling-ball-recommendation-2026">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選と重さの目安</a></strong></p>
 
-            <p><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10007477%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10007596%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM】トロピカルサージ TROPICAL SURGE</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10007477%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10007596%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" class="btn-affiliate">
+                    楽天市場で「STORM マイボール」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>あなたに必要な道具は？タイプ別チェック</h3>
 
