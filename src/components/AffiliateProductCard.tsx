@@ -47,7 +47,7 @@ export default function AffiliateProductCard({ item }: AffiliateProductCardProps
                             className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-lg bg-[#BF0000] hover:bg-[#d60000] text-white font-bold text-sm transition-colors shadow-sm"
                         >
                             <ShoppingCart className="size-4" />
-                            楽天市場で見る
+                            詳細を見る
                         </a>
                     )}
                 </div>
