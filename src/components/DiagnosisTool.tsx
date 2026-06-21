@@ -300,11 +300,8 @@ export default function DiagnosisTool() {
                                         </div>
                                         
                                         <div className="affiliate-wrapper mt-5 flex flex-col items-center">
-                                            <a href={product.affiliateLink} target="_blank" rel="nofollow noopener noreferrer" className="btn-affiliate w-full justify-center group/btn relative overflow-hidden">
-                                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                                    楽天市場で最安値をチェック
-                                                    <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                                                </span>
+                                            <a href={product.affiliateLink} target="_blank" rel="nofollow noopener noreferrer" className="btn-affiliate w-full justify-center">
+                                                楽天市場で最安値をチェック
                                             </a>
                                             <p className="text-[11px] text-slate-400 mt-2 font-medium">※楽天ポイントが貯まります・人気のサイズはすぐ売り切れます</p>
                                             <img src={product.imageUrl} alt="" loading="lazy" width="1" height="1" style={{ border: "0px" }} />
