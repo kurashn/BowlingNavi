@@ -23,19 +23,14 @@ function getEndDate(tournament: Tournament): Date {
 
 /**
  * 日付ベースでステータスを自動計算する。
- * - 「受付中」は手動設定のみ（日付からは判定不能）のため、そのまま維持
- * - 終了日を過ぎていれば「開催終了」
+ * - 終了日を過ぎていれば「開催終了」（受付中を含む全ステータスを上書き）
  * - それ以外は元のステータスを維持
  */
 function computeStatus(tournament: Tournament): TournamentStatus {
-    // 「受付中」は運営が手動で設定するステータスなので自動変更しない
-    if (tournament.status === '受付中') {
-        return '受付中';
-    }
-
     const now = new Date();
     const endDate = getEndDate(tournament);
 
+    // 終了日を過ぎていれば、どのステータスでも「開催終了」にする
     if (now > endDate) {
         return '開催終了';
     }
@@ -190,13 +185,13 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         organizer: "JAPAN BOWLING",
         description: "各都道府県予選代表が出場する新人戦。",
         imageUrl: "/images/tournament_rookie.png",
-        status: "受付中",
+        status: "開催終了",
         maxParticipants: 150,
         currentParticipants: 0,
         sourceUrl: "https://www.japan-bowling.or.jp/",
         entryMethod: "各都道府県のボウリング連盟を通じて申し込み",
         entryRequirements: "当該年度のJB登録会員で、入会初年度から3年間（規定あり）",
-        entryStatus: "各都道府県連盟にて要確認",
+        entryStatus: "受付終了",
     },
     // 30. 第38回 オールジャパンレディスボウリングトーナメント with MEN
     {
@@ -316,13 +311,13 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         organizer: "JPBA / スカイA",
         description: "次世代のスター候補生たちがぶつかり合う、若手女子プロボウラーの登竜門。",
         imageUrl: "/images/tournament_ladies.png",
-        status: "受付中",
+        status: "開催終了",
         maxParticipants: 120,
         currentParticipants: 0,
         sourceUrl: "https://www.jpba.or.jp/",
         entryMethod: "JPBA公式サイトより",
         entryRequirements: "規定の年度内にプロ入りした女子プロボウラー、および選抜アマチュア",
-        entryStatus: "受付中",
+        entryStatus: "受付終了",
     },
     // 37. 関西アマチュアボウリング選手権 2026
     {
@@ -340,10 +335,10 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         status: "受付中",
         maxParticipants: 100,
         currentParticipants: 45,
-        sourceUrl: "https://example.com/",
+        sourceUrl: "https://www.japan-bowling.or.jp/",
         entryMethod: "公式サイトの専用フォームより",
         entryRequirements: "プロ資格を持たないボウラー",
-        entryStatus: "絶賛受付中！",
+        entryStatus: "受付中",
     },
     // 38. NBF 全日本アマチュア選手権 予選会
     {
@@ -361,7 +356,7 @@ const MOCK_TOURNAMENTS: Tournament[] = [
         status: "開催予定",
         maxParticipants: 80,
         currentParticipants: 20,
-        sourceUrl: "https://example.com/",
+        sourceUrl: "https://www.nbf.or.jp/",
         entryMethod: "NBF加盟の各センターにて申し込み",
         entryRequirements: "NBF会員であること",
         entryStatus: "要確認",
