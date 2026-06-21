@@ -404,7 +404,12 @@ export const MOCK_ARTICLES: Article[] = [
                 カラーバリエーションも豊富で、ウェアに合わせやすいのも魅力です。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">【ABS】 S-380 ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「ABS S-380」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>【第2位】デザイン重視ならこれ！普段履きのようなカッコよさ<br>Dexter（デクスター） Ds38</h3>
 
@@ -425,7 +430,12 @@ export const MOCK_ARTICLES: Article[] = [
                 友人やデートでボウリングに行く際も、このデザインなら恥ずかしくありません。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10003761%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10003761%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">★13000足突破！◆新色追加！◆デクスターDs38ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10003761%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10003761%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「Dexter Ds38」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>【第3位】紐を結ぶ手間なし！画期的なジッパータイプ<br>Dexter（デクスター） Ds49</h3>
 
@@ -445,7 +455,12 @@ export const MOCK_ARTICLES: Article[] = [
                 ジッパー式ならストレスフリーで、集中力を切らさずにプレイできます。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10004096%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10004096%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">【Dexter】デクスターDs49・ジッパーボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10004096%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10004096%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「Dexter Ds49」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <hr>
 
@@ -459,14 +474,24 @@ export const MOCK_ARTICLES: Article[] = [
             ボールバッグを持っていない場合は、単体のシューズケースを用意しましょう。<br>
             ABS製のシンプルな巾着タイプなら、1,000円以下で購入できることもあり非常にコスパが良いです。</p>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10003698%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10003698%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【ABS】PROamシューズ袋※巾着袋としても利用できます。ネコポス・メール便可 プロアマシューズケースボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10003698%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10003698%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「ABS シューズ袋」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>4-2. HI-SP シューズスライド</h3>
             <p>ボウリング場によって、床（アプローチ）の滑りやすさは異なります。<br>
             「今日のアプローチは滑らなくてつっかかる」という時に、靴の上から被せるカバーです。<br>
             HI-SPのシューズスライドは定番中の定番で、一つ持っておくとどんなボウリング場でも安心です。</p>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowling-shoes%2Fhisp1-1008%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowling-shoes%2Fi%2F10000523%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">HI-SP MA-3 シューズ スライド パーツ ハイ スポーツ ボウリング用品 ボーリング グッズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowling-shoes%2Fhisp1-1008%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowling-shoes%2Fi%2F10000523%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「HI-SP シューズスライド」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <hr>
 
@@ -485,7 +510,12 @@ export const MOCK_ARTICLES: Article[] = [
             <p>最もおすすめなのは、<strong>ABS S-380</strong> です。<br>
             3,000円台という安さで、レンタルシューズとは段違いの投げやすさを手に入れられます。</p>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank">【ABS】 S-380 ボウリングシューズ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「ABS S-380」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <p>マイシューズを手に入れたら、次は練習の成果を試してみましょう。<br>
             当サイト「BowlingNavi（ボウナビ）」では、全国のボウリング大会やプロチャレンジの情報を検索できます。</p>
@@ -642,7 +672,12 @@ export const MOCK_ARTICLES: Article[] = [
                 「派手に曲がりすぎない」ので、コントロールを練習するのに最適です。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【中古】【未使用・未開封品】Storm トロピカルサージボーリングボール ブラック/チェリー 16</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「Storm トロピカルサージ」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>【おすすめNo.2】安定感抜群！扱いやすさNo.1<br>Brunswick（ブランズウィック） ライノ</h3>
 
@@ -661,7 +696,12 @@ export const MOCK_ARTICLES: Article[] = [
                 基礎をしっかり固めたい方におすすめです。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10002581%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【Brunswick 新色追加】 ライノ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10002581%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「Brunswick ライノ」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <h3>【おすすめNo.3】日本人のために作られたコスパ最強モデル<br>Hi-SP（ハイスポーツ） アップビート</h3>
 
@@ -680,7 +720,12 @@ export const MOCK_ARTICLES: Article[] = [
                 予算を抑えたい学生さんや、とりあえず試してみたい方に一押しです。</p>
             </blockquote>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnandk-shop%2Fupbeat-pearl-hisp%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fnandk-shop%2Fi%2F10000140%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【HI-SPORTS】 アップビートパール ・SE ボウリング ボール ハイスポーツ</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnandk-shop%2Fupbeat-pearl-hisp%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fnandk-shop%2Fi%2F10000140%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「Hi-SP アップビート」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <hr>
 
@@ -694,7 +739,12 @@ export const MOCK_ARTICLES: Article[] = [
             重いボールとシューズを収納できる専用バッグが必要です。<br>
             最初は1個用のショルダータイプか、キャスター付きがおすすめです。</p>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【STORM ROTOGRIP HI-SPORTS】 SB24-DF 1ボールケース</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「1個用ボールバッグ」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <p><strong>失敗しないバッグの選び方はこちら</strong><br>
             <strong><a href="/bowling-bag-recommendation-2026">【失敗しない】ボウリングバッグのおすすめ3選！1個用キャスター付きが最強な理由</a></strong></p>
@@ -704,7 +754,12 @@ export const MOCK_ARTICLES: Article[] = [
             投げ終わった後にクリーナーで拭かないと、<mark>数ヶ月で曲がらなくなってしまいます（ボールの死）。</mark><br>
             必ず練習後にひと拭きして、ボールの寿命を延ばしましょう。</p>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fbowl-clean%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000247%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【ABS】 ボウルクリーン【単品】</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fbowl-clean%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000247%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「ボールクリーナー」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <hr>
 
@@ -720,7 +775,12 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>おすすめは、香り付きでテンションも上がる<mark>「トロピカル・サージ」</mark>です。</p>
 
-            <p><strong><a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">【中古】【未使用・未開封品】Storm トロピカルサージボーリングボール ブラック/チェリー 16</a><img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" /></strong></p>
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" target="_blank" class="btn-affiliate">
+                    楽天市場で「Storm トロピカルサージ」を見る
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
 
             <p>マイボールを手に入れたら、あなたのボウリングライフは劇的に変わります。<br>
             ストライクの音、ピンが弾け飛ぶ爽快感を、ぜひ自分のボールで味わってください。</p>
