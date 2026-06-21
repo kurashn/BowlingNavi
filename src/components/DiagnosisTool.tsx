@@ -80,14 +80,14 @@ const RESULTS: Record<ResultId, ResultData> = {
     res1: {
         id: 'res1',
         title: 'まずは足元から！',
-        subtitle: 'マイシューズデビューがおすすめ',
-        description: 'レンタルシューズは滑りやすさが毎回違うため、フォームが安定しません。3,000円台のマイシューズを買うだけで、ピタッと止まれてスコアが劇的に上がります！10回行けば元が取れる圧倒的コスパも魅力です。',
+        subtitle: 'マイシューズデビューが最優先',
+        description: 'レンタルシューズは滑りやすさが毎回違うため、フォームが安定しません。実は、3,000円台のマイシューズを買うだけで「ピタッと止まれる」ようになり、スコアが劇的に上がります！10回行けば元が取れる圧倒的コスパも魅力です。',
         products: [
             {
                 name: 'ABS S-380',
                 affiliateLink: '//af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fs-380%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000040%2F',
                 imageUrl: '//i.moshimo.com/af/i/impression?a_id=5285587&p_id=54&pc_id=54&pl_id=616',
-                reason: '初心者シェアNo.1！最も安くて基本性能がしっかりした王道シューズ。'
+                reason: '【初心者シェアNo.1】最も安くて基本性能がしっかりした王道シューズ。まずはこれを買えば間違いありません。'
             }
         ],
         nextArticleUrl: '/bowling-shoes-recommendation-2026',
@@ -97,19 +97,19 @@ const RESULTS: Record<ResultId, ResultData> = {
         id: 'res2',
         title: 'カーブへの第一歩！',
         subtitle: '入門用マイボールがおすすめ',
-        description: 'ボウリング場の備え付けボール（ハウスボール）は構造上、曲がらないように作られています。入門用のマイボール（リアクティブ素材）を作れば、力まなくても面白いように曲がり始めます！',
+        description: 'ボウリング場の備え付けボール（ハウスボール）は構造上、曲がらないように作られています。入門用のマイボール（リアクティブ素材）を作れば、力まなくても面白いように曲がり始めます！ストライクの爽快感が倍増しますよ。',
         products: [
             {
                 name: 'Storm トロピカルサージ',
                 affiliateLink: '//af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fajimura4861%2Fb07q3m2hm6%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fajimura4861%2Fi%2F12086770%2F',
                 imageUrl: '//i.moshimo.com/af/i/impression?a_id=5285587&p_id=54&pc_id=54&pl_id=616',
-                reason: '世界で一番売れている入門ボール。良い香りがするのも特徴！'
+                reason: '【世界一売れてる入門ボール】良い香りがするのも特徴！最初の1球目に最適です。'
             },
             {
                 name: '1個用ボールバッグ',
                 affiliateLink: '//af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fsb24-df%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10004213%2F',
                 imageUrl: '//i.moshimo.com/af/i/impression?a_id=5285587&p_id=54&pc_id=54&pl_id=616',
-                reason: 'マイボールはボウリング場に置いて帰れないため、持ち運び用のバッグが必須です。'
+                reason: '【必須アイテム】マイボールはボウリング場に置いて帰れないため、持ち運び用のバッグが必ず必要になります。'
             }
         ],
         nextArticleUrl: '/bowling-ball-recommendation-2026',
@@ -125,7 +125,7 @@ const RESULTS: Record<ResultId, ResultData> = {
                 name: 'Brunswick ライノ',
                 affiliateLink: '//af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Frhino%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10002581%2F',
                 imageUrl: '//i.moshimo.com/af/i/impression?a_id=5285587&p_id=54&pc_id=54&pl_id=616',
-                reason: '安定した曲がりで暴れない、初心者〜中級者のためのステップアップボール。'
+                reason: '【コスパ最強】安定した曲がりで暴れない、初心者〜中級者のためのステップアップボール。'
             }
         ],
         nextArticleUrl: '/bowling-ball-recommendation-2026',
@@ -141,13 +141,13 @@ const RESULTS: Record<ResultId, ResultData> = {
                 name: 'ボールクリーナー',
                 affiliateLink: '//af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fb-primeiro%2Fbowl-clean%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fb-primeiro%2Fi%2F10000247%2F',
                 imageUrl: '//i.moshimo.com/af/i/impression?a_id=5285587&p_id=54&pc_id=54&pl_id=616',
-                reason: 'レーンの油を取り除き、ボールの寿命（曲がり）を復活させます。'
+                reason: '【ボールの寿命を延ばす】レーンの油を取り除き、ボールの寿命（曲がり）を復活させます。'
             },
             {
                 name: 'フィッティングテープ',
                 affiliateLink: '//af.moshimo.com/af/c/click?a_id=5285587&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbowling-shoes%2F4102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbowling-shoes%2Fi%2F10000031%2F',
                 imageUrl: '//i.moshimo.com/af/i/impression?a_id=5285587&p_id=54&pc_id=54&pl_id=616',
-                reason: '親指の抜けをミリ単位で調整し、失投を防ぐ必須アイテム。'
+                reason: '【アベレージアップの秘訣】親指の抜けをミリ単位で調整し、失投を防ぐ必須アイテム。'
             }
         ],
         nextArticleUrl: '/how-to-throw-curve-2026',
@@ -284,21 +284,29 @@ export default function DiagnosisTool() {
 
                             <div className="space-y-6">
                                 {RESULTS[currentStep as ResultId].products.map((product, idx) => (
-                                    <div key={idx} className="border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-shadow">
-                                        <div className="flex items-start gap-4 mb-4">
-                                            <div className="w-12 h-12 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center shrink-0 font-bold text-lg">
+                                    <div key={idx} className="border-2 border-slate-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition-all bg-white relative overflow-hidden">
+                                        {/* Badge */}
+                                        <div className="absolute top-0 right-0 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-bl-xl">
+                                            おすすめ
+                                        </div>
+                                        <div className="flex items-start gap-4 mb-5 mt-2">
+                                            <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center shrink-0 font-black text-lg">
                                                 {idx + 1}
                                             </div>
                                             <div>
-                                                <h4 className="text-lg font-bold text-slate-900 mb-1">{product.name}</h4>
-                                                <p className="text-sm text-slate-600 leading-relaxed">{product.reason}</p>
+                                                <h4 className="text-xl font-bold text-slate-900 mb-2">{product.name}</h4>
+                                                <p className="text-sm text-slate-600 leading-relaxed font-medium">{product.reason}</p>
                                             </div>
                                         </div>
                                         
-                                        <div className="affiliate-wrapper mt-4">
-                                            <a href={product.affiliateLink} target="_blank" rel="nofollow noopener noreferrer" className="btn-affiliate w-full justify-center">
-                                                楽天市場で「{product.name}」を見る
+                                        <div className="affiliate-wrapper mt-5 flex flex-col items-center">
+                                            <a href={product.affiliateLink} target="_blank" rel="nofollow noopener noreferrer" className="btn-affiliate w-full justify-center group/btn relative overflow-hidden">
+                                                <span className="relative z-10 flex items-center justify-center gap-2">
+                                                    楽天市場で最安値をチェック
+                                                    <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                                                </span>
                                             </a>
+                                            <p className="text-[11px] text-slate-400 mt-2 font-medium">※楽天ポイントが貯まります・人気のサイズはすぐ売り切れます</p>
                                             <img src={product.imageUrl} alt="" loading="lazy" width="1" height="1" style={{ border: "0px" }} />
                                         </div>
                                     </div>
