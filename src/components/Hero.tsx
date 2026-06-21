@@ -70,7 +70,25 @@ export function Hero() {
                         </button>
                     ))}
                 </div>
-            </div>
+                </div>
+
+                {/* Diagnosis Banner */}
+                <div className="mt-10 sm:mt-12 w-full max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+                    <div onClick={() => router.push('/diagnosis')} className="cursor-pointer group relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 p-[2px] shadow-xl transition-all hover:shadow-[0_20px_40px_-15px_rgba(37,99,235,0.5)] hover:-translate-y-1">
+                        <div className="relative flex items-center justify-between rounded-xl bg-[#020b1b]/90 px-5 py-4 sm:px-6 sm:py-5 backdrop-blur-sm transition-colors group-hover:bg-[#020b1b]/80">
+                            <div className="flex items-center gap-4 text-left">
+                                <span className="text-3xl sm:text-4xl drop-shadow-md">🎳</span>
+                                <div>
+                                    <div className="text-xs sm:text-sm font-bold text-cyan-300 tracking-wide">1分でわかる！完全無料</div>
+                                    <div className="text-base sm:text-lg font-black text-white mt-0.5">あなたにぴったりの道具を診断する</div>
+                                </div>
+                            </div>
+                            <div className="hidden sm:flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-all group-hover:bg-white/20 group-hover:translate-x-1">
+                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" /></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
     );
 }

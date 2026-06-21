@@ -1547,6 +1547,18 @@ export const MOCK_ARTICLES: Article[] = [
 
             <p>さあ、次はあなたの番です。自己ベスト更新を目指して、レーンへ向かいましょう！</p>
 
+            <div class="my-10 p-6 sm:p-8 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100 text-center shadow-sm">
+                <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-3 mt-0 leading-tight">🎳 あなたにぴったりの道具は？</h3>
+                <p class="text-sm sm:text-base text-slate-600 font-medium mb-6 leading-relaxed">
+                    「シューズとボール、どっちから買えばいいの？」<br>
+                    たった1分であなたに一番必要なアイテムがわかる無料診断を試してみましょう！
+                </p>
+                <a href="/diagnosis" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold rounded-full transition-all hover:shadow-[0_8px_20px_rgba(37,99,235,0.4)] hover:-translate-y-1 no-underline w-full sm:w-auto">
+                    無料道具診断をやってみる
+                    <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+                </a>
+            </div>
+
             <hr>
 
             <h2>よくある質問（FAQ）</h2>

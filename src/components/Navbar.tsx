@@ -38,6 +38,9 @@ export function Navbar() {
                     <Link href="/tournaments" className="opacity-95 hover:text-[#78bbff] transition-colors duration-200">大会一覧</Link>
                     <Link href="/columns" className="opacity-95 hover:text-[#78bbff] transition-colors duration-200">コラム・記事</Link>
                     <Link href="/columns?category=Guide" className="opacity-95 hover:text-[#78bbff] transition-colors duration-200">初心者ガイド</Link>
+                    <Link href="/diagnosis" className="opacity-95 text-[#ffd700] hover:text-[#ffea75] transition-colors duration-200 flex items-center gap-1">
+                        無料道具診断
+                    </Link>
                     <Link href="/organizers" className="opacity-95 hover:text-[#78bbff] transition-colors duration-200">掲載のご案内</Link>
                 </nav>
 
@@ -94,6 +97,7 @@ export function Navbar() {
                         <Link href="/tournaments" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>大会一覧</Link>
                         <Link href="/columns" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>コラム・記事</Link>
                         <Link href="/columns?category=Guide" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>初心者ガイド</Link>
+                        <Link href="/diagnosis" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors text-[#ffd700]" onClick={() => setIsMenuOpen(false)}>無料道具診断</Link>
                         <Link href="/organizers" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>掲載のご案内</Link>
                         <div className="mt-2 pt-4 border-t border-white/10 flex justify-center sm:hidden">
                             <Link href="/tournaments" className="inline-flex items-center justify-center gap-2 w-full text-white border-0 rounded-xl bg-gradient-to-r from-[#3b69ff] via-[#672df1] to-[#22b9ff] shadow-[0_10px_24px_rgba(45,111,255,0.34)] font-black cursor-pointer hover:shadow-[0_12px_28px_rgba(45,111,255,0.5)] h-[44px] text-sm" onClick={() => setIsMenuOpen(false)}>
