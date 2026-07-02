@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, ChevronRight } from "lucide-react";
 import ArticleContent from "@/components/ArticleContent";
+import { ArticleNoteCTA } from "@/components/ArticleNoteCTA";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -188,6 +189,11 @@ export default async function ArticlePage({ params }: PageProps) {
                         <ArticleContent html={article.content} />
                     </div>
                 </article>
+
+                {/* Note Promotion Banner */}
+                <div className="mt-8 px-2">
+                    <ArticleNoteCTA />
+                </div>
 
                 {/* Back to columns link */}
                 <div className="mt-12 text-center">

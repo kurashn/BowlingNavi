@@ -4,6 +4,8 @@ import { getTournaments } from "@/data/mockTournaments";
 import { MOCK_ARTICLES } from "@/data/mockArticles";
 import { format, addDays, subDays, isSameDay } from 'date-fns';
 import { ja } from 'date-fns/locale';
+import { NotePromotionBanner } from "@/components/NotePromotionBanner";
+
 export default function Home() {
     const allTournaments = getTournaments();
     
@@ -99,6 +101,11 @@ export default function Home() {
                         </Link>
                     ))}
                 </div>
+            </section>
+
+            {/* Note Promotion Banner */}
+            <section className="container mx-auto px-4 max-w-6xl relative z-20">
+                <NotePromotionBanner />
             </section>
 
             {/* Featured Tournaments */}
