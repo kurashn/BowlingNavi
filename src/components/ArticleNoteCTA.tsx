@@ -56,7 +56,7 @@ export function ArticleNoteCTA() {
 
                         {/* CTA Button */}
                         <a 
-                            href="https://note.com/bownavi/n/nebeea10758b1?sub_rt=share_sb" 
+                            href="https://brain-market.com/u/bownavi/a/b2YDO0UjMgoTZsNWa0JXY" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="relative flex items-center justify-center w-full sm:w-auto min-w-[280px] h-14 md:h-16 rounded-full group/btn overflow-hidden shadow-[0_10px_30px_rgba(227,53,215,0.3)] hover:shadow-[0_15px_40px_rgba(227,53,215,0.5)] hover:-translate-y-1 transition-all duration-300"
@@ -68,11 +68,11 @@ export function ArticleNoteCTA() {
                             <div className="absolute top-0 left-[-100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg] group-hover/btn:left-[200%] transition-all duration-1000 ease-in-out"></div>
                             
                             <span className="relative z-10 flex items-center gap-2 text-white text-[15px] md:text-base font-black tracking-wide">
-                                noteで詳しく見る
+                                Brainで詳しく見る
                                 <ChevronRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                             </span>
                         </a>
-                        <span className="mt-4 text-[#5877ae] text-[11px] font-bold">※note.comのサイトへ移動します</span>
+                        <span className="mt-4 text-[#5877ae] text-[11px] font-bold">※Brainのサイトへ移動します</span>
                     </div>
                 </div>
             </div>

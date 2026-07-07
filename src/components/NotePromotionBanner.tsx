@@ -26,7 +26,7 @@ export function NotePromotionBanner() {
                      <div className="absolute bottom-2.5 left-0 w-full text-center z-20">
                          <span className="inline-flex items-center gap-1 bg-[#e335d7] text-white text-[11px] md:text-xs font-black px-3 py-1.5 rounded-md shadow-md">
                              <BookOpen className="w-3.5 h-3.5" />
-                             note記事
+                             Brain記事
                          </span>
                      </div>
                 </div>
@@ -48,12 +48,12 @@ export function NotePromotionBanner() {
                     </p>
 
                     <a 
-                        href="https://note.com/bownavi/n/nebeea10758b1?sub_rt=share_sb" 
+                        href="https://brain-market.com/u/bownavi/a/b2YDO0UjMgoTZsNWa0JXY" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#e335d7] to-[#8a34ff] text-white h-12 md:h-14 px-6 md:px-8 rounded-full font-black text-sm md:text-[15px] shadow-[0_10px_25px_rgba(227,53,215,0.4)] hover:shadow-[0_15px_35px_rgba(227,53,215,0.6)] hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300 group/btn"
                     >
-                        noteで記事を読む
+                        Brainで記事を読む
                         <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover/btn:translate-x-1 transition-transform" />
                     </a>
                 </div>

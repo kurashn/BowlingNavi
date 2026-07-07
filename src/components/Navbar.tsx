@@ -37,8 +37,8 @@ export function Navbar() {
                 <nav className="hidden md:flex items-center justify-center flex-1 gap-8 text-[#f4f7ff] text-sm font-extrabold whitespace-nowrap" aria-label="メインナビゲーション">
                     <Link href="/tournaments" className="opacity-95 hover:text-[#78bbff] transition-colors duration-200">大会一覧</Link>
                     <Link href="/columns" className="opacity-95 hover:text-[#78bbff] transition-colors duration-200">コラム・記事</Link>
-                    <a href="https://note.com/bownavi/n/nebeea10758b1?sub_rt=share_sb" target="_blank" rel="noopener noreferrer" className="opacity-100 text-[#e335d7] hover:text-[#ff7ae6] transition-colors duration-200 flex items-center gap-1">
-                        プロへの道(note)
+                    <a href="https://brain-market.com/u/bownavi/a/b2YDO0UjMgoTZsNWa0JXY" target="_blank" rel="noopener noreferrer" className="opacity-100 text-[#e335d7] hover:text-[#ff7ae6] transition-colors duration-200 flex items-center gap-1">
+                        プロへの道(Brain)
                     </a>
                     <Link href="/diagnosis" className="opacity-95 text-[#ffd700] hover:text-[#ffea75] transition-colors duration-200 flex items-center gap-1">
                         無料道具診断
@@ -98,7 +98,7 @@ export function Navbar() {
                     <nav className="flex flex-col p-4 text-[#f4f7ff] text-base font-extrabold gap-3">
                         <Link href="/tournaments" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>大会一覧</Link>
                         <Link href="/columns" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>コラム・記事</Link>
-                        <a href="https://note.com/bownavi/n/nebeea10758b1?sub_rt=share_sb" target="_blank" rel="noopener noreferrer" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors text-[#e335d7]" onClick={() => setIsMenuOpen(false)}>プロへの道(note)</a>
+                        <a href="https://brain-market.com/u/bownavi/a/b2YDO0UjMgoTZsNWa0JXY" target="_blank" rel="noopener noreferrer" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors text-[#e335d7]" onClick={() => setIsMenuOpen(false)}>プロへの道(Brain)</a>
                         <Link href="/diagnosis" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors text-[#ffd700]" onClick={() => setIsMenuOpen(false)}>無料道具診断</Link>
                         <Link href="/organizers" className="flex items-center h-12 px-4 bg-white/5 rounded-xl hover:bg-white/10 active:bg-white/10 transition-colors" onClick={() => setIsMenuOpen(false)}>掲載のご案内</Link>
                         <div className="mt-2 pt-4 border-t border-white/10 flex justify-center sm:hidden">
