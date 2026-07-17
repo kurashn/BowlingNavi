@@ -5,6 +5,13 @@ import { MOCK_ARTICLES } from "@/data/mockArticles";
 import { format, addDays, subDays, isSameDay } from 'date-fns';
 import { ja } from 'date-fns/locale';
 import { NotePromotionBanner } from "@/components/NotePromotionBanner";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: "/",
+    },
+};
 
 export default function Home() {
     const allTournaments = getTournaments();

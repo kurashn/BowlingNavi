@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
         title: tournament.title,
         description: tournament.description,
+        alternates: {
+            canonical: `/tournaments/${tournament.id}`,
+        },
         openGraph: {
             title: tournament.title,
             description: tournament.description,

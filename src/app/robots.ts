@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://bowlingnavi.com/sitemap.xml',
+        sitemap: 'https://www.bowlingnavi.com/sitemap.xml',
     }
 }

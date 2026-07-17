@@ -4,7 +4,7 @@ import { getWPPosts } from '@/lib/wordpress'
 import { MOCK_PLAYERS } from '@/data/mockPlayers'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://bowlingnavi.com'
+    const baseUrl = 'https://www.bowlingnavi.com'
 
     // Static pages
     const routes = [

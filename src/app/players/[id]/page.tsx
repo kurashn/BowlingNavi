@@ -207,5 +207,8 @@ export async function generateMetadata({ params }: PageProps) {
     return {
         title: `${player.name} | ボウナビ プロボウラー名鑑`,
         description: player.catchphrase,
+        alternates: {
+            canonical: `/players/${player.id}`,
+        },
     };
 }

@@ -10,7 +10,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://bowlingnavi.com'),
+    metadataBase: new URL('https://www.bowlingnavi.com'),
     title: {
         default: "BowlingNavi -ボウナビ- | 関西のボウリング大会情報サイト",
         template: "%s | BowlingNavi -ボウナビ-",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     openGraph: {
         type: "website",
         locale: "ja_JP",
-        url: "https://bowlingnavi.com/",
+        url: "https://www.bowlingnavi.com/",
         title: "BowlingNavi -ボウナビ- | 関西のボウリング大会情報サイト",
         description: "関西エリアのボウリング大会情報を網羅。あなたにぴったりの大会が見つかります。",
         siteName: "BowlingNavi -ボウナビ-",

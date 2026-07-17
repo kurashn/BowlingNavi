@@ -228,6 +228,9 @@ export async function generateMetadata({ params }: PageProps) {
         title: title,
         description: description,
         keywords: article.seoKeyword || "",
+        alternates: {
+            canonical: `/${article.id}`,
+        },
         openGraph: {
             title: title,
             description: description,
