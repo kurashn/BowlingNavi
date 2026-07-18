@@ -1561,6 +1561,30 @@ export const MOCK_ARTICLES: Article[] = [
 
             <hr>
 
+            <h2>【保存版】スコアアップ完全ガイド：あわせて読みたい記事</h2>
+
+            <p>平均スコアがわかったら、次は「どうやって上げるか」。目的別に、脱初心者〜200点までの道のりを記事にまとめました。気になるものから読んでみてください。</p>
+
+            <div class="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500 my-6">
+              <p class="font-bold text-blue-800 mb-3">🎳 スコアを上げる・上達したい</p>
+              <ul>
+                <li><a href="/bowling-score-calculation-guide" class="text-blue-600 hover:underline font-bold">ボウリングのスコア計算方法【図解】</a>｜ストライク・スペアの点数の仕組みを世界一わかりやすく</li>
+                <li><a href="/bowling-spare-guide" class="text-blue-600 hover:underline font-bold">スペアの取り方！残ったピン別の狙い方</a>｜スコアを一番縮めるのは実はスペア</li>
+                <li><a href="/bowling-200-score-guide" class="text-blue-600 hover:underline font-bold">200点を出す方法</a>｜アベレージ180からの壁を超える5つの技術</li>
+              </ul>
+            </div>
+
+            <div class="bg-green-50 p-5 rounded-lg border-l-4 border-green-500 my-6">
+              <p class="font-bold text-green-800 mb-3">🛠️ 道具でスコアを上げたい・買いたい</p>
+              <ul>
+                <li><a href="/bowling-ball-weight-guide" class="text-green-700 hover:underline font-bold">ボールの重さは何ポンドが最適？</a>｜体重別・男女別の失敗しない選び方</li>
+                <li><a href="/bowling-myball-price-guide" class="text-green-700 hover:underline font-bold">マイボールはいくら？値段の相場</a>｜ドリル込み総額と安く買うコツ</li>
+                <li><a href="/bowling-wrist-support-guide" class="text-green-700 hover:underline font-bold">手首サポーター（リスタイ）の選び方</a>｜回転が安定し、カーブもかけやすくなる</li>
+              </ul>
+            </div>
+
+            <hr>
+
             <h2>よくある質問（FAQ）</h2>
 
             <p>最後に、ボウリングのスコアやプレイに関する素朴な疑問にお答えします。</p>
