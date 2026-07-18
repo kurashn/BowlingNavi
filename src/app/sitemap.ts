@@ -31,8 +31,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.6,
     }))
 
-    // Dynamic article pages
-    const wpArticles = await getWPPosts();
+    // Dynamic article pages（全記事を取得。デフォルトは9件のみのため perPage を明示）
+    const wpArticles = await getWPPosts({ perPage: 100 });
     const articles = wpArticles.posts.map((article) => ({
         url: `${baseUrl}/${article.id}`,
         lastModified: new Date(article.publishedAt),
