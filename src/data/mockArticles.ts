@@ -977,7 +977,8 @@ export const MOCK_ARTICLES: Article[] = [
             <p>最初はボール1個からスタートするので、<mark>「1個用ショートタイプ」</mark>と呼ばれるキャスターバッグがベストです。<br>
             コンパクトで電車の改札も通りやすく、家の収納場所もとりません。</p>
 
-            <p>※もし「すぐに2個目のボールを買う予定がある」という人だけ、最初から「2個用バッグ」を買うのもアリです。</p>
+            <p>※もし「すぐに2個目のボールを買う予定がある」という人だけ、最初から「2個用バッグ」を買うのもアリです。<br>
+            👉 <a href="/bag-2ball">ボウリングバッグ2個用のおすすめと選び方はこちら</a></p>
 
             <h3>2-2. 「シューズ収納」がついているか確認する</h3>
             <p>これが一番重要です。<br>
@@ -1579,7 +1580,7 @@ export const MOCK_ARTICLES: Article[] = [
               <ul>
                 <li><a href="/bowling-ball-weight-guide" class="text-green-700 hover:underline font-bold">ボールの重さは何ポンドが最適？</a>｜体重別・男女別の失敗しない選び方</li>
                 <li><a href="/bowling-myball-price-guide" class="text-green-700 hover:underline font-bold">マイボールはいくら？値段の相場</a>｜ドリル込み総額と安く買うコツ</li>
-                <li><a href="/bowling-wrist-support-guide" class="text-green-700 hover:underline font-bold">手首サポーター（リスタイ）の選び方</a>｜回転が安定し、カーブもかけやすくなる</li>
+                <li><a href="/wrist-support-recommendation" class="text-green-700 hover:underline font-bold">リスタイ（手首サポーター）のおすすめと選び方</a>｜回転が安定し、カーブもかけやすくなる</li>
               </ul>
             </div>
 

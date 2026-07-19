@@ -35,6 +35,12 @@ const nextConfig: NextConfig = {
         destination: '/:slug',
         permanent: true,
       },
+      {
+        // 重複記事(カニバリ)解消: 手首サポーター記事は既存のリスタイ記事へ統合
+        source: '/bowling-wrist-support-guide',
+        destination: '/wrist-support-recommendation',
+        permanent: true,
+      },
     ];
   },
 };
