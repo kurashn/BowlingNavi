@@ -924,6 +924,13 @@ export const MOCK_ARTICLES: Article[] = [
             <p><strong>絶対に曲がる！初心者におすすめのボール3選はこちら</strong><br>
             <strong><a href="/bowling-ball-recommendation-2026">【初心者向け】最初のマイボールの選び方！絶対に曲がるおすすめ3選</a></strong></p>
 
+            <div class="affiliate-wrapper">
+                <a href="//af.moshimo.com/af/c/click?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fanan%2F10007477%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fanan%2Fi%2F10007596%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" class="btn-affiliate">
+                    楽天市場で「STORM マイボール」を見る（曲がるリアクティブ素材）
+                </a>
+                <img src="//i.moshimo.com/af/i/impression?a_id=5285587&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" alt="" loading="lazy" width="1" height="1" style="border: 0px;" />
+            </div>
+
             <p><strong>まだレンタルの靴を履いていますか？</strong><br>
             <strong><a href="/bowling-shoes-recommendation-2026">【脱レンタル】ボウリングシューズおすすめ5選！3,000円台で買える安い靴はこれ</a></strong></p>
 
