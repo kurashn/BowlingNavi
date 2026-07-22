@@ -1576,6 +1576,7 @@ export const MOCK_ARTICLES: Article[] = [
             <div class="bg-blue-50 p-5 rounded-lg border-l-4 border-blue-500 my-6">
               <p class="font-bold text-blue-800 mb-3">🎳 スコアを上げる・上達したい</p>
               <ul>
+                <li><a href="/score-100-breakthrough" class="text-blue-600 hover:underline font-bold">100点の壁を超えるには？</a>｜まず最初の目標。壁を突破する具体的なコツ</li>
                 <li><a href="/bowling-score-calculation-guide" class="text-blue-600 hover:underline font-bold">ボウリングのスコア計算方法【図解】</a>｜ストライク・スペアの点数の仕組みを世界一わかりやすく</li>
                 <li><a href="/bowling-spare-guide" class="text-blue-600 hover:underline font-bold">スペアの取り方！残ったピン別の狙い方</a>｜スコアを一番縮めるのは実はスペア</li>
                 <li><a href="/bowling-200-score-guide" class="text-blue-600 hover:underline font-bold">200点を出す方法</a>｜アベレージ180からの壁を超える5つの技術</li>
